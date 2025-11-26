@@ -1,0 +1,77 @@
+/* ======== Layout Base ======== */
+.dev-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #0f1117;
+  color: white;
+}
+
+/* ======== SIDEBAR ======== */
+.dev-sidebar {
+  width: 260px;
+  background: #151821;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.dev-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* ======== LINKS ======== */
+.sidebar-link {
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  cursor: pointer;
+  transition: 0.15s ease;
+  font-size: 0.95rem;
+}
+
+.sidebar-link:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* ======== LOGOUT ======== */
+.sidebar-logout {
+  margin-top: auto;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background: rgba(255,80,80,0.1);
+  cursor: pointer;
+  transition: 0.15s;
+  text-align: center;
+}
+
+.sidebar-logout:hover {
+  background: rgba(255,80,80,0.2);
+}
+
+/* ======== CONTEÚDO ======== */
+.dev-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #0f0f11 0%, #1a1f2a 40%, #0a2a43 100%);
+}
+
+/* ======== ACESSO NEGADO ======== */
+.dev-denied {
+  width: 100%;
+  min-height: 100vh;
+  background: #12141b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
