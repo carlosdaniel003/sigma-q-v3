@@ -4,23 +4,28 @@ import { useEffect, useState } from "react";
 import "./dev.css"; // CSS do layout
 
 export default function DevelopmentLayout({ children }: any) {
-  const [user, setUser] = useState<any>(null);
+  const [allowed, setAllowed] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem("sigma_user");
-    if (saved) setUser(JSON.parse(saved));
+
+    if (!saved) {
+      window.location.href = "/login";
+      return;
+    }
+
+    const user = JSON.parse(saved);
+
+    if (user.role !== "admin") {
+      window.location.href = "/dashboard"; // guest é redirecionado
+      return;
+    }
+
+    // usuário admin → liberar renderização
+    setAllowed(true);
   }, []);
 
-  if (!user) return null;
-
-  if (user.role !== "admin") {
-    return (
-      <div className="dev-denied">
-        <h1>🚫 Acesso Negado</h1>
-        <p>Apenas administradores podem acessar esta área.</p>
-      </div>
-    );
-  }
+  if (!allowed) return null; // evita piscar conteúdo
 
   return (
     <div className="dev-container">
@@ -84,10 +89,7 @@ export default function DevelopmentLayout({ children }: any) {
       </aside>
 
       {/* ==== CONTEÚDO DA PÁGINA ==== */}
-      <main className="dev-content">
-        {children}
-      </main>
-
+      <main className="dev-content">{children}</main>
     </div>
   );
 }

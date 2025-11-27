@@ -1,0 +1,176 @@
+/* ============================= */
+/* TABELA DE USUÁRIOS */
+/* ============================= */
+
+.access-container {
+  padding: 20px;
+  color: #fff;
+  font-family: Inter, sans-serif;
+}
+
+.access-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.access-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(25, 27, 35, 0.65);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.access-table th {
+  background: rgba(255,255,255,0.06);
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.access-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Badges */
+.badge {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge.admin {
+  background: #2563eb;
+}
+
+.badge.dev {
+  background: #0ea5e9;
+}
+
+.badge.viewer {
+  background: #6b7280;
+}
+
+/* ============================= */
+/* BOTÕES */
+/* ============================= */
+
+.btn-edit,
+.btn-delete {
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: 0.2s ease;
+}
+
+.btn-edit {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #1d4ed8;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #b91c1c;
+}
+
+/* ============================= */
+/* MODAL */
+/* ============================= */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: rgba(25, 27, 35, 0.9);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 28px;
+  border-radius: 14px;
+  width: 360px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: fadeIn 0.25s ease-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+/* Campos */
+.modal-content label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #d0d6e0;
+}
+
+.modal-content .input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #1f232e;
+  color: white;
+  border: 1px solid #2f3545;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+
+.modal-actions button.secondary {
+  background: #374151;
+}
+
+.modal-actions button.secondary:hover {
+  background: #4b5563;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
