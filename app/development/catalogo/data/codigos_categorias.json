@@ -1,0 +1,3497 @@
+[
+  {
+    "MODELO":"ALTO FALANTE CM-550\/400",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2824-0002-01"
+  },
+  {
+    "MODELO":"ALTO FALANTE CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2824-0003-01"
+  },
+  {
+    "MODELO":"ALTO FALANTE  CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2824-0001-01"
+  },
+  {
+    "MODELO":"BX-18",
+    "CATEGORIA":"BX",
+    "CODIGO":"5141-01"
+  },
+  {
+    "MODELO":"BX-18",
+    "CATEGORIA":"BX",
+    "CODIGO":"5141-02"
+  },
+  {
+    "MODELO":"BX-18",
+    "CATEGORIA":"BX",
+    "CODIGO":"5141-03"
+  },
+  {
+    "MODELO":"BX-18",
+    "CATEGORIA":"BX",
+    "CODIGO":"5141-04"
+  },
+  {
+    "MODELO":"BX-19",
+    "CATEGORIA":"BX",
+    "CODIGO":"5241-01"
+  },
+  {
+    "MODELO":"BX-21",
+    "CATEGORIA":"BX",
+    "CODIGO":"5243-01"
+  },
+  {
+    "MODELO":"BX-21",
+    "CATEGORIA":"BX",
+    "CODIGO":"5243-02"
+  },
+  {
+    "MODELO":"BX-21",
+    "CATEGORIA":"BX",
+    "CODIGO":"5242-01"
+  },
+  {
+    "MODELO":"CM-13",
+    "CATEGORIA":"CM",
+    "CODIGO":"8323-03"
+  },
+  {
+    "MODELO":"CM-13",
+    "CATEGORIA":"CM",
+    "CODIGO":"8323-02"
+  },
+  {
+    "MODELO":"CM-14",
+    "CATEGORIA":"CM",
+    "CODIGO":"6840-02"
+  },
+  {
+    "MODELO":"CM-150",
+    "CATEGORIA":"CM",
+    "CODIGO":"5487-01"
+  },
+  {
+    "MODELO":"CM-150",
+    "CATEGORIA":"CM",
+    "CODIGO":"5487-02"
+  },
+  {
+    "MODELO":"CM-16",
+    "CATEGORIA":"CM",
+    "CODIGO":"5595-01"
+  },
+  {
+    "MODELO":"CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"2108-01"
+  },
+  {
+    "MODELO":"CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"2108-02"
+  },
+  {
+    "MODELO":"CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"2108-03"
+  },
+  {
+    "MODELO":"CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"0685-01"
+  },
+  {
+    "MODELO":"CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"0685-02"
+  },
+  {
+    "MODELO":"CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"0685-03"
+  },
+  {
+    "MODELO":"CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"0685-04"
+  },
+  {
+    "MODELO":"CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"2555-05"
+  },
+  {
+    "MODELO":"CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"2555-04"
+  },
+  {
+    "MODELO":"CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"2555-03"
+  },
+  {
+    "MODELO":"CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"2555-01"
+  },
+  {
+    "MODELO":"CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"9915-01"
+  },
+  {
+    "MODELO":"CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"9915-02"
+  },
+  {
+    "MODELO":"CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"9915-03"
+  },
+  {
+    "MODELO":"CMPA-01",
+    "CATEGORIA":"CMPA",
+    "CODIGO":"4576-01"
+  },
+  {
+    "MODELO":"CR 55\" SKY-IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0002-01"
+  },
+  {
+    "MODELO":"CR CM-500\/550 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-40"
+  },
+  {
+    "MODELO":"CR CM-550-M",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"CR DVD PRETO IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-55"
+  },
+  {
+    "MODELO":"CR KTC ANDROID-IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0003-01"
+  },
+  {
+    "MODELO":"CR CM-13",
+    "CATEGORIA":"CM",
+    "CODIGO":"0391-97"
+  },
+  {
+    "MODELO":"CR CM14",
+    "CATEGORIA":"CM",
+    "CODIGO":"0392-13"
+  },
+  {
+    "MODELO":"CR D20\/D21\/D22",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0382-41"
+  },
+  {
+    "MODELO":"D-14",
+    "CATEGORIA":"DVD",
+    "CODIGO":"6010-01"
+  },
+  {
+    "MODELO":"D-15",
+    "CATEGORIA":"DVD",
+    "CODIGO":"4860-01"
+  },
+  {
+    "MODELO":"D-16",
+    "CATEGORIA":"DVD",
+    "CODIGO":"5090-01"
+  },
+  {
+    "MODELO":"D-17",
+    "CATEGORIA":"DVD",
+    "CODIGO":"6010-02"
+  },
+  {
+    "MODELO":"D-18",
+    "CATEGORIA":"DVD",
+    "CODIGO":"6014-01"
+  },
+  {
+    "MODELO":"D-20",
+    "CATEGORIA":"DVD",
+    "CODIGO":"4865-01"
+  },
+  {
+    "MODELO":"D-21",
+    "CATEGORIA":"DVD",
+    "CODIGO":"2955-01"
+  },
+  {
+    "MODELO":"MCO-14",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0645-01"
+  },
+  {
+    "MODELO":"MIC D14\/17\/18",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0395-04"
+  },
+  {
+    "MODELO":"MIC D20",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0395-30"
+  },
+  {
+    "MODELO":"MO-01-21-B",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5615-01"
+  },
+  {
+    "MODELO":"MO-01-21-B",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5615-04"
+  },
+  {
+    "MODELO":"MO-01-21-B",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5615-02"
+  },
+  {
+    "MODELO":"MO-01-21-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5616-01"
+  },
+  {
+    "MODELO":"MO-01-21-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5616-04"
+  },
+  {
+    "MODELO":"MO-01-21-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5616-02"
+  },
+  {
+    "MODELO":"MO-02-34-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5617-01"
+  },
+  {
+    "MODELO":"MO-02-34-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5617-03"
+  },
+  {
+    "MODELO":"MO-02-34-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5617-02"
+  },
+  {
+    "MODELO":"MO-02-34-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5617-04"
+  },
+  {
+    "MODELO":"MO-02-34-E",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5618-01"
+  },
+  {
+    "MODELO":"MO-02-34-E",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5618-02"
+  },
+  {
+    "MODELO":"NBX-13",
+    "CATEGORIA":"BX",
+    "CODIGO":"5161-01"
+  },
+  {
+    "MODELO":"NBX-13",
+    "CATEGORIA":"BX",
+    "CODIGO":"5161-02"
+  },
+  {
+    "MODELO":"NBX-14",
+    "CATEGORIA":"NBX",
+    "CODIGO":"5331-01"
+  },
+  {
+    "MODELO":"NBX-15",
+    "CATEGORIA":"NBX",
+    "CODIGO":"5341-01"
+  },
+  {
+    "MODELO":"NBX-17",
+    "CATEGORIA":"NBX",
+    "CODIGO":"5361-01"
+  },
+  {
+    "MODELO":"PC AUX RCA CM700 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-74"
+  },
+  {
+    "MODELO":"PC AUX.BATERIA COM-IM",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-44"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-50"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-76"
+  },
+  {
+    "MODELO":"PC LED DIREITO CM700",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-72"
+  },
+  {
+    "MODELO":"PC LED ESQUERDO  CM700",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-73"
+  },
+  {
+    "MODELO":"PC LED ALTO FAL CM-700 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-93"
+  },
+  {
+    "MODELO":"PC LED ORN.DIR CM-700 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-94"
+  },
+  {
+    "MODELO":"PC LED ORN.ESQ CM-700 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-95"
+  },
+  {
+    "MODELO":"PC POTEN. CM-700 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-77"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MWO",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0123-0010-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 21L 127V-IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 21L 127V-IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0005-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 21L 220V-IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0002-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-49"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MNTD CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-03"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MNTD CM-700 FM-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-99"
+  },
+  {
+    "MODELO":"PC PRINCIPAL TV SKY 55-IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0008-01"
+  },
+  {
+    "MODELO":"PC WIFI MKWBT02 MNTD-IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0002-01"
+  },
+  {
+    "MODELO":"PC WIFI MKWBT03-IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0003-01"
+  },
+  {
+    "MODELO":"PC AMPLIF+FONTE CM-16-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0020-01"
+  },
+  {
+    "MODELO":"PC AUX MIC GUITAR CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0004-01"
+  },
+  {
+    "MODELO":"PC AUX MIC GUITAR CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0022-01"
+  },
+  {
+    "MODELO":"PC AUX RCA DC CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0016-01"
+  },
+  {
+    "MODELO":"PC AUX RCA DC CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0024-01"
+  },
+  {
+    "MODELO":"PC AUX+ MIC+GUI CM-14",
+    "CATEGORIA":"CM",
+    "CODIGO":"0392-11"
+  },
+  {
+    "MODELO":"PC AUX+MIC E GUITAR CM-500\/550 I.M",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-39"
+  },
+  {
+    "MODELO":"PC CONTROLE BX-13 I.M",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-06"
+  },
+  {
+    "MODELO":"PC CONTROLE BX-13 M.A",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-05"
+  },
+  {
+    "MODELO":"PC CONTROLE BX-18",
+    "CATEGORIA":"BX",
+    "CODIGO":"0398-91"
+  },
+  {
+    "MODELO":"PC CONTROLE BX-18\/21 I.M",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-08"
+  },
+  {
+    "MODELO":"PC CONTROLE BX18\/BX 21 MA",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-07"
+  },
+  {
+    "MODELO":"PC CONTROLE REMOTO KTC-32 MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0008-01"
+  },
+  {
+    "MODELO":"PC CONTROLE REMOTO SKY-55 MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0011-01"
+  },
+  {
+    "MODELO":"PC DISPLAY BT BX19 IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-10"
+  },
+  {
+    "MODELO":"PC DISPLAY BT BX19 MA",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-09"
+  },
+  {
+    "MODELO":"PC DISPLAY BX",
+    "CATEGORIA":"BX",
+    "CODIGO":"0395-34"
+  },
+  {
+    "MODELO":"PC DISPLAY BX-13\/18\/21-IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-32"
+  },
+  {
+    "MODELO":"PC DISPLAY BX-13\/18\/21-MA",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-31"
+  },
+  {
+    "MODELO":"PC DISPLAY BX-19",
+    "CATEGORIA":"BX",
+    "CODIGO":"0398-92"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-14",
+    "CATEGORIA":"CM",
+    "CODIGO":"0392-07"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-150",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0020-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-150-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0018-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0012-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0030-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-250-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0012-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-27"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-26"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0002-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0032-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0002-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-500-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-36"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-500-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-35"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0008-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0008-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-02"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550-M",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0015-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0015-01"
+  },
+  {
+    "MODELO":"PC DISPLAY D-21",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0395-03"
+  },
+  {
+    "MODELO":"PC DISPLAY D21 MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-56"
+  },
+  {
+    "MODELO":"PC DISPLAY DVD IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-57"
+  },
+  {
+    "MODELO":"PC DISPLAY MNTD CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-07"
+  },
+  {
+    "MODELO":"PC DISPLAY MNTD SKD CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"3008-02"
+  },
+  {
+    "MODELO":"PC DISPLAY MNTD SKD CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"2462-15"
+  },
+  {
+    "MODELO":"PC DISPLAY MONT.NBX-19 BT",
+    "CATEGORIA":"BX",
+    "CODIGO":"0385-33"
+  },
+  {
+    "MODELO":"PC DISPLAY MONTADA D-22",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0396-03"
+  },
+  {
+    "MODELO":"PC EXT 12V DC CM-500\/550 MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-37"
+  },
+  {
+    "MODELO":"PC EXT 12V DC CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0005-01"
+  },
+  {
+    "MODELO":"PC EXT 12V DC CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0023-01"
+  },
+  {
+    "MODELO":"PC EXT CM14",
+    "CATEGORIA":"CM",
+    "CODIGO":"0392-09"
+  },
+  {
+    "MODELO":"PC FONTE",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0497-30"
+  },
+  {
+    "MODELO":"PC FONTE BX",
+    "CATEGORIA":"BX",
+    "CODIGO":"0395-56"
+  },
+  {
+    "MODELO":"PC FONTE BX",
+    "CATEGORIA":"BX",
+    "CODIGO":"0395-33"
+  },
+  {
+    "MODELO":"PC FONTE BX IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-30"
+  },
+  {
+    "MODELO":"PC FONTE BX MA",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-19"
+  },
+  {
+    "MODELO":"PC FONTE BX MA",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-29"
+  },
+  {
+    "MODELO":"PC FONTE CM14",
+    "CATEGORIA":"CM",
+    "CODIGO":"0392-08"
+  },
+  {
+    "MODELO":"PC FONTE CM-250-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-04"
+  },
+  {
+    "MODELO":"PC FONTE CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0011-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0029-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-250-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0011-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-28"
+  },
+  {
+    "MODELO":"PC FONTE CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-25"
+  },
+  {
+    "MODELO":"PC FONTE CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0003-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0033-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0003-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-500\/550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-34"
+  },
+  {
+    "MODELO":"PC FONTE CM-500\/550-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-33"
+  },
+  {
+    "MODELO":"PC FONTE CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0006-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0034-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0009-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-700 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-63"
+  },
+  {
+    "MODELO":"PC FONTE CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0014-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0038-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-700-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0014-01"
+  },
+  {
+    "MODELO":"PC FONTE D20",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0395-31"
+  },
+  {
+    "MODELO":"PC FONTE D20 MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-53"
+  },
+  {
+    "MODELO":"PC FONTE D21",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0396-31"
+  },
+  {
+    "MODELO":"PC FONTE D21",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-79"
+  },
+  {
+    "MODELO":"PC FONTE D21 MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-62"
+  },
+  {
+    "MODELO":"PC FONTE D22",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0395-39"
+  },
+  {
+    "MODELO":"PC FONTE D22",
+    "CATEGORIA":"DVD",
+    "CODIGO":"1455-01"
+  },
+  {
+    "MODELO":"PC FONTE DVD MNTD-IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-54"
+  },
+  {
+    "MODELO":"PC FONTE MNTD CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-05"
+  },
+  {
+    "MODELO":"PC FONTE MNTD SKD CM-250 V",
+    "CATEGORIA":"CM",
+    "CODIGO":"3008-01"
+  },
+  {
+    "MODELO":"PC FRONTAL C\/  CHAVES E USB DVD-IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-52"
+  },
+  {
+    "MODELO":"PC FRONTAL C\/CHAVES E USB DVD D20-MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-51"
+  },
+  {
+    "MODELO":"PC GAME",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0395-05"
+  },
+  {
+    "MODELO":"PC GAME DVD D21 IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-61"
+  },
+  {
+    "MODELO":"PC IDU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"2P6475082-1"
+  },
+  {
+    "MODELO":"PC LED",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0044-01"
+  },
+  {
+    "MODELO":"PC LED  ALTO FAL CM-400 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-22"
+  },
+  {
+    "MODELO":"PC LED CM-150",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0021-01"
+  },
+  {
+    "MODELO":"PC LED CM-500\/550 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-14"
+  },
+  {
+    "MODELO":"PC LED CM-500\/550 MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-13"
+  },
+  {
+    "MODELO":"PC LED CM-550-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0022-01"
+  },
+  {
+    "MODELO":"PC LED DO ALTO FAL. MCO MNTD-IM",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-46"
+  },
+  {
+    "MODELO":"PC LED DO ALTO FAL.CM-250 MNTD-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-08"
+  },
+  {
+    "MODELO":"PC LED DO ALTO FALANTE CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0004-01"
+  },
+  {
+    "MODELO":"PC LED DO ORN. ESQ CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0006-01"
+  },
+  {
+    "MODELO":"PC LED DO ORN.DIR CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0005-01"
+  },
+  {
+    "MODELO":"PC LED DO ORN.DIR CM-700-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0017-01"
+  },
+  {
+    "MODELO":"PC LED DO ORN.DIREITO CM-400 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-23"
+  },
+  {
+    "MODELO":"PC LED DO ORN.DIREITO CM-400 MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-41"
+  },
+  {
+    "MODELO":"PC LED DO ORN.ESQ CM-700-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0018-01"
+  },
+  {
+    "MODELO":"PC LED DO ORN.ESQUERDO CM-400 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-24"
+  },
+  {
+    "MODELO":"PC LED DO SPK CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0040-01"
+  },
+  {
+    "MODELO":"PC LED DO SPK CM-700-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0016-01"
+  },
+  {
+    "MODELO":"PC LED MNTD SKD CM-250 V",
+    "CATEGORIA":"CM",
+    "CODIGO":"3008-03"
+  },
+  {
+    "MODELO":"PC LED SPK CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0009-01"
+  },
+  {
+    "MODELO":"PC LIGA\/DESL CM550 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0129-38"
+  },
+  {
+    "MODELO":"PC LIGA\/DESLIGA CM500\/550 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-38"
+  },
+  {
+    "MODELO":"PC MIC COM  MNTD - IM",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-45"
+  },
+  {
+    "MODELO":"PC MIC DVD  MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-58"
+  },
+  {
+    "MODELO":"PC MIC DVD D20 IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-59"
+  },
+  {
+    "MODELO":"PC MPEG D20 MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0350-54"
+  },
+  {
+    "MODELO":"PC MPEG DVD D20 IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-16"
+  },
+  {
+    "MODELO":"PC MPEG DVD D21 MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-60"
+  },
+  {
+    "MODELO":"PC MPEG DVD20 MA",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-15"
+  },
+  {
+    "MODELO":"PC ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"2P6027232-1"
+  },
+  {
+    "MODELO":"PC POTEN CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0017-01"
+  },
+  {
+    "MODELO":"PC PRINC CM250",
+    "CATEGORIA":"CM",
+    "CODIGO":"3008-00"
+  },
+  {
+    "MODELO":"PC PRINC MWO",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0220-14"
+  },
+  {
+    "MODELO":"PC PRINC MWO",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0219-89"
+  },
+  {
+    "MODELO":"PC PRINC MWO 127v",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0220-16"
+  },
+  {
+    "MODELO":"PC PRINC MWO 21L 127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0219-97"
+  },
+  {
+    "MODELO":"PC PRINC MWO 220v",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0220-18"
+  },
+  {
+    "MODELO":"PC PRINC_21L MWO-220",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0219-87"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 21L 220V-MA",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0123-0002-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 34L 127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0003-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 34L 127V-IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0007-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 34L 127V-MA",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0123-0003-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 34L 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0004-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 21L 127V-MA",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0123-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 21L 220V-IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0006-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 34L 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0008-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL 34L 220V-MA",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0123-0004-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL AWS-32",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0015-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL AWS-43",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0013-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL AWS-50",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0014-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-150",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0019-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-150-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0019-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-16",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0024-03"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-16-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0021-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-02"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0010-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0028-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0010-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-21"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-20"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-85"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-83"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0031-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-500-IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-12"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM500 IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0129-12"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-500-MA",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-11"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-48"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0007-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-81"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0007-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0035-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-69"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700 FM-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0013-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700 FM-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0013-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL KTC-32-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL KTC-43-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0005-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL KTC-50-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0006-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MCO-14",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-43"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SA97 21L 127V - MA",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0219-66"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SE49 34L 220V-IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0219-91"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MWO 21L_127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"0219-67"
+  },
+  {
+    "MODELO":"PC PRINCIPAL SKY-55-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0009-01"
+  },
+  {
+    "MODELO":"PC SENSOR KTC-30-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0003-01"
+  },
+  {
+    "MODELO":"PC SENSOR SKY-55-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0010-01"
+  },
+  {
+    "MODELO":"PC TECLA KTC-32-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0004-01"
+  },
+  {
+    "MODELO":"PC USB",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0395-29"
+  },
+  {
+    "MODELO":"PC WIFI KTC-32-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0002-01"
+  },
+  {
+    "MODELO":"PC WIFI KTC-50-MA",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0007-01"
+  },
+  {
+    "MODELO":"PC MPEG DVD D21 IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-17"
+  },
+  {
+    "MODELO":"PC ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"2P6027231-1"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-84"
+  },
+  {
+    "MODELO":"TV-32",
+    "CATEGORIA":"TV",
+    "CODIGO":"3202-01"
+  },
+  {
+    "MODELO":"TV-43",
+    "CATEGORIA":"TV",
+    "CODIGO":"4302-01"
+  },
+  {
+    "MODELO":"TV-50",
+    "CATEGORIA":"TV",
+    "CODIGO":"5003-01"
+  },
+  {
+    "MODELO":"TV-50",
+    "CATEGORIA":"TV",
+    "CODIGO":"5026-01"
+  },
+  {
+    "MODELO":"TV-55",
+    "CATEGORIA":"TV",
+    "CODIGO":"5504-01"
+  },
+  {
+    "MODELO":"TV-55",
+    "CATEGORIA":"TV",
+    "CODIGO":"5504-02"
+  },
+  {
+    "MODELO":"TV-32",
+    "CATEGORIA":"TV",
+    "CODIGO":"8832-01"
+  },
+  {
+    "MODELO":"TV-32",
+    "CATEGORIA":"TV",
+    "CODIGO":"8832-02"
+  },
+  {
+    "MODELO":"TV-43",
+    "CATEGORIA":"TV",
+    "CODIGO":"8843-01"
+  },
+  {
+    "MODELO":"TV-43",
+    "CATEGORIA":"TV",
+    "CODIGO":"8843-02"
+  },
+  {
+    "MODELO":"TV-43",
+    "CATEGORIA":"TV",
+    "CODIGO":"8843-03"
+  },
+  {
+    "MODELO":"MCO-14 BIVOLT",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0645-01"
+  },
+  {
+    "MODELO":"PC CONTROLE OTICO DO CD NBX13 - IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-06"
+  },
+  {
+    "MODELO":"PC  DISPLAY BT BX19 MNTD - IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-10"
+  },
+  {
+    "MODELO":"PC  MPEG D-20 MNTD - IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-16"
+  },
+  {
+    "MODELO":"PC  LED DO ALTO FALANTE CM-400 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-22"
+  },
+  {
+    "MODELO":"PC  LED DO ORNAMENTO DIREITO CM-400 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-23"
+  },
+  {
+    "MODELO":"PC  LED DO ORNAMENTO ESQUERDO CM-400 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-24"
+  },
+  {
+    "MODELO":"PC  DISPLAY CM-400 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-27"
+  },
+  {
+    "MODELO":"PC  FONTE CM-400 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-28"
+  },
+  {
+    "MODELO":"PC  FONTE BX - MA",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-29"
+  },
+  {
+    "MODELO":"PC  FONTE BX MNTD - IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-30"
+  },
+  {
+    "MODELO":"PC  DISPLAY COM CD BX13\/BX18\/BX21 MNTD - IM",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-32"
+  },
+  {
+    "MODELO":"PC  FONTE CM-500\/CM-550 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-34"
+  },
+  {
+    "MODELO":"PC  EXT 12V DC MNTD CM-500\/CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-37"
+  },
+  {
+    "MODELO":"PC  LIGA\/DESLIGA CM-500\/CM-550 MNTD - IM 0",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-38"
+  },
+  {
+    "MODELO":"PC  AUXILIAR + MIC E GUITAR MNTD CM-500\/CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-39"
+  },
+  {
+    "MODELO":"CR MNTD CM-500\/CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-40"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL MCO-14 MNTD - IM",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-43"
+  },
+  {
+    "MODELO":"PC  AUXILIAR DA BATERIA MCO-12\/MCO-14 MNTD - IM",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-44"
+  },
+  {
+    "MODELO":"PC  MIC MCO-12\/MCO-14 MNTD - IM",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-45"
+  },
+  {
+    "MODELO":"PC  LED DO ALTO FALANTE MCO-12\/MCO-14 MNTD - IM",
+    "CATEGORIA":"MCO",
+    "CODIGO":"0219-46"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL CM-550 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-49"
+  },
+  {
+    "MODELO":"PC  DISPLAY CM-550 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-50"
+  },
+  {
+    "MODELO":"PC  FRONTAL C CHAVES E USB MNTD D-20 -",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-52"
+  },
+  {
+    "MODELO":"PC  DA FONTE DVD MNTD D-20 - IM",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-54"
+  },
+  {
+    "MODELO":"CR DVD PRETO 0",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-55"
+  },
+  {
+    "MODELO":"PC  MICROFONE MNTD DVD D-20",
+    "CATEGORIA":"DVD",
+    "CODIGO":"0219-59"
+  },
+  {
+    "MODELO":"PC  FONTE CM-700 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-63"
+  },
+  {
+    "MODELO":"PC  AUX RCA DC CM-700 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-74"
+  },
+  {
+    "MODELO":"PC  DISPLAY CM-700 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-76"
+  },
+  {
+    "MODELO":"PC  POTENCIOMETRO CM-700 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-77"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL CM-550 MNTD S\/ SD CARD- IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-81"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL CM-400 MNTD S\/ SD CARD TPA3118 -",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-83"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL CM-400 MNTD S\/ SD CARD AD52090 -",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-85"
+  },
+  {
+    "MODELO":"PC  LED DO ALTO FALANTE CM-700 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-93"
+  },
+  {
+    "MODELO":"PC  LED DO ORNAMENTO DIREITO CM-700 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-94"
+  },
+  {
+    "MODELO":"PC  LED DO ORNAMENTO ESQUERDO CM-700 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-95"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL MNTD CM-700 FM - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-99"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL MNTD CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-03"
+  },
+  {
+    "MODELO":"PC  FONTE MNTD CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-05"
+  },
+  {
+    "MODELO":"PC  DISPLAY MNTD CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-07"
+  },
+  {
+    "MODELO":"PC  LED DO ALTO FALANTE CM-250 MNTD - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-08"
+  },
+  {
+    "MODELO":"PC DISPLAY MONTADA AP SEM CD NBX-19 BT",
+    "CATEGORIA":"BX",
+    "CODIGO":"0385-33"
+  },
+  {
+    "MODELO":"PC PRINCIPAL TV SKY 55 - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0008-01"
+  },
+  {
+    "MODELO":"PC WIFI MKWBT02 MNTD - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0002-01"
+  },
+  {
+    "MODELO":"PC WIFI MKWBT03 - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0003-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SA97 21L 127V - IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SEB7 21L 220V - IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0002-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SA97 21L 127V - IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0005-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SEB7 21L 220V - IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0006-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SA39 34L 127V - IM",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0007-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0001-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0002-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0003-01"
+  },
+  {
+    "MODELO":"PC AUX MIC GUITAR CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0004-01"
+  },
+  {
+    "MODELO":"PC EXT 12V DC CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0005-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0006-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0007-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0008-01"
+  },
+  {
+    "MODELO":"PC LED DO SPK CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0009-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0010-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0011-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0012-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700 FM - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0013-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-700 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0014-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0015-01"
+  },
+  {
+    "MODELO":"PC AUX RCA DC CM-700 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0016-01"
+  },
+  {
+    "MODELO":"PC POTENCIOMETRO CM-700 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0017-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-150 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0018-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-150 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0019-01"
+  },
+  {
+    "MODELO":"PC AMPLIFICADORA+FONTE CM-16 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0020-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-16 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0021-01"
+  },
+  {
+    "MODELO":"PC AUX MIC GUITAR CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0022-01"
+  },
+  {
+    "MODELO":"PC EXT 12V DC CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0023-01"
+  },
+  {
+    "MODELO":"PC AUX RCA DC CM-700  - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0024-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0028-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0029-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0030-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0031-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0032-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0033-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0034-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0035-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-02"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-01"
+  },
+  {
+    "MODELO":"PC LED DO SPK CM-250 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0040-01"
+  },
+  {
+    "MODELO":"CR 55\" SKY - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0002-01"
+  },
+  {
+    "MODELO":"CR KTC ANDROID - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0003-01"
+  },
+  {
+    "MODELO":"CR CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"CR CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"CR CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"CR CM-550 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-02"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-02"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0037-02"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"0220-02"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"0219-14"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0010-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550-IM",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0001-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-700-IM",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0002-01"
+  },
+  {
+    "MODELO":"PC POTENCIOMETRO CM-700-IM",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0003-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-IM",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0004-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550-IM",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0005-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700 FM-IM",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0006-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400-IM",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0007-01"
+  },
+  {
+    "MODELO":"COND C CNX 3P 190MM AC POWER C ESPONJA",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0008-01"
+  },
+  {
+    "MODELO":"DIAFRAGMA MONTADO PRETO\/CINZA MLTR",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0009-01"
+  },
+  {
+    "MODELO":"DIAFRAGMA MONTADO VERDE MLTR",
+    "CATEGORIA":null,
+    "CODIGO":"AT0217-0010-01"
+  },
+  {
+    "MODELO":"PAINEL LCM 32\" KTC",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0001-01"
+  },
+  {
+    "MODELO":"PAINEL LCM 43\" KTC",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0002-01"
+  },
+  {
+    "MODELO":"PAINEL LCM 50\" KTC",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0003-01"
+  },
+  {
+    "MODELO":"PAINEL LCM 55\" SKY",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0004-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL-FONTE TV KTC 32 - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0005-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL-FONTE TV KTC 43 - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0006-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL-FONTE TV KTC 50 - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0007-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL TV SKY 55 - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0008-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL-FONTE KTC 32\" ANDROID - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0009-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL-FONTE KTC 43\" ANDROID - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0010-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL-FONTE KTC 50\" ANDROID - IM",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0011-01"
+  },
+  {
+    "MODELO":"PAINEL LCM 32\" KTC ANDROID",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0012-01"
+  },
+  {
+    "MODELO":"PAINEL LCM 50\" KTC ANDROID",
+    "CATEGORIA":"TV",
+    "CODIGO":"AT0222-0014-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0001-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0002-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0003-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0004-01"
+  },
+  {
+    "MODELO":"PC POTENCIOMETRO CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0005-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0006-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0007-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700 FM-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0008-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0009-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL+DISPLAY CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"AT0224-0010-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0031-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0032-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0033-01"
+  },
+  {
+    "MODELO":"PC AUX MIC GUITAR CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0022-01"
+  },
+  {
+    "MODELO":"PC EXT 12V DC CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0023-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0034-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0035-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-01"
+  },
+  {
+    "MODELO":"PC LED CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0044-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-02"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-01"
+  },
+  {
+    "MODELO":"PC AUX RCA DC CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0024-01"
+  },
+  {
+    "MODELO":"PC LED DO SPK CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0009-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0028-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0029-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-250",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0030-01"
+  },
+  {
+    "MODELO":"PCI LED DO SPK CM-150",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0025-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY CM-150",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0026-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-150-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0027-01"
+  },
+  {
+    "MODELO":"INDOOR IDU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"6475082-1"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-2"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-1"
+  },
+  {
+    "MODELO":"CR KTC ANDROID TV-32\/43\/50",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0003-01"
+  },
+  {
+    "MODELO":"CR SKY TV-55",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0004-01"
+  },
+  {
+    "MODELO":"PC WIFI MKWBT02",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0002-01"
+  },
+  {
+    "MODELO":"PC WIFI MKWBT03",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0003-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA97 21L 127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0005-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SEB7 21L 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0006-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA39 34L 127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0007-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SE49 34L 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0008-01"
+  },
+  {
+    "MODELO":"PC DISPLAY BT",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-10"
+  },
+  {
+    "MODELO":"PC FONTE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-30"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-32"
+  },
+  {
+    "MODELO":"PC CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-06"
+  },
+  {
+    "MODELO":"PC CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-08"
+  },
+  {
+    "MODELO":"PLACA PRINCIPAL CM-550",
+    "CATEGORIA":"CM",
+    "CODIGO":"0392-17"
+  },
+  {
+    "MODELO":"AWS-BBS-01-B",
+    "CATEGORIA":"BBS",
+    "CODIGO":"4899-01"
+  },
+  {
+    "MODELO":"PC FONTE BBS",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0002-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL BBS",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0001-01"
+  },
+  {
+    "MODELO":"PC USB BBS",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0003-01"
+  },
+  {
+    "MODELO":"TV-50",
+    "CATEGORIA":"TV",
+    "CODIGO":"5026-02"
+  },
+  {
+    "MODELO":"TV-75",
+    "CATEGORIA":"TV",
+    "CODIGO":"5122-01"
+  },
+  {
+    "MODELO":"AWS-BBS-01-GR",
+    "CATEGORIA":"BBS",
+    "CODIGO":"4487-01"
+  },
+  {
+    "MODELO":"AWS-BBS-01-BG",
+    "CATEGORIA":"BBS",
+    "CODIGO":"5782-01"
+  },
+  {
+    "MODELO":"AWS-BBS-01-LBL",
+    "CATEGORIA":"BBS",
+    "CODIGO":"9531-01"
+  },
+  {
+    "MODELO":"AWS-BBS-01-B",
+    "CATEGORIA":"BBS",
+    "CODIGO":"4899-01"
+  },
+  {
+    "MODELO":"AWS-BBS-01-GR",
+    "CATEGORIA":"BBS",
+    "CODIGO":"4487-01"
+  },
+  {
+    "MODELO":"AWS-BBS-01-BG",
+    "CATEGORIA":"BBS",
+    "CODIGO":"5782-01"
+  },
+  {
+    "MODELO":"AWS-BBS-01-LBL",
+    "CATEGORIA":"BBS",
+    "CODIGO":"9531-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0031-01"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0032-01"
+  },
+  {
+    "MODELO":"PC AUX MIC GUITAR",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0022-01"
+  },
+  {
+    "MODELO":"PC EXT 12V DC",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0023-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0035-01"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-01"
+  },
+  {
+    "MODELO":"PC LED",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0044-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-01"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-01"
+  },
+  {
+    "MODELO":"PC AUX RCA DC",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0024-01"
+  },
+  {
+    "MODELO":"PC POTENCIOMETRO",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0025-01"
+  },
+  {
+    "MODELO":"PC LED DO SPK",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0009-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0028-01"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0030-01"
+  },
+  {
+    "MODELO":"PC LED DO SPK",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0025-01"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0026-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0027-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0001-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL (NOVA)",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0008-01"
+  },
+  {
+    "MODELO":"PC FONTE",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0002-01"
+  },
+  {
+    "MODELO":"PC USB\/AUX",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0003-01"
+  },
+  {
+    "MODELO":"INDOOR IDU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"6475082-1"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-2"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-1"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO KTC ANDROID",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0003-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO SKY",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0002-01"
+  },
+  {
+    "MODELO":"PCI WIFI MKWBT02",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0002-01"
+  },
+  {
+    "MODELO":"PCI WIFI MKWBT03",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0003-01"
+  },
+  {
+    "MODELO":"PC  PRINCIPAL MEL829-SA97\/21L-127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0005-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SEB7\/21L-220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0006-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SA39\/34L-127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0007-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL MEL829-SE49\/34L-220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0008-01"
+  },
+  {
+    "MODELO":"PC DISPLAY BT",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-10"
+  },
+  {
+    "MODELO":"PC FONTE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-30"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-32"
+  },
+  {
+    "MODELO":"PC CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-06"
+  },
+  {
+    "MODELO":"PC CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-08"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA99\/34L(BIVOLT)",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0010-01"
+  },
+  {
+    "MODELO":"MO-02-34-B 110V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5774-01"
+  },
+  {
+    "MODELO":"MO-02-34-B 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5774-02"
+  },
+  {
+    "MODELO":"AWS-T1W-01 BT",
+    "CATEGORIA":"TW",
+    "CODIGO":"5115-01"
+  },
+  {
+    "MODELO":"AWS-T2W-01 BT",
+    "CATEGORIA":"TW",
+    "CODIGO":"5015-01"
+  },
+  {
+    "MODELO":"PC LUZ TECLADO",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0053-01"
+  },
+  {
+    "MODELO":"PC USB",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0057-01"
+  },
+  {
+    "MODELO":"PC DISPLAY",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0058-01"
+  },
+  {
+    "MODELO":"PC AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0056-01"
+  },
+  {
+    "MODELO":"PCI AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-00562-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-400 (NOVA)",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0049-01"
+  },
+  {
+    "MODELO":"PC FONTE CM-550 (NOVA)",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0050-01"
+  },
+  {
+    "MODELO":"MO-01-21-B",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5615-03"
+  },
+  {
+    "MODELO":"PC LED DO SPK",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0223-0009-01"
+  },
+  {
+    "MODELO":"PC AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0062-01"
+  },
+  {
+    "MODELO":"PC AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0056-01"
+  },
+  {
+    "MODELO":"PC PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0035-01"
+  },
+  {
+    "MODELO":"TV-65",
+    "CATEGORIA":"TV",
+    "CODIGO":"5022-01"
+  },
+  {
+    "MODELO":"MO-01-21-W",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5616-03"
+  },
+  {
+    "MODELO":"ALTO FALANTE 10POL TW",
+    "CATEGORIA":"TW",
+    "CODIGO":"SC2824-0004-01"
+  },
+  {
+    "MODELO":"AWS-T2W-02",
+    "CATEGORIA":"TW",
+    "CODIGO":"5016-01"
+  },
+  {
+    "MODELO":"AWS-T1W-02 BT",
+    "CATEGORIA":"TW",
+    "CODIGO":"5116-01"
+  },
+  {
+    "MODELO":"MO-02-34-E",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5618-03"
+  },
+  {
+    "MODELO":"MO-02-34-E",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5618-04"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-16 - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0021-01"
+  },
+  {
+    "MODELO":"PC DISPLAY CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-02"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700-IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-02"
+  },
+  {
+    "MODELO":"PC PRINCIPAL CM-700-MA",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0037-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0001-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL (NOVA)",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0008-01"
+  },
+  {
+    "MODELO":"PCI FONTE",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0002-01"
+  },
+  {
+    "MODELO":"PCI USB\/AUX",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0003-01"
+  },
+  {
+    "MODELO":"PCI TECLA",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0117-0004-01"
+  },
+  {
+    "MODELO":"PCI LED",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0117-0005-01"
+  },
+  {
+    "MODELO":"PLACA DISPLAY BT",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-10"
+  },
+  {
+    "MODELO":"PLACA FONTE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-30"
+  },
+  {
+    "MODELO":"PLACA DISPLAY",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-32"
+  },
+  {
+    "MODELO":"PLACA CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-06"
+  },
+  {
+    "MODELO":"PLACA CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-08"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0031-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0032-01"
+  },
+  {
+    "MODELO":"PCI FONTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0033-01"
+  },
+  {
+    "MODELO":"PCI LED ALTO FALANTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0041-01"
+  },
+  {
+    "MODELO":"PCI LED DIREITO",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0042-01"
+  },
+  {
+    "MODELO":"PCI LED ESQUERDO",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0043-01"
+  },
+  {
+    "MODELO":"PCI AUX MIC GUITAR",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0022-01"
+  },
+  {
+    "MODELO":"PCI EXT 12V DC",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0023-01"
+  },
+  {
+    "MODELO":"PCI FONTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0034-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0035-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-01"
+  },
+  {
+    "MODELO":"PCI LED",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0044-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-01"
+  },
+  {
+    "MODELO":"PCI AUX RCA DC",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0024-01"
+  },
+  {
+    "MODELO":"PCI POTENCIOMETRO",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0025-01"
+  },
+  {
+    "MODELO":"PCI LED DO SPK",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0009-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0028-01"
+  },
+  {
+    "MODELO":"PCI FONTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0029-01"
+  },
+  {
+    "MODELO":"PCI FONTE (NOVA)",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0048-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0030-01"
+  },
+  {
+    "MODELO":"PCI LED DO SPK",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0025-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0026-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0027-01"
+  },
+  {
+    "MODELO":"INDOOR IDU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"6475082-1"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-2"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-1"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA99\/34L(BIVOLT)",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0010-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SAG7\/21L(BIVOLT)",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0009-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA97\/21L-127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0005-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SEB7\/21L-220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0006-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA39\/34L-127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0007-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SE49\/34L-220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0008-01"
+  },
+  {
+    "MODELO":"PCI LUZ TECLADO",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0053-01"
+  },
+  {
+    "MODELO":"PCI USB",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0057-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0058-01"
+  },
+  {
+    "MODELO":"PCI AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0056-01"
+  },
+  {
+    "MODELO":"PCI AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0062-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO KTC ANDROID",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0003-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO SKY",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0002-01"
+  },
+  {
+    "MODELO":"PCI WIFI MKWBT02",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0002-01"
+  },
+  {
+    "MODELO":"PCI WIFI MKWBT03",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0003-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(NACIONAL)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0015-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(IMPORTADA)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0015-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(NACIONAL)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0013-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(NACIONAL)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0014-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0001-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL (NOVA)",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0008-01"
+  },
+  {
+    "MODELO":"PCI USB\/AUX",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0217-0003-01"
+  },
+  {
+    "MODELO":"PCI TECLA",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0117-0004-01"
+  },
+  {
+    "MODELO":"PCI LED",
+    "CATEGORIA":"BBS",
+    "CODIGO":"PL0117-0005-01"
+  },
+  {
+    "MODELO":"PLACA DISPLAY BT",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-10"
+  },
+  {
+    "MODELO":"PLACA FONTE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-30"
+  },
+  {
+    "MODELO":"PLACA DISPLAY",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-32"
+  },
+  {
+    "MODELO":"PLACA CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-06"
+  },
+  {
+    "MODELO":"PLACA CONTROLE",
+    "CATEGORIA":"BX",
+    "CODIGO":"0219-08"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0031-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0032-01"
+  },
+  {
+    "MODELO":"PCI LED ALTO FALANTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0041-01"
+  },
+  {
+    "MODELO":"PCI LED DIREITO",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0042-01"
+  },
+  {
+    "MODELO":"PCI LED ESQUERDO",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0124-0043-01"
+  },
+  {
+    "MODELO":"PCI AUX MIC GUITAR",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0022-01"
+  },
+  {
+    "MODELO":"PCI EXT 12V DC",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0023-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0035-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0036-01"
+  },
+  {
+    "MODELO":"PCI LED",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0044-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2524-0001-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0037-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0039-01"
+  },
+  {
+    "MODELO":"PCI AUX RCA DC",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0024-01"
+  },
+  {
+    "MODELO":"PCI POTENCIOMETRO",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0025-01"
+  },
+  {
+    "MODELO":"PCI LED DO SPK",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0009-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0028-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0030-01"
+  },
+  {
+    "MODELO":"PCI LED DO SPK",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0025-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0026-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0027-01"
+  },
+  {
+    "MODELO":"INDOOR IDU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"6475082-1"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-2"
+  },
+  {
+    "MODELO":"OUTDOOR ODU",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"602723-1"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA99\/34L(BIVOLT)",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0010-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SAG7\/21L(BIVOLT)",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0009-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA97\/21L-127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0005-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SEB7\/21L-220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0006-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SA39\/34L-127V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0007-01"
+  },
+  {
+    "MODELO":" PRINCIPAL MEL829-SE49\/34L-220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0008-01"
+  },
+  {
+    "MODELO":"PCI LUZ TECLADO",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0053-01"
+  },
+  {
+    "MODELO":"PCI USB",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0057-01"
+  },
+  {
+    "MODELO":"PCI DISPLAY",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0058-01"
+  },
+  {
+    "MODELO":"PCI AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0056-01"
+  },
+  {
+    "MODELO":"PCI AMPLIFICADORA (principal)",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0062-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO KTC ANDROID",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0003-01"
+  },
+  {
+    "MODELO":"CONTROLE REMOTO SKY",
+    "CATEGORIA":"TV",
+    "CODIGO":"SC2522-0002-01"
+  },
+  {
+    "MODELO":"PCI WIFI MKWBT02",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0002-01"
+  },
+  {
+    "MODELO":"PCI WIFI MKWBT03",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0222-0003-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(NACIONAL)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0015-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(IMPORTADA)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0015-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(NACIONAL)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0013-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC ANDROID(NACIONAL)",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0014-01"
+  },
+  {
+    "MODELO":"CM-400 AR",
+    "CATEGORIA":"CM",
+    "CODIGO":"8060-01"
+  },
+  {
+    "MODELO":"CM-700 AR",
+    "CATEGORIA":"CM",
+    "CODIGO":"8056-01"
+  },
+  {
+    "MODELO":"MO-02-34-B 110V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5774-03"
+  },
+  {
+    "MODELO":"PC FONTE CM-700",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0051-01"
+  },
+  {
+    "MODELO":"MO-01-21-E 110V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5619-01"
+  },
+  {
+    "MODELO":"MO-01-21-E 220",
+    "CATEGORIA":"MWO",
+    "CODIGO":"5619-02"
+  },
+  {
+    "MODELO":"TM-1200 BIV",
+    "CATEGORIA":"TM",
+    "CODIGO":"2401-01"
+  },
+  {
+    "MODELO":"TM-2200 BIV",
+    "CATEGORIA":"TM",
+    "CODIGO":"2501-01"
+  },
+  {
+    "MODELO":"ALTO FALANTE TM",
+    "CATEGORIA":"TM",
+    "CODIGO":"SC2824-0005-01"
+  },
+  {
+    "MODELO":"PC AMPLIFICADORA – TM2200",
+    "CATEGORIA":"TM",
+    "CODIGO":"PL0224-0065-01"
+  },
+  {
+    "MODELO":"PC DISPLAY TM",
+    "CATEGORIA":"TM",
+    "CODIGO":"PL0224-0066-01"
+  },
+  {
+    "MODELO":"PC FONTE TM-1200",
+    "CATEGORIA":"TM",
+    "CODIGO":"PL0224-0067-01"
+  },
+  {
+    "MODELO":"PC AMPLIFICADORA  TM-1200",
+    "CATEGORIA":"TM",
+    "CODIGO":"PL0224-0064-01"
+  },
+  {
+    "MODELO":"MWO 34L 220V ARGENTINA",
+    "CATEGORIA":"MWO",
+    "CODIGO":"8055-01"
+  },
+  {
+    "MODELO":"MWO 21L 220V ARGENTINA",
+    "CATEGORIA":"MWO",
+    "CODIGO":"8054-01"
+  },
+  {
+    "MODELO":"CM 700 FONTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0078-01"
+  },
+  {
+    "MODELO":"CM-550 L",
+    "CATEGORIA":"CM",
+    "CODIGO":"8999-01"
+  },
+  {
+    "MODELO":"MO01-21-W 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"80034-02"
+  },
+  {
+    "MODELO":"MO02-34-W 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"80036-02"
+  },
+  {
+    "MODELO":"MO02-34-B 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"80035-02"
+  },
+  {
+    "MODELO":"CM-400L",
+    "CATEGORIA":"CM",
+    "CODIGO":"8998-01"
+  },
+  {
+    "MODELO":"MWO0121B 220V",
+    "CATEGORIA":"MWO",
+    "CODIGO":"80037-02"
+  },
+  {
+    "MODELO":"CM 400 ARG",
+    "CATEGORIA":"CM",
+    "CODIGO":"80075-01"
+  },
+  {
+    "MODELO":"CM 400\/550\/550L",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2824-0006-01"
+  },
+  {
+    "MODELO":"CM 400 FONTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0075-01"
+  },
+  {
+    "MODELO":"CM 150\/250\/400L",
+    "CATEGORIA":"CM",
+    "CODIGO":"SC2824-0007-01"
+  },
+  {
+    "MODELO":"PC AUX - TM1200\/ TM2200",
+    "CATEGORIA":"TM",
+    "CODIGO":"PL0224-0054-01"
+  },
+  {
+    "MODELO":"PCI AMPLIFICADORA – T2W",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0062-02"
+  },
+  {
+    "MODELO":"SA67 MWO",
+    "CATEGORIA":"MWO",
+    "CODIGO":"PL0223-0090-01"
+  },
+  {
+    "MODELO":"MBX-01-LB-AR",
+    "CATEGORIA":"BBS",
+    "CODIGO":"80020-01"
+  },
+  {
+    "MODELO":"COND AWS-C-18F",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6305-02"
+  },
+  {
+    "MODELO":"COND AWS-C-18QF",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"PL0225-0002-01"
+  },
+  {
+    "MODELO":"COND AWS-C-9F",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0077-01"
+  },
+  {
+    "MODELO":"CM 500L FONTE",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0091-01"
+  },
+  {
+    "MODELO":"IDU-PCI PRINCIPAL EVAPORADORA 18K\/24K",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"PL0225-0006-01"
+  },
+  {
+    "MODELO":"EVAP AWS-EV-18F",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6316-02"
+  },
+  {
+    "MODELO":"PCI LUZ TECLADO T1W\/T2W - IM",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0053-02"
+  },
+  {
+    "MODELO":"COND AWS-C-18QF",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6306-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL CM-400-L - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0080-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL CM-550-L - IM",
+    "CATEGORIA":"CM",
+    "CODIGO":"PL0224-0083-01"
+  },
+  {
+    "MODELO":"EVAP AWS-EV-9F",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6312-02"
+  },
+  {
+    "MODELO":"EVAP AWS-EV-9QF",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6313-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL CONDENSADORA 9K\/12K - IM",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"PL0225-0004-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL EVAPORADORA 9K F - IM",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"PL0225-0009-01"
+  },
+  {
+    "MODELO":"CONDENSADOR AWS-C-9F 220V",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6301-02"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC 50 ANDROID CSOT",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0023-01"
+  },
+  {
+    "MODELO":"PCI IDU 2P399175-20 DAIKIN - IM",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"2P399175-20"
+  },
+  {
+    "MODELO":"PCI ODU ECO-A 2P731499-15 - IM",
+    "CATEGORIA":"DAIKIN",
+    "CODIGO":"2P731499-15"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL-FONTE KTC 43 ANDROID CSOT",
+    "CATEGORIA":"TV",
+    "CODIGO":"PL0122-0019-01"
+  },
+  {
+    "MODELO":"EVAP AWS-EV-24QF",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6319-02"
+  },
+  {
+    "MODELO":"CONDENSADOR AWS-C-9QF 220V",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6302-02"
+  },
+  {
+    "MODELO":"PCI FONTE T1W\/T2W\/TM-2200 - IM",
+    "CATEGORIA":"TW",
+    "CODIGO":"PL0224-0059-01"
+  },
+  {
+    "MODELO":"PCI WIFI MKWBT03 - MA",
+    "CATEGORIA":"PTH",
+    "CODIGO":"PL0122-0016-01"
+  },
+  {
+    "MODELO":"PCI PRINCIPAL CONDENSADORA 24K - IM",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"PL0225-0003-01"
+  },
+  {
+    "MODELO":"CONDENSADOR AWS-C-24QF 220V",
+    "CATEGORIA":"ARCON",
+    "CODIGO":"6308-02"
+  }
+]
