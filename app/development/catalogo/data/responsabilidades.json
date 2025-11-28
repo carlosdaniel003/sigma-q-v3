@@ -1,0 +1,82 @@
+[
+  {
+    "CÓDIGO":"F",
+    "DESCRIÇÃO DO MATERIAL":" CHINA"
+  },
+  {
+    "CÓDIGO":"FL ",
+    "DESCRIÇÃO DO MATERIAL":" FORNECEDOR LOCAL"
+  },
+  {
+    "CÓDIGO":"JIG ",
+    "DESCRIÇÃO DO MATERIAL":" ENGENHARIA\/PROJETO"
+  },
+  {
+    "CÓDIGO":"ENG ",
+    "DESCRIÇÃO DO MATERIAL":" ENGENHARIA\/PROJETO"
+  },
+  {
+    "CÓDIGO":"IP ",
+    "DESCRIÇÃO DO MATERIAL":" PROCESSO INJEÇÃO"
+  },
+  {
+    "CÓDIGO":"LCM ",
+    "DESCRIÇÃO DO MATERIAL":" PROCESSO LCM"
+  },
+  {
+    "CÓDIGO":"MA ",
+    "DESCRIÇÃO DO MATERIAL":" PROCESSO MA"
+  },
+  {
+    "CÓDIGO":"AF ",
+    "DESCRIÇÃO DO MATERIAL":" PROC. ALTO FALANTE"
+  },
+  {
+    "CÓDIGO":"DP ",
+    "DESCRIÇÃO DO MATERIAL":" DIP PTH"
+  },
+  {
+    "CÓDIGO":"T ",
+    "DESCRIÇÃO DO MATERIAL":" PROCESSO PTH"
+  },
+  {
+    "CÓDIGO":"P ",
+    "DESCRIÇÃO DO MATERIAL":" PROCESSO PA"
+  },
+  {
+    "CÓDIGO":"AC ",
+    "DESCRIÇÃO DO MATERIAL":" ACÚMULO"
+  },
+  {
+    "CÓDIGO":"OC ",
+    "DESCRIÇÃO DO MATERIAL":" OCORRÊNCIA"
+  },
+  {
+    "CÓDIGO":"RT ",
+    "DESCRIÇÃO DO MATERIAL":" RETRABALHO PEÇA"
+  },
+  {
+    "CÓDIGO":"INT MOD ",
+    "DESCRIÇÃO DO MATERIAL":" INTRODUÇÃO DE MODELO"
+  },
+  {
+    "CÓDIGO":"VER ",
+    "DESCRIÇÃO DO MATERIAL":" REVISÃO"
+  },
+  {
+    "CÓDIGO":"FF ",
+    "DESCRIÇÃO DO MATERIAL":" FALSA FALHA "
+  },
+  {
+    "CÓDIGO":"AF RET ",
+    "DESCRIÇÃO DO MATERIAL":" ALTO FALANTE RETRABALHO"
+  },
+  {
+    "CÓDIGO":"RC ",
+    "DESCRIÇÃO DO MATERIAL":" RETORNO DE CAMPO"
+  },
+  {
+    "CÓDIGO":"A ",
+    "DESCRIÇÃO DO MATERIAL":" ARMAZENAMENTO"
+  }
+]

@@ -1,0 +1,598 @@
+[
+  {
+    "CÓDIGO":"A1",
+    "DESCRIÇÃO DO MATERIAL":"Sem áudio geral"
+  },
+  {
+    "CÓDIGO":"A2",
+    "DESCRIÇÃO DO MATERIAL":"Sem áudio no canal ESQUERDO\/Fone"
+  },
+  {
+    "CÓDIGO":"A3",
+    "DESCRIÇÃO DO MATERIAL":"Sem áudio no canal DIREITO\/Fone"
+  },
+  {
+    "CÓDIGO":"A4",
+    "DESCRIÇÃO DO MATERIAL":"Sem áudio no  MIC\/Fone\/Aux"
+  },
+  {
+    "CÓDIGO":"A5",
+    "DESCRIÇÃO DO MATERIAL":"Ruido no áudio do  MIC\/Fone\/Aux"
+  },
+  {
+    "CÓDIGO":"A6",
+    "DESCRIÇÃO DO MATERIAL":"Ruido no áudio "
+  },
+  {
+    "CÓDIGO":"A7",
+    "DESCRIÇÃO DO MATERIAL":"Vibração no Áudio"
+  },
+  {
+    "CÓDIGO":"A8",
+    "DESCRIÇÃO DO MATERIAL":"Mal Contato no MIC\/Fone\/Aux"
+  },
+  {
+    "CÓDIGO":"A9",
+    "DESCRIÇÃO DO MATERIAL":"Sem audio no Tweteer"
+  },
+  {
+    "CÓDIGO":"A10",
+    "DESCRIÇÃO DO MATERIAL":"Sem audio no alto falante"
+  },
+  {
+    "CÓDIGO":"A11",
+    "DESCRIÇÃO DO MATERIAL":"Vibração no Áudio SWEEP"
+  },
+  {
+    "CÓDIGO":"A12",
+    "DESCRIÇÃO DO MATERIAL":"Volume minimo não atua"
+  },
+  {
+    "CÓDIGO":"A13",
+    "DESCRIÇÃO DO MATERIAL":"Audio Baixo"
+  },
+  {
+    "CÓDIGO":"A14",
+    "DESCRIÇÃO DO MATERIAL":"Sem áudio no canal do AF"
+  },
+  {
+    "CÓDIGO":"AP1",
+    "DESCRIÇÃO DO MATERIAL":"Liga\/desliga automaticamente"
+  },
+  {
+    "CÓDIGO":"AP2",
+    "DESCRIÇÃO DO MATERIAL":"HI-POT\/Rigidez\/WI"
+  },
+  {
+    "CÓDIGO":"BAT1",
+    "DESCRIÇÃO DO MATERIAL":"Bateria\/Pilha não atua"
+  },
+  {
+    "CÓDIGO":"BAT2",
+    "DESCRIÇÃO DO MATERIAL":"Aparelho não carrega"
+  },
+  {
+    "CÓDIGO":"BAT3",
+    "DESCRIÇÃO DO MATERIAL":"Bateria Aux. Não Atua"
+  },
+  {
+    "CÓDIGO":"BT1",
+    "DESCRIÇÃO DO MATERIAL":"Bluetooth Não Funciona"
+  },
+  {
+    "CÓDIGO":"BT2",
+    "DESCRIÇÃO DO MATERIAL":"Ruido no Bluetooth"
+  },
+  {
+    "CÓDIGO":"BZ",
+    "DESCRIÇÃO DO MATERIAL":"Buzzer não Atua"
+  },
+  {
+    "CÓDIGO":"CAP",
+    "DESCRIÇÃO DO MATERIAL":"Calço\/Quadro aparecendo"
+  },
+  {
+    "CÓDIGO":"CR1",
+    "DESCRIÇÃO DO MATERIAL":"Controle não atua"
+  },
+  {
+    "CÓDIGO":"CR2",
+    "DESCRIÇÃO DO MATERIAL":"Controle com pouca sensibilidade"
+  },
+  {
+    "CÓDIGO":"CR3",
+    "DESCRIÇÃO DO MATERIAL":"Controle do Game"
+  },
+  {
+    "CÓDIGO":"CH1",
+    "DESCRIÇÃO DO MATERIAL":"Chave Não Atua"
+  },
+  {
+    "CÓDIGO":"CONT",
+    "DESCRIÇÃO DO MATERIAL":"Contaminação"
+  },
+  {
+    "CÓDIGO":"D1",
+    "DESCRIÇÃO DO MATERIAL":"Não lê dvd\/CD\/Jogos"
+  },
+  {
+    "CÓDIGO":"D2",
+    "DESCRIÇÃO DO MATERIAL":"CD Sai girando"
+  },
+  {
+    "CÓDIGO":"G1",
+    "DESCRIÇÃO DO MATERIAL":"Não abre gaveta\/Lenta\/Batendo"
+  },
+  {
+    "CÓDIGO":"G2",
+    "DESCRIÇÃO DO MATERIAL":"Abrindo e fechando automaticamente"
+  },
+  {
+    "CÓDIGO":"G3",
+    "DESCRIÇÃO DO MATERIAL":"Gaveta abre mas não fecha"
+  },
+  {
+    "CÓDIGO":"G4",
+    "DESCRIÇÃO DO MATERIAL":"Loader com ruidos"
+  },
+  {
+    "CÓDIGO":"GB",
+    "DESCRIÇÃO DO MATERIAL":"Terra Aberto"
+  },
+  {
+    "CÓDIGO":"HP1",
+    "DESCRIÇÃO DO MATERIAL":"Entrada da Gui\/Aux Não Funciona "
+  },
+  {
+    "CÓDIGO":"HP2",
+    "DESCRIÇÃO DO MATERIAL":"Saída Dupla de Áudio"
+  },
+  {
+    "CÓDIGO":"HP3",
+    "DESCRIÇÃO DO MATERIAL":"Audio Oscilando"
+  },
+  {
+    "CÓDIGO":"HP4",
+    "DESCRIÇÃO DO MATERIAL":"Osciloscópio com Tensão Variada"
+  },
+  {
+    "CÓDIGO":"HP5",
+    "DESCRIÇÃO DO MATERIAL":"Repertições de ECO"
+  },
+  {
+    "CÓDIGO":"HP6",
+    "DESCRIÇÃO DO MATERIAL":"Agudo\/Grave não atua"
+  },
+  {
+    "CÓDIGO":"HP7",
+    "DESCRIÇÃO DO MATERIAL":"Pop noise "
+  },
+  {
+    "CÓDIGO":"LAN",
+    "DESCRIÇÃO DO MATERIAL":"Entrada de Rede não Atua"
+  },
+  {
+    "CÓDIGO":"L1",
+    "DESCRIÇÃO DO MATERIAL":"Lâmpada não apaga"
+  },
+  {
+    "CÓDIGO":"L2",
+    "DESCRIÇÃO DO MATERIAL":"Lâmpada não Acende"
+  },
+  {
+    "CÓDIGO":"L3",
+    "DESCRIÇÃO DO MATERIAL":"Lâmpada Fraca\/Forte"
+  },
+  {
+    "CÓDIGO":"L4",
+    "DESCRIÇÃO DO MATERIAL":"Lâmpada Piscando"
+  },
+  {
+    "CÓDIGO":"LH",
+    "DESCRIÇÃO DO MATERIAL":"Linha Horizontal"
+  },
+  {
+    "CÓDIGO":"LV",
+    "DESCRIÇÃO DO MATERIAL":"Linha Vertical"
+  },
+  {
+    "CÓDIGO":"LD1",
+    "DESCRIÇÃO DO MATERIAL":"Led não acende"
+  },
+  {
+    "CÓDIGO":"LD2",
+    "DESCRIÇÃO DO MATERIAL":"Led não apaga"
+  },
+  {
+    "CÓDIGO":"LD3",
+    "DESCRIÇÃO DO MATERIAL":"Led\/Flash Light com luz fraca"
+  },
+  {
+    "CÓDIGO":"LD4",
+    "DESCRIÇÃO DO MATERIAL":"Led\/Flash Light com luz forte"
+  },
+  {
+    "CÓDIGO":"LD5",
+    "DESCRIÇÃO DO MATERIAL":"Led\/Display piscando"
+  },
+  {
+    "CÓDIGO":"LD6",
+    "DESCRIÇÃO DO MATERIAL":"Led com cor diferente"
+  },
+  {
+    "CÓDIGO":"LD7",
+    "DESCRIÇÃO DO MATERIAL":"Led com luz invertida"
+  },
+  {
+    "CÓDIGO":"LD8",
+    "DESCRIÇÃO DO MATERIAL":"Faltando digito no display"
+  },
+  {
+    "CÓDIGO":"LD9",
+    "DESCRIÇÃO DO MATERIAL":"Excesso de Digitos"
+  },
+  {
+    "CÓDIGO":"LD10",
+    "DESCRIÇÃO DO MATERIAL":"Flash Light  não liga"
+  },
+  {
+    "CÓDIGO":"LD11",
+    "DESCRIÇÃO DO MATERIAL":"Flash Light Faltando Cor"
+  },
+  {
+    "CÓDIGO":"LD15",
+    "DESCRIÇÃO DO MATERIAL":"Display não acende"
+  },
+  {
+    "CÓDIGO":"LD16",
+    "DESCRIÇÃO DO MATERIAL":"Led do Equalizador não atua"
+  },
+  {
+    "CÓDIGO":"MURA",
+    "DESCRIÇÃO DO MATERIAL":"Mancha Escura na Tela"
+  },
+  {
+    "CÓDIGO":"N1",
+    "DESCRIÇÃO DO MATERIAL":"Aparelho não liga"
+  },
+  {
+    "CÓDIGO":"N2",
+    "DESCRIÇÃO DO MATERIAL":"Aparelho não desliga"
+  },
+  {
+    "CÓDIGO":"N3",
+    "DESCRIÇÃO DO MATERIAL":"Não Grava\/Atualiza"
+  },
+  {
+    "CÓDIGO":"N4",
+    "DESCRIÇÃO DO MATERIAL":"Software desatualizado"
+  },
+  {
+    "CÓDIGO":"N5",
+    "DESCRIÇÃO DO MATERIAL":"Software Travando"
+  },
+  {
+    "CÓDIGO":"N6",
+    "DESCRIÇÃO DO MATERIAL":"Centelhando\/Ruido"
+  },
+  {
+    "CÓDIGO":"NC",
+    "DESCRIÇÃO DO MATERIAL":"Não Comunica"
+  },
+  {
+    "CÓDIGO":"OPT",
+    "DESCRIÇÃO DO MATERIAL":"Optical não Atual"
+  },
+  {
+    "CÓDIGO":"OP",
+    "DESCRIÇÃO DO MATERIAL":"O-cell com Película"
+  },
+  {
+    "CÓDIGO":"OPEN",
+    "DESCRIÇÃO DO MATERIAL":"Tampa do LOADER Aberto"
+  },
+  {
+    "CÓDIGO":"P1",
+    "DESCRIÇÃO DO MATERIAL":"Quebrado\/Danificado\/Batido"
+  },
+  {
+    "CÓDIGO":"P2",
+    "DESCRIÇÃO DO MATERIAL":"Riscado"
+  },
+  {
+    "CÓDIGO":"P3",
+    "DESCRIÇÃO DO MATERIAL":"Mancha"
+  },
+  {
+    "CÓDIGO":"P4",
+    "DESCRIÇÃO DO MATERIAL":"Com rebarba"
+  },
+  {
+    "CÓDIGO":"P5",
+    "DESCRIÇÃO DO MATERIAL":"Empenado\/Amassado"
+  },
+  {
+    "CÓDIGO":"P6",
+    "DESCRIÇÃO DO MATERIAL":"Mal montado"
+  },
+  {
+    "CÓDIGO":"P7",
+    "DESCRIÇÃO DO MATERIAL":"Abertura\/Gap"
+  },
+  {
+    "CÓDIGO":"P8",
+    "DESCRIÇÃO DO MATERIAL":"Falha de Injeção \/Serigrafia"
+  },
+  {
+    "CÓDIGO":"P9",
+    "DESCRIÇÃO DO MATERIAL":"Faltando "
+  },
+  {
+    "CÓDIGO":"P10",
+    "DESCRIÇÃO DO MATERIAL":"Deslocado"
+  },
+  {
+    "CÓDIGO":"P11",
+    "DESCRIÇÃO DO MATERIAL":"Fora do especificado"
+  },
+  {
+    "CÓDIGO":"P12",
+    "DESCRIÇÃO DO MATERIAL":"Película no O-CELL"
+  },
+  {
+    "CÓDIGO":"P13",
+    "DESCRIÇÃO DO MATERIAL":"Aparelho com corpo estranho"
+  },
+  {
+    "CÓDIGO":"P14",
+    "DESCRIÇÃO DO MATERIAL":"Espanado"
+  },
+  {
+    "CÓDIGO":"PT1",
+    "DESCRIÇÃO DO MATERIAL":"Prato não Gira"
+  },
+  {
+    "CÓDIGO":"PT2",
+    "DESCRIÇÃO DO MATERIAL":"Prato Travado"
+  },
+  {
+    "CÓDIGO":"PBR",
+    "DESCRIÇÃO DO MATERIAL":"Ponto Brilhante"
+  },
+  {
+    "CÓDIGO":"PAP",
+    "DESCRIÇÃO DO MATERIAL":"Ponto Apagado"
+  },
+  {
+    "CÓDIGO":"Q1",
+    "DESCRIÇÃO DO MATERIAL":"Super Aquecimento"
+  },
+  {
+    "CÓDIGO":"Q2",
+    "DESCRIÇÃO DO MATERIAL":"Não Aquece"
+  },
+  {
+    "CÓDIGO":"REC",
+    "DESCRIÇÃO DO MATERIAL":"Função REC não Grava"
+  },
+  {
+    "CÓDIGO":"RC1",
+    "DESCRIÇÃO DO MATERIAL":"RCA Fora do especificado"
+  },
+  {
+    "CÓDIGO":"RC2",
+    "DESCRIÇÃO DO MATERIAL":"RCA  Não atua"
+  },
+  {
+    "CÓDIGO":"RD",
+    "DESCRIÇÃO DO MATERIAL":"Radio Não Funciona\/Sintoniza"
+  },
+  {
+    "CÓDIGO":"SD",
+    "DESCRIÇÃO DO MATERIAL":"Falha no SD Card"
+  },
+  {
+    "CÓDIGO":"ST1",
+    "DESCRIÇÃO DO MATERIAL":"Sem tensão"
+  },
+  {
+    "CÓDIGO":"ST2",
+    "DESCRIÇÃO DO MATERIAL":"Tensão baixa"
+  },
+  {
+    "CÓDIGO":"ST3",
+    "DESCRIÇÃO DO MATERIAL":"Tensão alta"
+  },
+  {
+    "CÓDIGO":"ST4",
+    "DESCRIÇÃO DO MATERIAL":"Tensões variando"
+  },
+  {
+    "CÓDIGO":"ST5",
+    "DESCRIÇÃO DO MATERIAL":"Placa em Curto "
+  },
+  {
+    "CÓDIGO":"ST6",
+    "DESCRIÇÃO DO MATERIAL":"Luz de Jig"
+  },
+  {
+    "CÓDIGO":"T1",
+    "DESCRIÇÃO DO MATERIAL":"Teclas não atua"
+  },
+  {
+    "CÓDIGO":"T2",
+    "DESCRIÇÃO DO MATERIAL":"Tecla deslocada\/danificada"
+  },
+  {
+    "CÓDIGO":"T3",
+    "DESCRIÇÃO DO MATERIAL":"Função Invertida"
+  },
+  {
+    "CÓDIGO":"T4",
+    "DESCRIÇÃO DO MATERIAL":"Tecla dura"
+  },
+  {
+    "CÓDIGO":"T5",
+    "DESCRIÇÃO DO MATERIAL":"Volume diminui automaticamente"
+  },
+  {
+    "CÓDIGO":"T6",
+    "DESCRIÇÃO DO MATERIAL":"Volume maximo não atua"
+  },
+  {
+    "CÓDIGO":"T7",
+    "DESCRIÇÃO DO MATERIAL":"Tecla capacitiva (touch) não atua"
+  },
+  {
+    "CÓDIGO":"USB1",
+    "DESCRIÇÃO DO MATERIAL":"Aparelho não lê pen drive"
+  },
+  {
+    "CÓDIGO":"USB2",
+    "DESCRIÇÃO DO MATERIAL":"Mal contato na leitura do pen drive "
+  },
+  {
+    "CÓDIGO":"V1",
+    "DESCRIÇÃO DO MATERIAL":"Sem imagem\/sem brilho"
+  },
+  {
+    "CÓDIGO":"V2",
+    "DESCRIÇÃO DO MATERIAL":"Sem vídeo no AV"
+  },
+  {
+    "CÓDIGO":"V3",
+    "DESCRIÇÃO DO MATERIAL":"Sem video no HDMI"
+  },
+  {
+    "CÓDIGO":"V4",
+    "DESCRIÇÃO DO MATERIAL":"Vídeo com Cor fora de Padrão"
+  },
+  {
+    "CÓDIGO":"V5",
+    "DESCRIÇÃO DO MATERIAL":"Interferência na Imagem"
+  },
+  {
+    "CÓDIGO":"V6",
+    "DESCRIÇÃO DO MATERIAL":"Sem video no RF\/ANTENA"
+  },
+  {
+    "CÓDIGO":"VS1",
+    "DESCRIÇÃO DO MATERIAL":"Falha Visual\/Montagem"
+  },
+  {
+    "CÓDIGO":"VZL",
+    "DESCRIÇÃO DO MATERIAL":"Vazamento de Luz"
+  },
+  {
+    "CÓDIGO":"VT1",
+    "DESCRIÇÃO DO MATERIAL":"Ventilador não Gira"
+  },
+  {
+    "CÓDIGO":"VT2",
+    "DESCRIÇÃO DO MATERIAL":"Ruído no Ventilador"
+  },
+  {
+    "CÓDIGO":"VM1",
+    "DESCRIÇÃO DO MATERIAL":"Vazamento na Cavidade"
+  },
+  {
+    "CÓDIGO":"VM2",
+    "DESCRIÇÃO DO MATERIAL":"Vazamento na Porta"
+  },
+  {
+    "CÓDIGO":"WS",
+    "DESCRIÇÃO DO MATERIAL":"White Spot"
+  },
+  {
+    "CÓDIGO":"WI-FI",
+    "DESCRIÇÃO DO MATERIAL":"Sem sinal de wi-fi"
+  },
+  {
+    "CÓDIGO":"WB",
+    "DESCRIÇÃO DO MATERIAL":"White Ballance"
+  },
+  {
+    "CÓDIGO":"TC1",
+    "DESCRIÇÃO DO MATERIAL":"Tescon Falha de Processo"
+  },
+  {
+    "CÓDIGO":"TC2",
+    "DESCRIÇÃO DO MATERIAL":"Tescon Material"
+  },
+  {
+    "CÓDIGO":"GV1",
+    "DESCRIÇÃO DO MATERIAL":"Gravação Falha de Processo"
+  },
+  {
+    "CÓDIGO":"GV2",
+    "DESCRIÇÃO DO MATERIAL":"Gravação Material"
+  },
+  {
+    "CÓDIGO":"DH",
+    "DESCRIÇÃO DO MATERIAL":"Dip teste Manutenção de equipamento"
+  },
+  {
+    "CÓDIGO":"PM1",
+    "DESCRIÇÃO DO MATERIAL":"Potencia Maxima"
+  },
+  {
+    "CÓDIGO":"PM2",
+    "DESCRIÇÃO DO MATERIAL":"Potencia Minima"
+  },
+  {
+    "CÓDIGO":"CTT",
+    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+  },
+  {
+    "CÓDIGO":"VSL",
+    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+  },
+  {
+    "CÓDIGO":"ECJ",
+    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+  },
+  {
+    "CÓDIGO":"VPC1",
+    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+  },
+  {
+    "CÓDIGO":"5V",
+    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+  },
+  {
+    "CÓDIGO":"12V",
+    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+  },
+  {
+    "CÓDIGO":"CT",
+    "DESCRIÇÃO DO MATERIAL":"Coating\/Selador"
+  },
+  {
+    "CÓDIGO":"BP1",
+    "DESCRIÇÃO DO MATERIAL":"Buzer não Atua"
+  },
+  {
+    "CÓDIGO":"FF",
+    "DESCRIÇÃO DO MATERIAL":"Falsa falha"
+  },
+  {
+    "CÓDIGO":"VAR",
+    "DESCRIÇÃO DO MATERIAL":"Vazamento de AR"
+  },
+  {
+    "CÓDIGO":"POL",
+    "DESCRIÇÃO DO MATERIAL":"Polarite Invertido"
+  },
+  {
+    "CÓDIGO":"VZG",
+    "DESCRIÇÃO DO MATERIAL":"Vazamento de Gás"
+  },
+  {
+    "CÓDIGO":"ALT",
+    "DESCRIÇÃO DO MATERIAL":"ALETA NÃO ABRE\/FECHA"
+  },
+  {
+    "CÓDIGO":"A15",
+    "DESCRIÇÃO DO MATERIAL":"RUIDO NA HÉLICE"
+  }
+]

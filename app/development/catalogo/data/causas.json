@@ -1,0 +1,798 @@
+[
+  {
+    "CÓDIGO":"ABRT ",
+    "DESCRIÇÃO DO MATERIAL":" ABERTO(A)"
+  },
+  {
+    "CÓDIGO":"AJIC ",
+    "DESCRIÇÃO DO MATERIAL":" AJUSTE INCORRETO"
+  },
+  {
+    "CÓDIGO":"ALTR ",
+    "DESCRIÇÃO DO MATERIAL":" ALTERADO(A)"
+  },
+  {
+    "CÓDIGO":"ALTO ",
+    "DESCRIÇÃO DO MATERIAL":" ALTO(A)"
+  },
+  {
+    "CÓDIGO":"AMAS ",
+    "DESCRIÇÃO DO MATERIAL":" AMASSADO(A)"
+  },
+  {
+    "CÓDIGO":"APAR ",
+    "DESCRIÇÃO DO MATERIAL":" APARECENDO"
+  },
+  {
+    "CÓDIGO":"ARNH ",
+    "DESCRIÇÃO DO MATERIAL":" ARRANHADO(A)"
+  },
+  {
+    "CÓDIGO":"ARRC ",
+    "DESCRIÇÃO DO MATERIAL":" ARRANCADO(A)"
+  },
+  {
+    "CÓDIGO":"ATTD ",
+    "DESCRIÇÃO DO MATERIAL":" ATERRADO(A)"
+  },
+  {
+    "CÓDIGO":"AUDB ",
+    "DESCRIÇÃO DO MATERIAL":"ÁUDIO BAIXO"
+  },
+  {
+    "CÓDIGO":"BAIX ",
+    "DESCRIÇÃO DO MATERIAL":" BAIXO(A)"
+  },
+  {
+    "CÓDIGO":"BOLH ",
+    "DESCRIÇÃO DO MATERIAL":" BOLHA"
+  },
+  {
+    "CÓDIGO":"BORS ",
+    "DESCRIÇÃO DO MATERIAL":" BORRA DE SOLDA"
+  },
+  {
+    "CÓDIGO":"BTDO ",
+    "DESCRIÇÃO DO MATERIAL":" BATIDO(A)"
+  },
+  {
+    "CÓDIGO":"CALD ",
+    "DESCRIÇÃO DO MATERIAL":"CALÇO DESALINHADO"
+  },
+  {
+    "CÓDIGO":"CARB ",
+    "DESCRIÇÃO DO MATERIAL":"CARBONIZADO"
+  },
+  {
+    "CÓDIGO":"CARG ",
+    "DESCRIÇÃO DO MATERIAL":" CARGA ALTA"
+  },
+  {
+    "CÓDIGO":"CBAX ",
+    "DESCRIÇÃO DO MATERIAL":" CARGA BAIXA"
+  },
+  {
+    "CÓDIGO":"CENH ",
+    "DESCRIÇÃO DO MATERIAL":" CENTELHANDO"
+  },
+  {
+    "CÓDIGO":"CFP ",
+    "DESCRIÇÃO DO MATERIAL":" COATING FORA DE POSIÇÃO"
+  },
+  {
+    "CÓDIGO":"CHPM ",
+    "DESCRIÇÃO DO MATERIAL":" CHAPA MENOR"
+  },
+  {
+    "CÓDIGO":"CINCO ",
+    "DESCRIÇÃO DO MATERIAL":" COLAGEM INCORRETA"
+  },
+  {
+    "CÓDIGO":"CIVO ",
+    "DESCRIÇÃO DO MATERIAL":" CIRCUNFERÊNCIA OVAL"
+  },
+  {
+    "CÓDIGO":"CNCN ",
+    "DESCRIÇÃO DO MATERIAL":" COLA NÃO CONECTOR"
+  },
+  {
+    "CÓDIGO":"CNTR ",
+    "DESCRIÇÃO DO MATERIAL":" COLA NÃO TERMINAL"
+  },
+  {
+    "CÓDIGO":"COBR ",
+    "DESCRIÇÃO DO MATERIAL":" COBRE EXPOSTO"
+  },
+  {
+    "CÓDIGO":"COES ",
+    "DESCRIÇÃO DO MATERIAL":" COLA ESCORRIDA"
+  },
+  {
+    "CÓDIGO":"COLA ",
+    "DESCRIÇÃO DO MATERIAL":" COLADO(A)"
+  },
+  {
+    "CÓDIGO":"CON ",
+    "DESCRIÇÃO DO MATERIAL":" SEM CONECTOR"
+  },
+  {
+    "CÓDIGO":"CONR ",
+    "DESCRIÇÃO DO MATERIAL":" CONE RÍGIDO"
+  },
+  {
+    "CÓDIGO":"CONT ",
+    "DESCRIÇÃO DO MATERIAL":" CONTAMINAÇÃO"
+  },
+  {
+    "CÓDIGO":"COPR ",
+    "DESCRIÇÃO DO MATERIAL":" CORPO ESTRANHO"
+  },
+  {
+    "CÓDIGO":"CORD ",
+    "DESCRIÇÃO DO MATERIAL":" COR DIFERENTE"
+  },
+  {
+    "CÓDIGO":"CORT ",
+    "DESCRIÇÃO DO MATERIAL":" CORTADO(A)"
+  },
+  {
+    "CÓDIGO":"CURI ",
+    "DESCRIÇÃO DO MATERIAL":" CURTO DE IMPRESSO"
+  },
+  {
+    "CÓDIGO":"CURS ",
+    "DESCRIÇÃO DO MATERIAL":" CURTO DE SOLDA"
+  },
+  {
+    "CÓDIGO":"DANI ",
+    "DESCRIÇÃO DO MATERIAL":" DANIFICADO(A)"
+  },
+  {
+    "CÓDIGO":"DEFO ",
+    "DESCRIÇÃO DO MATERIAL":" DEFORMADO(A)"
+  },
+  {
+    "CÓDIGO":"DSCS ",
+    "DESCRIÇÃO DO MATERIAL":" DESCASCANDO"
+  },
+  {
+    "CÓDIGO":"DOBR ",
+    "DESCRIÇÃO DO MATERIAL":" DOBRADO(A)"
+  },
+  {
+    "CÓDIGO":"DSAL ",
+    "DESCRIÇÃO DO MATERIAL":" DESALINHADO(A)"
+  },
+  {
+    "CÓDIGO":"DSAT ",
+    "DESCRIÇÃO DO MATERIAL":" DESATUALIZADO(A)"
+  },
+  {
+    "CÓDIGO":"DSC ",
+    "DESCRIÇÃO DO MATERIAL":" DESCONECTADO(A)"
+  },
+  {
+    "CÓDIGO":"DSCE ",
+    "DESCRIÇÃO DO MATERIAL":" DESCENTRALIZADO(A)"
+  },
+  {
+    "CÓDIGO":"DSCO",
+    "DESCRIÇÃO DO MATERIAL":" DESCOLADO(A)"
+  },
+  {
+    "CÓDIGO":"DSCR ",
+    "DESCRIÇÃO DO MATERIAL":" DESCARREGADO(A)"
+  },
+  {
+    "CÓDIGO":"DSFI ",
+    "DESCRIÇÃO DO MATERIAL":" DESFIANDO"
+  },
+  {
+    "CÓDIGO":"DSGS ",
+    "DESCRIÇÃO DO MATERIAL":" DESGASTADO(A)"
+  },
+  {
+    "CÓDIGO":"DSIG ",
+    "DESCRIÇÃO DO MATERIAL":" DESLIGANDO"
+  },
+  {
+    "CÓDIGO":"DSJA ",
+    "DESCRIÇÃO DO MATERIAL":" DESAJUSTADO(A)"
+  },
+  {
+    "CÓDIGO":"DSLC ",
+    "DESCRIÇÃO DO MATERIAL":" DESLOCADO(A)"
+  },
+  {
+    "CÓDIGO":"DSPL ",
+    "DESCRIÇÃO DO MATERIAL":" DESPLACADO(A)"
+  },
+  {
+    "CÓDIGO":"ECAL ",
+    "DESCRIÇÃO DO MATERIAL":" EM CURTO (ALTERADO)"
+  },
+  {
+    "CÓDIGO":"EMAN ",
+    "DESCRIÇÃO DO MATERIAL":" EM ANALISE"
+  },
+  {
+    "CÓDIGO":"EMB ",
+    "DESCRIÇÃO DO MATERIAL":" EMBORCADO"
+  },
+  {
+    "CÓDIGO":"EMPA ",
+    "DESCRIÇÃO DO MATERIAL":" EMPENADO(A)"
+  },
+  {
+    "CÓDIGO":"ENRI ",
+    "DESCRIÇÃO DO MATERIAL":" ENROLAMENTO INVERTIDO"
+  },
+  {
+    "CÓDIGO":"ESPA ",
+    "DESCRIÇÃO DO MATERIAL":" ESPANADO(A)"
+  },
+  {
+    "CÓDIGO":"ESTS ",
+    "DESCRIÇÃO DO MATERIAL":" ESTRESSADO(A)"
+  },
+  {
+    "CÓDIGO":"EXAD ",
+    "DESCRIÇÃO DO MATERIAL":" EXCESSO DE ADESIVO"
+  },
+  {
+    "CÓDIGO":"EXCL ",
+    "DESCRIÇÃO DO MATERIAL":" EXCESSO DE COLA"
+  },
+  {
+    "CÓDIGO":"EXFL ",
+    "DESCRIÇÃO DO MATERIAL":" EXCESSO DE FLUXO"
+  },
+  {
+    "CÓDIGO":"EXSO ",
+    "DESCRIÇÃO DO MATERIAL":" EXCESSO DE SOLDA"
+  },
+  {
+    "CÓDIGO":"FACO ",
+    "DESCRIÇÃO DO MATERIAL":" FALHA DE COLA"
+  },
+  {
+    "CÓDIGO":"FAFS ",
+    "DESCRIÇÃO DO MATERIAL":" FALSA FALHA"
+  },
+  {
+    "CÓDIGO":"FAIN ",
+    "DESCRIÇÃO DO MATERIAL":" FALHA DE INJEÇÃO"
+  },
+  {
+    "CÓDIGO":"FAIP ",
+    "DESCRIÇÃO DO MATERIAL":" FALHA DE IMPRESSO"
+  },
+  {
+    "CÓDIGO":"FALT ",
+    "DESCRIÇÃO DO MATERIAL":" FALTANDO"
+  },
+  {
+    "CÓDIGO":"FASE ",
+    "DESCRIÇÃO DO MATERIAL":" FALHA DE SERIGRAFIA"
+  },
+  {
+    "CÓDIGO":"FASO ",
+    "DESCRIÇÃO DO MATERIAL":" FALHA DE SOLDA"
+  },
+  {
+    "CÓDIGO":"FCFN ",
+    "DESCRIÇÃO DO MATERIAL":" FERRITE COM FOLGA"
+  },
+  {
+    "CÓDIGO":"FECU ",
+    "DESCRIÇÃO DO MATERIAL":" FILAMENTO EM CURTO"
+  },
+  {
+    "CÓDIGO":"FERR ",
+    "DESCRIÇÃO DO MATERIAL":" FURO ERRADO"
+  },
+  {
+    "CÓDIGO":"FESP ",
+    "DESCRIÇÃO DO MATERIAL":" FORA DO ESPECIFICADO"
+  },
+  {
+    "CÓDIGO":"FFH ",
+    "DESCRIÇÃO DO MATERIAL":" FIO FORA DO HOUSE"
+  },
+  {
+    "CÓDIGO":"FINV ",
+    "DESCRIÇÃO DO MATERIAL":" FIAÇÃO INVERTIDA"
+  },
+  {
+    "CÓDIGO":"FIRM ",
+    "DESCRIÇÃO DO MATERIAL":" FILAMENTO ROMPIDO"
+  },
+  {
+    "CÓDIGO":"FISO ",
+    "DESCRIÇÃO DO MATERIAL":" FILETE DE SOLDA"
+  },
+  {
+    "CÓDIGO":"FLPR ",
+    "DESCRIÇÃO DO MATERIAL":" FALTANDO PARAFUSO"
+  },
+  {
+    "CÓDIGO":"FLTU ",
+    "DESCRIÇÃO DO MATERIAL":" FLUTUANDO"
+  },
+  {
+    "CÓDIGO":"FNGP ",
+    "DESCRIÇÃO DO MATERIAL":" FERRITE NO GAP"
+  },
+  {
+    "CÓDIGO":"FOLG ",
+    "DESCRIÇÃO DO MATERIAL":" FOLGADO(A)"
+  },
+  {
+    "CÓDIGO":"FPOS ",
+    "DESCRIÇÃO DO MATERIAL":" FORA DE POSIÇÃO"
+  },
+  {
+    "CÓDIGO":"FUMA ",
+    "DESCRIÇÃO DO MATERIAL":" FUMAÇANDO"
+  },
+  {
+    "CÓDIGO":"FURA ",
+    "DESCRIÇÃO DO MATERIAL":" FURADO"
+  },
+  {
+    "CÓDIGO":"GAP ",
+    "DESCRIÇÃO DO MATERIAL":" GAP"
+  },
+  {
+    "CÓDIGO":"GINI ",
+    "DESCRIÇÃO DO MATERIAL":" GALHO DE INJEÇÃO"
+  },
+  {
+    "CÓDIGO":"GIRO ",
+    "DESCRIÇÃO DO MATERIAL":" GIRO 360°"
+  },
+  {
+    "CÓDIGO":"GRA ",
+    "DESCRIÇÃO DO MATERIAL":" GIRO TRAVANDO"
+  },
+  {
+    "CÓDIGO":"INSS ",
+    "DESCRIÇÃO DO MATERIAL":" INSUFICIÊNCIA DE SOLDA"
+  },
+  {
+    "CÓDIGO":"INVE ",
+    "DESCRIÇÃO DO MATERIAL":" INVERTIDO(A)"
+  },
+  {
+    "CÓDIGO":"JOGA ",
+    "DESCRIÇÃO DO MATERIAL":" JOGADO"
+  },
+  {
+    "CÓDIGO":"LAMP ",
+    "DESCRIÇÃO DO MATERIAL":" LAMPADA"
+  },
+  {
+    "CÓDIGO":"LZFE ",
+    "DESCRIÇÃO DO MATERIAL":" LUZ FORTE"
+  },
+  {
+    "CÓDIGO":"LZFR ",
+    "DESCRIÇÃO DO MATERIAL":" LUZ FRACA"
+  },
+  {
+    "CÓDIGO":"MAA ",
+    "DESCRIÇÃO DO MATERIAL":" MAL CRIMPRADO"
+  },
+  {
+    "CÓDIGO":"MACT ",
+    "DESCRIÇÃO DO MATERIAL":" MAU CONTATO"
+  },
+  {
+    "CÓDIGO":"MANC ",
+    "DESCRIÇÃO DO MATERIAL":" MANCHADO(A)"
+  },
+  {
+    "CÓDIGO":"MCCN ",
+    "DESCRIÇÃO DO MATERIAL":" MAL CONECTADO(A)"
+  },
+  {
+    "CÓDIGO":"MDSC ",
+    "DESCRIÇÃO DO MATERIAL":" MONTAGEM DESLOCADA"
+  },
+  {
+    "CÓDIGO":"MDUP ",
+    "DESCRIÇÃO DO MATERIAL":" MONTAGEM DUPLICADA"
+  },
+  {
+    "CÓDIGO":"MER ",
+    "DESCRIÇÃO DO MATERIAL":" COMPONENTE ERRADO"
+  },
+  {
+    "CÓDIGO":"MEX ",
+    "DESCRIÇÃO DO MATERIAL":" COMPONENTE EXTRA"
+  },
+  {
+    "CÓDIGO":"MFT ",
+    "DESCRIÇÃO DO MATERIAL":" COMPONENTE FALTANDO"
+  },
+  {
+    "CÓDIGO":"MINS ",
+    "DESCRIÇÃO DO MATERIAL":" MAL INSERIDO(A)"
+  },
+  {
+    "CÓDIGO":"MMON ",
+    "DESCRIÇÃO DO MATERIAL":" MAL MONTADO(A)"
+  },
+  {
+    "CÓDIGO":"MNEP ",
+    "DESCRIÇÃO DO MATERIAL":" MONTADO NA POSIÇÃO ERRADA"
+  },
+  {
+    "CÓDIGO":"MOIN ",
+    "DESCRIÇÃO DO MATERIAL":" MONTADO INVERTIDO"
+  },
+  {
+    "CÓDIGO":"MPAR ",
+    "DESCRIÇÃO DO MATERIAL":" MAL PARAFUSADO(A)"
+  },
+  {
+    "CÓDIGO":"MPOS ",
+    "DESCRIÇÃO DO MATERIAL":" MAL POSICIONADO(A)"
+  },
+  {
+    "CÓDIGO":"MPRE ",
+    "DESCRIÇÃO DO MATERIAL":" MAL PREFORMADO(A)"
+  },
+  {
+    "CÓDIGO":"NAAU ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO ATUALIZA"
+  },
+  {
+    "CÓDIGO":"NACG ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO CARREGADA"
+  },
+  {
+    "CÓDIGO":"NCON ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO CONECTADO"
+  },
+  {
+    "CÓDIGO":"NGRV ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO GRAVA"
+  },
+  {
+    "CÓDIGO":"NINS ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO INSERIDO"
+  },
+  {
+    "CÓDIGO":"NLER ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO LÊ"
+  },
+  {
+    "CÓDIGO":"NMNT ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO MONTADO "
+  },
+  {
+    "CÓDIGO":"RASP ",
+    "DESCRIÇÃO DO MATERIAL":" RASPANDO"
+  },
+  {
+    "CÓDIGO":"NRMD ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO REMOVIDA"
+  },
+  {
+    "CÓDIGO":"NAAT ",
+    "DESCRIÇÃO DO MATERIAL":" NÃO ATUA"
+  },
+  {
+    "CÓDIGO":"OCOR ",
+    "DESCRIÇÃO DO MATERIAL":" OCORRÊNCIA"
+  },
+  {
+    "CÓDIGO":"ORNA ",
+    "DESCRIÇÃO DO MATERIAL":" ORNAMENTO"
+  },
+  {
+    "CÓDIGO":"OXID ",
+    "DESCRIÇÃO DO MATERIAL":" OXIDADO(A)"
+  },
+  {
+    "CÓDIGO":"PELN ",
+    "DESCRIÇÃO DO MATERIAL":" PELÍCULA NÃO REMOVIDA"
+  },
+  {
+    "CÓDIGO":"PFES ",
+    "DESCRIÇÃO DO MATERIAL":" PEGA FORA DE ESPECIFICAÇÃO"
+  },
+  {
+    "CÓDIGO":"PFJO ",
+    "DESCRIÇÃO DO MATERIAL":" PARAFUSO JOGADO"
+  },
+  {
+    "CÓDIGO":"PFSA ",
+    "DESCRIÇÃO DO MATERIAL":" PARAFUSADO(A)"
+  },
+  {
+    "CÓDIGO":"PINC ",
+    "DESCRIÇÃO DO MATERIAL":" PINO EM CURTO"
+  },
+  {
+    "CÓDIGO":"PFAL ",
+    "DESCRIÇÃO DO MATERIAL":" PARAFUSO ALTO"
+  },
+  {
+    "CÓDIGO":"POTA ",
+    "DESCRIÇÃO DO MATERIAL":" POTENCIA ALTA"
+  },
+  {
+    "CÓDIGO":"POTB ",
+    "DESCRIÇÃO DO MATERIAL":" POTENCIA BAIXA"
+  },
+  {
+    "CÓDIGO":"PROJ ",
+    "DESCRIÇÃO DO MATERIAL":" PROJETO"
+  },
+  {
+    "CÓDIGO":"PTAP ",
+    "DESCRIÇÃO DO MATERIAL":" PONTO APAGADO"
+  },
+  {
+    "CÓDIGO":"PTBR ",
+    "DESCRIÇÃO DO MATERIAL":" PONTO BRILHANTE"
+  },
+  {
+    "CÓDIGO":"QUBR ",
+    "DESCRIÇÃO DO MATERIAL":" QUEBRADO(A)"
+  },
+  {
+    "CÓDIGO":"QUMA",
+    "DESCRIÇÃO DO MATERIAL":" QUEIMADO(A)"
+  },
+  {
+    "CÓDIGO":"REBA ",
+    "DESCRIÇÃO DO MATERIAL":" REBARBA"
+  },
+  {
+    "CÓDIGO":"REBR ",
+    "DESCRIÇÃO DO MATERIAL":" RETRABALHO"
+  },
+  {
+    "CÓDIGO":"REPU ",
+    "DESCRIÇÃO DO MATERIAL":" REPUXADO"
+  },
+  {
+    "CÓDIGO":"REV ",
+    "DESCRIÇÃO DO MATERIAL":" REVISÃO"
+  },
+  {
+    "CÓDIGO":"RISC ",
+    "DESCRIÇÃO DO MATERIAL":" RISCADO(A)"
+  },
+  {
+    "CÓDIGO":"RPSS ",
+    "DESCRIÇÃO DO MATERIAL":" RESPINGO DE SOLDA"
+  },
+  {
+    "CÓDIGO":"RSCL ",
+    "DESCRIÇÃO DO MATERIAL":" RESÍDUO DE COLA"
+  },
+  {
+    "CÓDIGO":"RSEP ",
+    "DESCRIÇÃO DO MATERIAL":" ROSCA ESPANADO"
+  },
+  {
+    "CÓDIGO":"RSLL ",
+    "DESCRIÇÃO DO MATERIAL":" RESÍDUO DE LUVA"
+  },
+  {
+    "CÓDIGO":"RSPL ",
+    "DESCRIÇÃO DO MATERIAL":" RESÍDUO DE PLÁSTICO"
+  },
+  {
+    "CÓDIGO":"RSSO ",
+    "DESCRIÇÃO DO MATERIAL":" RESÍDUO DE SOLDA"
+  },
+  {
+    "CÓDIGO":"RUID ",
+    "DESCRIÇÃO DO MATERIAL":" RUIDO"
+  },
+  {
+    "CÓDIGO":"SAUD ",
+    "DESCRIÇÃO DO MATERIAL":" SEM ÁUDIO"
+  },
+  {
+    "CÓDIGO":"SCME ",
+    "DESCRIÇÃO DO MATERIAL":" SEM COROA METÁLICA"
+  },
+  {
+    "CÓDIGO":"SCN ",
+    "DESCRIÇÃO DO MATERIAL":" SEM CONTATO"
+  },
+  {
+    "CÓDIGO":"SCOL",
+    "DESCRIÇÃO DO MATERIAL":" SEM COLA"
+  },
+  {
+    "CÓDIGO":"SDBL ",
+    "DESCRIÇÃO DO MATERIAL":" SOLDER BALL"
+  },
+  {
+    "CÓDIGO":"SENC ",
+    "DESCRIÇÃO DO MATERIAL":" SEM ENCAIXE"
+  },
+  {
+    "CÓDIGO":"SERI",
+    "DESCRIÇÃO DO MATERIAL":" SERIGRAFIA INVERTIDA"
+  },
+  {
+    "CÓDIGO":"SFIT ",
+    "DESCRIÇÃO DO MATERIAL":" SEM FITA"
+  },
+  {
+    "CÓDIGO":"SFUR ",
+    "DESCRIÇÃO DO MATERIAL":" SEM FURO"
+  },
+  {
+    "CÓDIGO":"SGRA ",
+    "DESCRIÇÃO DO MATERIAL":" SEM GRAVAÇÃO"
+  },
+  {
+    "CÓDIGO":"SISO ",
+    "DESCRIÇÃO DO MATERIAL":" SEM ISOLAMENTO"
+  },
+  {
+    "CÓDIGO":"SOES ",
+    "DESCRIÇÃO DO MATERIAL":" SOLDA ESCORRIDA"
+  },
+  {
+    "CÓDIGO":"SOFR ",
+    "DESCRIÇÃO DO MATERIAL":" SOLDA FRIA"
+  },
+  {
+    "CÓDIGO":"SORA ",
+    "DESCRIÇÃO DO MATERIAL":" SOLDA RASA"
+  },
+  {
+    "CÓDIGO":"SOTL",
+    "DESCRIÇÃO DO MATERIAL":" SOLTO(A)"
+  },
+  {
+    "CÓDIGO":"SOTR ",
+    "DESCRIÇÃO DO MATERIAL":" SOLDA TRINCADA"
+  },
+  {
+    "CÓDIGO":"SPRO ",
+    "DESCRIÇÃO DO MATERIAL":" SEM PROJEÇÃO"
+  },
+  {
+    "CÓDIGO":"SROS ",
+    "DESCRIÇÃO DO MATERIAL":" SEM ROSCA"
+  },
+  {
+    "CÓDIGO":"SSEG ",
+    "DESCRIÇÃO DO MATERIAL":" SEM SEGUIMENTO (DIGITO)"
+  },
+  {
+    "CÓDIGO":"STEN ",
+    "DESCRIÇÃO DO MATERIAL":" SEM TENSÃO"
+  },
+  {
+    "CÓDIGO":"STMR ",
+    "DESCRIÇÃO DO MATERIAL":" SEM TERMINAL"
+  },
+  {
+    "CÓDIGO":"STPD ",
+    "DESCRIÇÃO DO MATERIAL":" SEM TRILHA PED"
+  },
+  {
+    "CÓDIGO":"STRV ",
+    "DESCRIÇÃO DO MATERIAL":" SEM TRAVA"
+  },
+  {
+    "CÓDIGO":"SVIN ",
+    "DESCRIÇÃO DO MATERIAL":" SEM VINCO"
+  },
+  {
+    "CÓDIGO":"TCDR ",
+    "DESCRIÇÃO DO MATERIAL":" TECLA DURA"
+  },
+  {
+    "CÓDIGO":"TCLA ",
+    "DESCRIÇÃO DO MATERIAL":" TECLA ALTA"
+  },
+  {
+    "CÓDIGO":"TENR ",
+    "DESCRIÇÃO DO MATERIAL":" TENSÃO ERRADA"
+  },
+  {
+    "CÓDIGO":"TENS ",
+    "DESCRIÇÃO DO MATERIAL":" TENSIONADO"
+  },
+  {
+    "CÓDIGO":"TMAL ",
+    "DESCRIÇÃO DO MATERIAL":" TERMINAL ALTO"
+  },
+  {
+    "CÓDIGO":"TMCR ",
+    "DESCRIÇÃO DO MATERIAL":" TERMINAL CURTO"
+  },
+  {
+    "CÓDIGO":"TMDB ",
+    "DESCRIÇÃO DO MATERIAL":" TERMINAL DOBRADO"
+  },
+  {
+    "CÓDIGO":"TMEC ",
+    "DESCRIÇÃO DO MATERIAL":" TERMINAL EM CURTO"
+  },
+  {
+    "CÓDIGO":"TMFT ",
+    "DESCRIÇÃO DO MATERIAL":" TERMINAL FALTANDO"
+  },
+  {
+    "CÓDIGO":"TMSS ",
+    "DESCRIÇÃO DO MATERIAL":" TERMINAL SEM SOLDA"
+  },
+  {
+    "CÓDIGO":"TMTT ",
+    "DESCRIÇÃO DO MATERIAL":" TERMINAL TORTO"
+  },
+  {
+    "CÓDIGO":"TOMB ",
+    "DESCRIÇÃO DO MATERIAL":" TOMBSTONE"
+  },
+  {
+    "CÓDIGO":"TRAV ",
+    "DESCRIÇÃO DO MATERIAL":" TRAVADO(A)"
+  },
+  {
+    "CÓDIGO":"TRDS ",
+    "DESCRIÇÃO DO MATERIAL":" TRILHA DESPLACADA"
+  },
+  {
+    "CÓDIGO":"TRIN ",
+    "DESCRIÇÃO DO MATERIAL":" TRINCADO(A)"
+  },
+  {
+    "CÓDIGO":"TRRM ",
+    "DESCRIÇÃO DO MATERIAL":" TRILHA ROMPIDA"
+  },
+  {
+    "CÓDIGO":"TRXP ",
+    "DESCRIÇÃO DO MATERIAL":" TRILHA EXPOSTA"
+  },
+  {
+    "CÓDIGO":"TSCL",
+    "DESCRIÇÃO DO MATERIAL":" TECLA SEM CLICK"
+  },
+  {
+    "CÓDIGO":"UMID ",
+    "DESCRIÇÃO DO MATERIAL":" UMIDADE"
+  },
+  {
+    "CÓDIGO":"URS ",
+    "DESCRIÇÃO DO MATERIAL":" CURTO DE SOLDA"
+  },
+  {
+    "CÓDIGO":"VAER ",
+    "DESCRIÇÃO DO MATERIAL":" VALOR ERRADO"
+  },
+  {
+    "CÓDIGO":"VHA ",
+    "DESCRIÇÃO DO MATERIAL":" VIA HOLE ABERTO"
+  },
+  {
+    "CÓDIGO":"VINC ",
+    "DESCRIÇÃO DO MATERIAL":" VINCADO"
+  },
+  {
+    "CÓDIGO":"VZAR ",
+    "DESCRIÇÃO DO MATERIAL":" VAZAMENTO DE AR"
+  },
+  {
+    "CÓDIGO":"VZLU ",
+    "DESCRIÇÃO DO MATERIAL":" VAZAMENTO DE LUZ"
+  },
+  {
+    "CÓDIGO":"VZRD ",
+    "DESCRIÇÃO DO MATERIAL":" VAZAMENTO DE RADIAÇÃO"
+  }
+]
