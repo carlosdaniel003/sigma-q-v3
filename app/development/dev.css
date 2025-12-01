@@ -75,3 +75,125 @@
   justify-content: center;
   text-align: center;
 }
+
+/* ===========================
+   ESTILOS DA ABA CATÁLOGO
+   =========================== */
+
+.catalogo-container {
+  padding: 20px;
+  color: white;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.card-btn {
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card-btn:hover {
+  background: rgba(255, 255, 255, 0.13);
+  transform: scale(1.03);
+}
+
+.tabela-area {
+  margin-top: 28px;
+}
+
+.tabela-catalogo {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabela-catalogo th,
+.tabela-catalogo td {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tabela-catalogo th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: bold;
+}
+
+.tabela-catalogo tr:hover td {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===========================
+   BUSCA GLOBAL - ESTILO PREMIUM
+   =========================== */
+
+.busca-global-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 24px;
+}
+
+.input-busca-global {
+  width: 100%;
+  padding: 12px 16px 12px 42px; /* espaço para o ícone */
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.input-busca-global:hover {
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.28);
+}
+
+.input-busca-global:focus {
+  border-color: #4aa3ff;
+  background: rgba(255,255,255,0.14);
+  box-shadow: 0 0 10px rgba(77,163,255,0.35);
+}
+
+/* Ícone da lupa */
+.icon-lupa {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0.65;
+  pointer-events: none;
+}
+/* Animação de entrada suave */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Move um pouco de baixo para cima */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInAnimation 0.5s ease-out forwards;
+}

@@ -1,23 +1,38 @@
 import { NextResponse } from "next/server";
-import { userService } from "@/services/userService";
+import { db } from "@/lib/db";
 
 export async function GET() {
-  return NextResponse.json(userService.getAll());
+  // Busca direta no banco de dados via SQL
+  const result = await db.execute("SELECT * FROM users");
+  return NextResponse.json(result.rows);
 }
 
 export async function POST(req: Request) {
-  const body = await req.json();
-  const { username, passwordHash, role } = body;
+  const { username, password, role } = await req.json();
 
-  if (!username || !passwordHash || !role) {
+  // Validação básica
+  if (!username || !password || !role) {
     return NextResponse.json({ error: "Dados incompletos" }, { status: 400 });
   }
 
-  const exists = userService.getByUsername(username);
-  if (exists) {
-    return NextResponse.json({ error: "Usuário já existe" }, { status: 400 });
-  }
+  try {
+    // 1. Inserção direta via SQL (usando args para evitar SQL Injection)
+    await db.execute({
+      sql: "INSERT INTO users (username, password, role) VALUES (?, ?, ?)",
+      args: [username, password, role],
+    });
 
-  const newUser = userService.createUser(body);
-  return NextResponse.json(newUser);
+    // 2. Busca o usuário recém-criado para retornar o ID e dados completos
+    const result = await db.execute(
+      "SELECT * FROM users ORDER BY id DESC LIMIT 1"
+    );
+
+    return NextResponse.json(result.rows[0]);
+  } catch (error) {
+    console.error("Erro ao criar usuário:", error);
+    return NextResponse.json(
+      { error: "Erro ao processar requisição (possível duplicidade)" }, 
+      { status: 500 }
+    );
+  }
 }
