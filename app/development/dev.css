@@ -197,3 +197,150 @@
 .fade-in {
   animation: fadeInAnimation 0.5s ease-out forwards;
 }
+
+/* ---------------------------------------
+   SIDEBAR COLAPSÁVEL — SIGMA-Q PREMIUM
+---------------------------------------- */
+
+/* botão de colapsar */
+.collapse-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  width: 100%;
+  color: white;
+  transition: 0.2s;
+}
+
+.collapse-btn:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* estado normal */
+.dev-container {
+  display: flex;
+  transition: 0.3s ease;
+}
+
+/* largura normal */
+.dev-sidebar {
+  width: 240px;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+/* quando colapsado */
+.dev-container.collapsed .dev-sidebar {
+  width: 70px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* esconder textos quando colapsado */
+.dev-container.collapsed .dev-sidebar .text {
+  display: none;
+}
+
+/* alinhamento dos itens colapsados */
+.dev-container.collapsed .sidebar-link,
+.dev-container.collapsed .sidebar-logout {
+  justify-content: center;
+}
+
+/* conteúdo ocupa mais espaço */
+.dev-content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* ================================
+   Sidebar Premium - Heroicons
+================================ */
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.nav-item,
+.logout-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+
+  transition: 0.18s ease;
+}
+
+.nav-item:hover,
+.logout-item:hover {
+  background: rgba(95,180,255,0.15);
+  border-color: rgba(95,180,255,0.35);
+  transform: translateX(4px);
+}
+
+.nav-item.active {
+  background: rgba(95,180,255,0.25);
+  color: #fff;
+  border-color: rgba(95,180,255,0.45);
+  box-shadow: 0 0 12px rgba(95,180,255,0.35);
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.logout-item {
+  margin-top: auto;
+  background: rgba(255,50,50,0.08);
+  border-color: rgba(255,70,70,0.18);
+}
+
+.logout-item:hover {
+  background: rgba(255,50,50,0.18);
+  border-color: rgba(255,70,70,0.35);
+}
+
+/* Botão de colapsar – minimalista */
+.collapse-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 20px auto;
+  transition: 0.2s;
+}
+
+.collapse-btn:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.collapse-btn .icon {
+  width: 22px;
+  height: 22px;
+  color: #e5e7eb;
+}

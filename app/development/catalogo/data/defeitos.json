@@ -1,598 +1,598 @@
 [
   {
-    "CÓDIGO":"A1",
-    "DESCRIÇÃO DO MATERIAL":"Sem áudio geral"
+    "CÓDIGO DA FALHA":"A1",
+    "DESCRIÇÃO DA FALHA":"Sem áudio geral"
   },
   {
-    "CÓDIGO":"A2",
-    "DESCRIÇÃO DO MATERIAL":"Sem áudio no canal ESQUERDO\/Fone"
+    "CÓDIGO DA FALHA":"A2",
+    "DESCRIÇÃO DA FALHA":"Sem áudio no canal ESQUERDO\/Fone"
   },
   {
-    "CÓDIGO":"A3",
-    "DESCRIÇÃO DO MATERIAL":"Sem áudio no canal DIREITO\/Fone"
+    "CÓDIGO DA FALHA":"A3",
+    "DESCRIÇÃO DA FALHA":"Sem áudio no canal DIREITO\/Fone"
   },
   {
-    "CÓDIGO":"A4",
-    "DESCRIÇÃO DO MATERIAL":"Sem áudio no  MIC\/Fone\/Aux"
+    "CÓDIGO DA FALHA":"A4",
+    "DESCRIÇÃO DA FALHA":"Sem áudio no  MIC\/Fone\/Aux"
   },
   {
-    "CÓDIGO":"A5",
-    "DESCRIÇÃO DO MATERIAL":"Ruido no áudio do  MIC\/Fone\/Aux"
+    "CÓDIGO DA FALHA":"A5",
+    "DESCRIÇÃO DA FALHA":"Ruido no áudio do  MIC\/Fone\/Aux"
   },
   {
-    "CÓDIGO":"A6",
-    "DESCRIÇÃO DO MATERIAL":"Ruido no áudio "
+    "CÓDIGO DA FALHA":"A6",
+    "DESCRIÇÃO DA FALHA":"Ruido no áudio "
   },
   {
-    "CÓDIGO":"A7",
-    "DESCRIÇÃO DO MATERIAL":"Vibração no Áudio"
+    "CÓDIGO DA FALHA":"A7",
+    "DESCRIÇÃO DA FALHA":"Vibração no Áudio"
   },
   {
-    "CÓDIGO":"A8",
-    "DESCRIÇÃO DO MATERIAL":"Mal Contato no MIC\/Fone\/Aux"
+    "CÓDIGO DA FALHA":"A8",
+    "DESCRIÇÃO DA FALHA":"Mal Contato no MIC\/Fone\/Aux"
   },
   {
-    "CÓDIGO":"A9",
-    "DESCRIÇÃO DO MATERIAL":"Sem audio no Tweteer"
+    "CÓDIGO DA FALHA":"A9",
+    "DESCRIÇÃO DA FALHA":"Sem audio no Tweteer"
   },
   {
-    "CÓDIGO":"A10",
-    "DESCRIÇÃO DO MATERIAL":"Sem audio no alto falante"
+    "CÓDIGO DA FALHA":"A10",
+    "DESCRIÇÃO DA FALHA":"Sem audio no alto falante"
   },
   {
-    "CÓDIGO":"A11",
-    "DESCRIÇÃO DO MATERIAL":"Vibração no Áudio SWEEP"
+    "CÓDIGO DA FALHA":"A11",
+    "DESCRIÇÃO DA FALHA":"Vibração no Áudio SWEEP"
   },
   {
-    "CÓDIGO":"A12",
-    "DESCRIÇÃO DO MATERIAL":"Volume minimo não atua"
+    "CÓDIGO DA FALHA":"A12",
+    "DESCRIÇÃO DA FALHA":"Volume minimo não atua"
   },
   {
-    "CÓDIGO":"A13",
-    "DESCRIÇÃO DO MATERIAL":"Audio Baixo"
+    "CÓDIGO DA FALHA":"A13",
+    "DESCRIÇÃO DA FALHA":"Audio Baixo"
   },
   {
-    "CÓDIGO":"A14",
-    "DESCRIÇÃO DO MATERIAL":"Sem áudio no canal do AF"
+    "CÓDIGO DA FALHA":"A14",
+    "DESCRIÇÃO DA FALHA":"Sem áudio no canal do AF"
   },
   {
-    "CÓDIGO":"AP1",
-    "DESCRIÇÃO DO MATERIAL":"Liga\/desliga automaticamente"
+    "CÓDIGO DA FALHA":"AP1",
+    "DESCRIÇÃO DA FALHA":"Liga\/desliga automaticamente"
   },
   {
-    "CÓDIGO":"AP2",
-    "DESCRIÇÃO DO MATERIAL":"HI-POT\/Rigidez\/WI"
+    "CÓDIGO DA FALHA":"AP2",
+    "DESCRIÇÃO DA FALHA":"HI-POT\/Rigidez\/WI"
   },
   {
-    "CÓDIGO":"BAT1",
-    "DESCRIÇÃO DO MATERIAL":"Bateria\/Pilha não atua"
+    "CÓDIGO DA FALHA":"BAT1",
+    "DESCRIÇÃO DA FALHA":"Bateria\/Pilha não atua"
   },
   {
-    "CÓDIGO":"BAT2",
-    "DESCRIÇÃO DO MATERIAL":"Aparelho não carrega"
+    "CÓDIGO DA FALHA":"BAT2",
+    "DESCRIÇÃO DA FALHA":"Aparelho não carrega"
   },
   {
-    "CÓDIGO":"BAT3",
-    "DESCRIÇÃO DO MATERIAL":"Bateria Aux. Não Atua"
+    "CÓDIGO DA FALHA":"BAT3",
+    "DESCRIÇÃO DA FALHA":"Bateria Aux. Não Atua"
   },
   {
-    "CÓDIGO":"BT1",
-    "DESCRIÇÃO DO MATERIAL":"Bluetooth Não Funciona"
+    "CÓDIGO DA FALHA":"BT1",
+    "DESCRIÇÃO DA FALHA":"Bluetooth Não Funciona"
   },
   {
-    "CÓDIGO":"BT2",
-    "DESCRIÇÃO DO MATERIAL":"Ruido no Bluetooth"
+    "CÓDIGO DA FALHA":"BT2",
+    "DESCRIÇÃO DA FALHA":"Ruido no Bluetooth"
   },
   {
-    "CÓDIGO":"BZ",
-    "DESCRIÇÃO DO MATERIAL":"Buzzer não Atua"
+    "CÓDIGO DA FALHA":"BZ",
+    "DESCRIÇÃO DA FALHA":"Buzzer não Atua"
   },
   {
-    "CÓDIGO":"CAP",
-    "DESCRIÇÃO DO MATERIAL":"Calço\/Quadro aparecendo"
+    "CÓDIGO DA FALHA":"CAP",
+    "DESCRIÇÃO DA FALHA":"Calço\/Quadro aparecendo"
   },
   {
-    "CÓDIGO":"CR1",
-    "DESCRIÇÃO DO MATERIAL":"Controle não atua"
+    "CÓDIGO DA FALHA":"CR1",
+    "DESCRIÇÃO DA FALHA":"Controle não atua"
   },
   {
-    "CÓDIGO":"CR2",
-    "DESCRIÇÃO DO MATERIAL":"Controle com pouca sensibilidade"
+    "CÓDIGO DA FALHA":"CR2",
+    "DESCRIÇÃO DA FALHA":"Controle com pouca sensibilidade"
   },
   {
-    "CÓDIGO":"CR3",
-    "DESCRIÇÃO DO MATERIAL":"Controle do Game"
+    "CÓDIGO DA FALHA":"CR3",
+    "DESCRIÇÃO DA FALHA":"Controle do Game"
   },
   {
-    "CÓDIGO":"CH1",
-    "DESCRIÇÃO DO MATERIAL":"Chave Não Atua"
+    "CÓDIGO DA FALHA":"CH1",
+    "DESCRIÇÃO DA FALHA":"Chave Não Atua"
   },
   {
-    "CÓDIGO":"CONT",
-    "DESCRIÇÃO DO MATERIAL":"Contaminação"
+    "CÓDIGO DA FALHA":"CONT",
+    "DESCRIÇÃO DA FALHA":"Contaminação"
   },
   {
-    "CÓDIGO":"D1",
-    "DESCRIÇÃO DO MATERIAL":"Não lê dvd\/CD\/Jogos"
+    "CÓDIGO DA FALHA":"D1",
+    "DESCRIÇÃO DA FALHA":"Não lê dvd\/CD\/Jogos"
   },
   {
-    "CÓDIGO":"D2",
-    "DESCRIÇÃO DO MATERIAL":"CD Sai girando"
+    "CÓDIGO DA FALHA":"D2",
+    "DESCRIÇÃO DA FALHA":"CD Sai girando"
   },
   {
-    "CÓDIGO":"G1",
-    "DESCRIÇÃO DO MATERIAL":"Não abre gaveta\/Lenta\/Batendo"
+    "CÓDIGO DA FALHA":"G1",
+    "DESCRIÇÃO DA FALHA":"Não abre gaveta\/Lenta\/Batendo"
   },
   {
-    "CÓDIGO":"G2",
-    "DESCRIÇÃO DO MATERIAL":"Abrindo e fechando automaticamente"
+    "CÓDIGO DA FALHA":"G2",
+    "DESCRIÇÃO DA FALHA":"Abrindo e fechando automaticamente"
   },
   {
-    "CÓDIGO":"G3",
-    "DESCRIÇÃO DO MATERIAL":"Gaveta abre mas não fecha"
+    "CÓDIGO DA FALHA":"G3",
+    "DESCRIÇÃO DA FALHA":"Gaveta abre mas não fecha"
   },
   {
-    "CÓDIGO":"G4",
-    "DESCRIÇÃO DO MATERIAL":"Loader com ruidos"
+    "CÓDIGO DA FALHA":"G4",
+    "DESCRIÇÃO DA FALHA":"Loader com ruidos"
   },
   {
-    "CÓDIGO":"GB",
-    "DESCRIÇÃO DO MATERIAL":"Terra Aberto"
+    "CÓDIGO DA FALHA":"GB",
+    "DESCRIÇÃO DA FALHA":"Terra Aberto"
   },
   {
-    "CÓDIGO":"HP1",
-    "DESCRIÇÃO DO MATERIAL":"Entrada da Gui\/Aux Não Funciona "
+    "CÓDIGO DA FALHA":"HP1",
+    "DESCRIÇÃO DA FALHA":"Entrada da Gui\/Aux Não Funciona "
   },
   {
-    "CÓDIGO":"HP2",
-    "DESCRIÇÃO DO MATERIAL":"Saída Dupla de Áudio"
+    "CÓDIGO DA FALHA":"HP2",
+    "DESCRIÇÃO DA FALHA":"Saída Dupla de Áudio"
   },
   {
-    "CÓDIGO":"HP3",
-    "DESCRIÇÃO DO MATERIAL":"Audio Oscilando"
+    "CÓDIGO DA FALHA":"HP3",
+    "DESCRIÇÃO DA FALHA":"Audio Oscilando"
   },
   {
-    "CÓDIGO":"HP4",
-    "DESCRIÇÃO DO MATERIAL":"Osciloscópio com Tensão Variada"
+    "CÓDIGO DA FALHA":"HP4",
+    "DESCRIÇÃO DA FALHA":"Osciloscópio com Tensão Variada"
   },
   {
-    "CÓDIGO":"HP5",
-    "DESCRIÇÃO DO MATERIAL":"Repertições de ECO"
+    "CÓDIGO DA FALHA":"HP5",
+    "DESCRIÇÃO DA FALHA":"Repertições de ECO"
   },
   {
-    "CÓDIGO":"HP6",
-    "DESCRIÇÃO DO MATERIAL":"Agudo\/Grave não atua"
+    "CÓDIGO DA FALHA":"HP6",
+    "DESCRIÇÃO DA FALHA":"Agudo\/Grave não atua"
   },
   {
-    "CÓDIGO":"HP7",
-    "DESCRIÇÃO DO MATERIAL":"Pop noise "
+    "CÓDIGO DA FALHA":"HP7",
+    "DESCRIÇÃO DA FALHA":"Pop noise "
   },
   {
-    "CÓDIGO":"LAN",
-    "DESCRIÇÃO DO MATERIAL":"Entrada de Rede não Atua"
+    "CÓDIGO DA FALHA":"LAN",
+    "DESCRIÇÃO DA FALHA":"Entrada de Rede não Atua"
   },
   {
-    "CÓDIGO":"L1",
-    "DESCRIÇÃO DO MATERIAL":"Lâmpada não apaga"
+    "CÓDIGO DA FALHA":"L1",
+    "DESCRIÇÃO DA FALHA":"Lâmpada não apaga"
   },
   {
-    "CÓDIGO":"L2",
-    "DESCRIÇÃO DO MATERIAL":"Lâmpada não Acende"
+    "CÓDIGO DA FALHA":"L2",
+    "DESCRIÇÃO DA FALHA":"Lâmpada não Acende"
   },
   {
-    "CÓDIGO":"L3",
-    "DESCRIÇÃO DO MATERIAL":"Lâmpada Fraca\/Forte"
+    "CÓDIGO DA FALHA":"L3",
+    "DESCRIÇÃO DA FALHA":"Lâmpada Fraca\/Forte"
   },
   {
-    "CÓDIGO":"L4",
-    "DESCRIÇÃO DO MATERIAL":"Lâmpada Piscando"
+    "CÓDIGO DA FALHA":"L4",
+    "DESCRIÇÃO DA FALHA":"Lâmpada Piscando"
   },
   {
-    "CÓDIGO":"LH",
-    "DESCRIÇÃO DO MATERIAL":"Linha Horizontal"
+    "CÓDIGO DA FALHA":"LH",
+    "DESCRIÇÃO DA FALHA":"Linha Horizontal"
   },
   {
-    "CÓDIGO":"LV",
-    "DESCRIÇÃO DO MATERIAL":"Linha Vertical"
+    "CÓDIGO DA FALHA":"LV",
+    "DESCRIÇÃO DA FALHA":"Linha Vertical"
   },
   {
-    "CÓDIGO":"LD1",
-    "DESCRIÇÃO DO MATERIAL":"Led não acende"
+    "CÓDIGO DA FALHA":"LD1",
+    "DESCRIÇÃO DA FALHA":"Led não acende"
   },
   {
-    "CÓDIGO":"LD2",
-    "DESCRIÇÃO DO MATERIAL":"Led não apaga"
+    "CÓDIGO DA FALHA":"LD2",
+    "DESCRIÇÃO DA FALHA":"Led não apaga"
   },
   {
-    "CÓDIGO":"LD3",
-    "DESCRIÇÃO DO MATERIAL":"Led\/Flash Light com luz fraca"
+    "CÓDIGO DA FALHA":"LD3",
+    "DESCRIÇÃO DA FALHA":"Led\/Flash Light com luz fraca"
   },
   {
-    "CÓDIGO":"LD4",
-    "DESCRIÇÃO DO MATERIAL":"Led\/Flash Light com luz forte"
+    "CÓDIGO DA FALHA":"LD4",
+    "DESCRIÇÃO DA FALHA":"Led\/Flash Light com luz forte"
   },
   {
-    "CÓDIGO":"LD5",
-    "DESCRIÇÃO DO MATERIAL":"Led\/Display piscando"
+    "CÓDIGO DA FALHA":"LD5",
+    "DESCRIÇÃO DA FALHA":"Led\/Display piscando"
   },
   {
-    "CÓDIGO":"LD6",
-    "DESCRIÇÃO DO MATERIAL":"Led com cor diferente"
+    "CÓDIGO DA FALHA":"LD6",
+    "DESCRIÇÃO DA FALHA":"Led com cor diferente"
   },
   {
-    "CÓDIGO":"LD7",
-    "DESCRIÇÃO DO MATERIAL":"Led com luz invertida"
+    "CÓDIGO DA FALHA":"LD7",
+    "DESCRIÇÃO DA FALHA":"Led com luz invertida"
   },
   {
-    "CÓDIGO":"LD8",
-    "DESCRIÇÃO DO MATERIAL":"Faltando digito no display"
+    "CÓDIGO DA FALHA":"LD8",
+    "DESCRIÇÃO DA FALHA":"Faltando digito no display"
   },
   {
-    "CÓDIGO":"LD9",
-    "DESCRIÇÃO DO MATERIAL":"Excesso de Digitos"
+    "CÓDIGO DA FALHA":"LD9",
+    "DESCRIÇÃO DA FALHA":"Excesso de Digitos"
   },
   {
-    "CÓDIGO":"LD10",
-    "DESCRIÇÃO DO MATERIAL":"Flash Light  não liga"
+    "CÓDIGO DA FALHA":"LD10",
+    "DESCRIÇÃO DA FALHA":"Flash Light  não liga"
   },
   {
-    "CÓDIGO":"LD11",
-    "DESCRIÇÃO DO MATERIAL":"Flash Light Faltando Cor"
+    "CÓDIGO DA FALHA":"LD11",
+    "DESCRIÇÃO DA FALHA":"Flash Light Faltando Cor"
   },
   {
-    "CÓDIGO":"LD15",
-    "DESCRIÇÃO DO MATERIAL":"Display não acende"
+    "CÓDIGO DA FALHA":"LD15",
+    "DESCRIÇÃO DA FALHA":"Display não acende"
   },
   {
-    "CÓDIGO":"LD16",
-    "DESCRIÇÃO DO MATERIAL":"Led do Equalizador não atua"
+    "CÓDIGO DA FALHA":"LD16",
+    "DESCRIÇÃO DA FALHA":"Led do Equalizador não atua"
   },
   {
-    "CÓDIGO":"MURA",
-    "DESCRIÇÃO DO MATERIAL":"Mancha Escura na Tela"
+    "CÓDIGO DA FALHA":"MURA",
+    "DESCRIÇÃO DA FALHA":"Mancha Escura na Tela"
   },
   {
-    "CÓDIGO":"N1",
-    "DESCRIÇÃO DO MATERIAL":"Aparelho não liga"
+    "CÓDIGO DA FALHA":"N1",
+    "DESCRIÇÃO DA FALHA":"Aparelho não liga"
   },
   {
-    "CÓDIGO":"N2",
-    "DESCRIÇÃO DO MATERIAL":"Aparelho não desliga"
+    "CÓDIGO DA FALHA":"N2",
+    "DESCRIÇÃO DA FALHA":"Aparelho não desliga"
   },
   {
-    "CÓDIGO":"N3",
-    "DESCRIÇÃO DO MATERIAL":"Não Grava\/Atualiza"
+    "CÓDIGO DA FALHA":"N3",
+    "DESCRIÇÃO DA FALHA":"Não Grava\/Atualiza"
   },
   {
-    "CÓDIGO":"N4",
-    "DESCRIÇÃO DO MATERIAL":"Software desatualizado"
+    "CÓDIGO DA FALHA":"N4",
+    "DESCRIÇÃO DA FALHA":"Software desatualizado"
   },
   {
-    "CÓDIGO":"N5",
-    "DESCRIÇÃO DO MATERIAL":"Software Travando"
+    "CÓDIGO DA FALHA":"N5",
+    "DESCRIÇÃO DA FALHA":"Software Travando"
   },
   {
-    "CÓDIGO":"N6",
-    "DESCRIÇÃO DO MATERIAL":"Centelhando\/Ruido"
+    "CÓDIGO DA FALHA":"N6",
+    "DESCRIÇÃO DA FALHA":"Centelhando\/Ruido"
   },
   {
-    "CÓDIGO":"NC",
-    "DESCRIÇÃO DO MATERIAL":"Não Comunica"
+    "CÓDIGO DA FALHA":"NC",
+    "DESCRIÇÃO DA FALHA":"Não Comunica"
   },
   {
-    "CÓDIGO":"OPT",
-    "DESCRIÇÃO DO MATERIAL":"Optical não Atual"
+    "CÓDIGO DA FALHA":"OPT",
+    "DESCRIÇÃO DA FALHA":"Optical não Atual"
   },
   {
-    "CÓDIGO":"OP",
-    "DESCRIÇÃO DO MATERIAL":"O-cell com Película"
+    "CÓDIGO DA FALHA":"OP",
+    "DESCRIÇÃO DA FALHA":"O-cell com Película"
   },
   {
-    "CÓDIGO":"OPEN",
-    "DESCRIÇÃO DO MATERIAL":"Tampa do LOADER Aberto"
+    "CÓDIGO DA FALHA":"OPEN",
+    "DESCRIÇÃO DA FALHA":"Tampa do LOADER Aberto"
   },
   {
-    "CÓDIGO":"P1",
-    "DESCRIÇÃO DO MATERIAL":"Quebrado\/Danificado\/Batido"
+    "CÓDIGO DA FALHA":"P1",
+    "DESCRIÇÃO DA FALHA":"Quebrado\/Danificado\/Batido"
   },
   {
-    "CÓDIGO":"P2",
-    "DESCRIÇÃO DO MATERIAL":"Riscado"
+    "CÓDIGO DA FALHA":"P2",
+    "DESCRIÇÃO DA FALHA":"Riscado"
   },
   {
-    "CÓDIGO":"P3",
-    "DESCRIÇÃO DO MATERIAL":"Mancha"
+    "CÓDIGO DA FALHA":"P3",
+    "DESCRIÇÃO DA FALHA":"Mancha"
   },
   {
-    "CÓDIGO":"P4",
-    "DESCRIÇÃO DO MATERIAL":"Com rebarba"
+    "CÓDIGO DA FALHA":"P4",
+    "DESCRIÇÃO DA FALHA":"Com rebarba"
   },
   {
-    "CÓDIGO":"P5",
-    "DESCRIÇÃO DO MATERIAL":"Empenado\/Amassado"
+    "CÓDIGO DA FALHA":"P5",
+    "DESCRIÇÃO DA FALHA":"Empenado\/Amassado"
   },
   {
-    "CÓDIGO":"P6",
-    "DESCRIÇÃO DO MATERIAL":"Mal montado"
+    "CÓDIGO DA FALHA":"P6",
+    "DESCRIÇÃO DA FALHA":"Mal montado"
   },
   {
-    "CÓDIGO":"P7",
-    "DESCRIÇÃO DO MATERIAL":"Abertura\/Gap"
+    "CÓDIGO DA FALHA":"P7",
+    "DESCRIÇÃO DA FALHA":"Abertura\/Gap"
   },
   {
-    "CÓDIGO":"P8",
-    "DESCRIÇÃO DO MATERIAL":"Falha de Injeção \/Serigrafia"
+    "CÓDIGO DA FALHA":"P8",
+    "DESCRIÇÃO DA FALHA":"Falha de Injeção \/Serigrafia"
   },
   {
-    "CÓDIGO":"P9",
-    "DESCRIÇÃO DO MATERIAL":"Faltando "
+    "CÓDIGO DA FALHA":"P9",
+    "DESCRIÇÃO DA FALHA":"Faltando "
   },
   {
-    "CÓDIGO":"P10",
-    "DESCRIÇÃO DO MATERIAL":"Deslocado"
+    "CÓDIGO DA FALHA":"P10",
+    "DESCRIÇÃO DA FALHA":"Deslocado"
   },
   {
-    "CÓDIGO":"P11",
-    "DESCRIÇÃO DO MATERIAL":"Fora do especificado"
+    "CÓDIGO DA FALHA":"P11",
+    "DESCRIÇÃO DA FALHA":"Fora do especificado"
   },
   {
-    "CÓDIGO":"P12",
-    "DESCRIÇÃO DO MATERIAL":"Película no O-CELL"
+    "CÓDIGO DA FALHA":"P12",
+    "DESCRIÇÃO DA FALHA":"Película no O-CELL"
   },
   {
-    "CÓDIGO":"P13",
-    "DESCRIÇÃO DO MATERIAL":"Aparelho com corpo estranho"
+    "CÓDIGO DA FALHA":"P13",
+    "DESCRIÇÃO DA FALHA":"Aparelho com corpo estranho"
   },
   {
-    "CÓDIGO":"P14",
-    "DESCRIÇÃO DO MATERIAL":"Espanado"
+    "CÓDIGO DA FALHA":"P14",
+    "DESCRIÇÃO DA FALHA":"Espanado"
   },
   {
-    "CÓDIGO":"PT1",
-    "DESCRIÇÃO DO MATERIAL":"Prato não Gira"
+    "CÓDIGO DA FALHA":"PT1",
+    "DESCRIÇÃO DA FALHA":"Prato não Gira"
   },
   {
-    "CÓDIGO":"PT2",
-    "DESCRIÇÃO DO MATERIAL":"Prato Travado"
+    "CÓDIGO DA FALHA":"PT2",
+    "DESCRIÇÃO DA FALHA":"Prato Travado"
   },
   {
-    "CÓDIGO":"PBR",
-    "DESCRIÇÃO DO MATERIAL":"Ponto Brilhante"
+    "CÓDIGO DA FALHA":"PBR",
+    "DESCRIÇÃO DA FALHA":"Ponto Brilhante"
   },
   {
-    "CÓDIGO":"PAP",
-    "DESCRIÇÃO DO MATERIAL":"Ponto Apagado"
+    "CÓDIGO DA FALHA":"PAP",
+    "DESCRIÇÃO DA FALHA":"Ponto Apagado"
   },
   {
-    "CÓDIGO":"Q1",
-    "DESCRIÇÃO DO MATERIAL":"Super Aquecimento"
+    "CÓDIGO DA FALHA":"Q1",
+    "DESCRIÇÃO DA FALHA":"Super Aquecimento"
   },
   {
-    "CÓDIGO":"Q2",
-    "DESCRIÇÃO DO MATERIAL":"Não Aquece"
+    "CÓDIGO DA FALHA":"Q2",
+    "DESCRIÇÃO DA FALHA":"Não Aquece"
   },
   {
-    "CÓDIGO":"REC",
-    "DESCRIÇÃO DO MATERIAL":"Função REC não Grava"
+    "CÓDIGO DA FALHA":"REC",
+    "DESCRIÇÃO DA FALHA":"Função REC não Grava"
   },
   {
-    "CÓDIGO":"RC1",
-    "DESCRIÇÃO DO MATERIAL":"RCA Fora do especificado"
+    "CÓDIGO DA FALHA":"RC1",
+    "DESCRIÇÃO DA FALHA":"RCA Fora do especificado"
   },
   {
-    "CÓDIGO":"RC2",
-    "DESCRIÇÃO DO MATERIAL":"RCA  Não atua"
+    "CÓDIGO DA FALHA":"RC2",
+    "DESCRIÇÃO DA FALHA":"RCA  Não atua"
   },
   {
-    "CÓDIGO":"RD",
-    "DESCRIÇÃO DO MATERIAL":"Radio Não Funciona\/Sintoniza"
+    "CÓDIGO DA FALHA":"RD",
+    "DESCRIÇÃO DA FALHA":"Radio Não Funciona\/Sintoniza"
   },
   {
-    "CÓDIGO":"SD",
-    "DESCRIÇÃO DO MATERIAL":"Falha no SD Card"
+    "CÓDIGO DA FALHA":"SD",
+    "DESCRIÇÃO DA FALHA":"Falha no SD Card"
   },
   {
-    "CÓDIGO":"ST1",
-    "DESCRIÇÃO DO MATERIAL":"Sem tensão"
+    "CÓDIGO DA FALHA":"ST1",
+    "DESCRIÇÃO DA FALHA":"Sem tensão"
   },
   {
-    "CÓDIGO":"ST2",
-    "DESCRIÇÃO DO MATERIAL":"Tensão baixa"
+    "CÓDIGO DA FALHA":"ST2",
+    "DESCRIÇÃO DA FALHA":"Tensão baixa"
   },
   {
-    "CÓDIGO":"ST3",
-    "DESCRIÇÃO DO MATERIAL":"Tensão alta"
+    "CÓDIGO DA FALHA":"ST3",
+    "DESCRIÇÃO DA FALHA":"Tensão alta"
   },
   {
-    "CÓDIGO":"ST4",
-    "DESCRIÇÃO DO MATERIAL":"Tensões variando"
+    "CÓDIGO DA FALHA":"ST4",
+    "DESCRIÇÃO DA FALHA":"Tensões variando"
   },
   {
-    "CÓDIGO":"ST5",
-    "DESCRIÇÃO DO MATERIAL":"Placa em Curto "
+    "CÓDIGO DA FALHA":"ST5",
+    "DESCRIÇÃO DA FALHA":"Placa em Curto "
   },
   {
-    "CÓDIGO":"ST6",
-    "DESCRIÇÃO DO MATERIAL":"Luz de Jig"
+    "CÓDIGO DA FALHA":"ST6",
+    "DESCRIÇÃO DA FALHA":"Luz de Jig"
   },
   {
-    "CÓDIGO":"T1",
-    "DESCRIÇÃO DO MATERIAL":"Teclas não atua"
+    "CÓDIGO DA FALHA":"T1",
+    "DESCRIÇÃO DA FALHA":"Teclas não atua"
   },
   {
-    "CÓDIGO":"T2",
-    "DESCRIÇÃO DO MATERIAL":"Tecla deslocada\/danificada"
+    "CÓDIGO DA FALHA":"T2",
+    "DESCRIÇÃO DA FALHA":"Tecla deslocada\/danificada"
   },
   {
-    "CÓDIGO":"T3",
-    "DESCRIÇÃO DO MATERIAL":"Função Invertida"
+    "CÓDIGO DA FALHA":"T3",
+    "DESCRIÇÃO DA FALHA":"Função Invertida"
   },
   {
-    "CÓDIGO":"T4",
-    "DESCRIÇÃO DO MATERIAL":"Tecla dura"
+    "CÓDIGO DA FALHA":"T4",
+    "DESCRIÇÃO DA FALHA":"Tecla dura"
   },
   {
-    "CÓDIGO":"T5",
-    "DESCRIÇÃO DO MATERIAL":"Volume diminui automaticamente"
+    "CÓDIGO DA FALHA":"T5",
+    "DESCRIÇÃO DA FALHA":"Volume diminui automaticamente"
   },
   {
-    "CÓDIGO":"T6",
-    "DESCRIÇÃO DO MATERIAL":"Volume maximo não atua"
+    "CÓDIGO DA FALHA":"T6",
+    "DESCRIÇÃO DA FALHA":"Volume maximo não atua"
   },
   {
-    "CÓDIGO":"T7",
-    "DESCRIÇÃO DO MATERIAL":"Tecla capacitiva (touch) não atua"
+    "CÓDIGO DA FALHA":"T7",
+    "DESCRIÇÃO DA FALHA":"Tecla capacitiva (touch) não atua"
   },
   {
-    "CÓDIGO":"USB1",
-    "DESCRIÇÃO DO MATERIAL":"Aparelho não lê pen drive"
+    "CÓDIGO DA FALHA":"USB1",
+    "DESCRIÇÃO DA FALHA":"Aparelho não lê pen drive"
   },
   {
-    "CÓDIGO":"USB2",
-    "DESCRIÇÃO DO MATERIAL":"Mal contato na leitura do pen drive "
+    "CÓDIGO DA FALHA":"USB2",
+    "DESCRIÇÃO DA FALHA":"Mal contato na leitura do pen drive "
   },
   {
-    "CÓDIGO":"V1",
-    "DESCRIÇÃO DO MATERIAL":"Sem imagem\/sem brilho"
+    "CÓDIGO DA FALHA":"V1",
+    "DESCRIÇÃO DA FALHA":"Sem imagem\/sem brilho"
   },
   {
-    "CÓDIGO":"V2",
-    "DESCRIÇÃO DO MATERIAL":"Sem vídeo no AV"
+    "CÓDIGO DA FALHA":"V2",
+    "DESCRIÇÃO DA FALHA":"Sem vídeo no AV"
   },
   {
-    "CÓDIGO":"V3",
-    "DESCRIÇÃO DO MATERIAL":"Sem video no HDMI"
+    "CÓDIGO DA FALHA":"V3",
+    "DESCRIÇÃO DA FALHA":"Sem video no HDMI"
   },
   {
-    "CÓDIGO":"V4",
-    "DESCRIÇÃO DO MATERIAL":"Vídeo com Cor fora de Padrão"
+    "CÓDIGO DA FALHA":"V4",
+    "DESCRIÇÃO DA FALHA":"Vídeo com Cor fora de Padrão"
   },
   {
-    "CÓDIGO":"V5",
-    "DESCRIÇÃO DO MATERIAL":"Interferência na Imagem"
+    "CÓDIGO DA FALHA":"V5",
+    "DESCRIÇÃO DA FALHA":"Interferência na Imagem"
   },
   {
-    "CÓDIGO":"V6",
-    "DESCRIÇÃO DO MATERIAL":"Sem video no RF\/ANTENA"
+    "CÓDIGO DA FALHA":"V6",
+    "DESCRIÇÃO DA FALHA":"Sem video no RF\/ANTENA"
   },
   {
-    "CÓDIGO":"VS1",
-    "DESCRIÇÃO DO MATERIAL":"Falha Visual\/Montagem"
+    "CÓDIGO DA FALHA":"VS1",
+    "DESCRIÇÃO DA FALHA":"Falha Visual\/Montagem"
   },
   {
-    "CÓDIGO":"VZL",
-    "DESCRIÇÃO DO MATERIAL":"Vazamento de Luz"
+    "CÓDIGO DA FALHA":"VZL",
+    "DESCRIÇÃO DA FALHA":"Vazamento de Luz"
   },
   {
-    "CÓDIGO":"VT1",
-    "DESCRIÇÃO DO MATERIAL":"Ventilador não Gira"
+    "CÓDIGO DA FALHA":"VT1",
+    "DESCRIÇÃO DA FALHA":"Ventilador não Gira"
   },
   {
-    "CÓDIGO":"VT2",
-    "DESCRIÇÃO DO MATERIAL":"Ruído no Ventilador"
+    "CÓDIGO DA FALHA":"VT2",
+    "DESCRIÇÃO DA FALHA":"Ruído no Ventilador"
   },
   {
-    "CÓDIGO":"VM1",
-    "DESCRIÇÃO DO MATERIAL":"Vazamento na Cavidade"
+    "CÓDIGO DA FALHA":"VM1",
+    "DESCRIÇÃO DA FALHA":"Vazamento na Cavidade"
   },
   {
-    "CÓDIGO":"VM2",
-    "DESCRIÇÃO DO MATERIAL":"Vazamento na Porta"
+    "CÓDIGO DA FALHA":"VM2",
+    "DESCRIÇÃO DA FALHA":"Vazamento na Porta"
   },
   {
-    "CÓDIGO":"WS",
-    "DESCRIÇÃO DO MATERIAL":"White Spot"
+    "CÓDIGO DA FALHA":"WS",
+    "DESCRIÇÃO DA FALHA":"White Spot"
   },
   {
-    "CÓDIGO":"WI-FI",
-    "DESCRIÇÃO DO MATERIAL":"Sem sinal de wi-fi"
+    "CÓDIGO DA FALHA":"WI-FI",
+    "DESCRIÇÃO DA FALHA":"Sem sinal de wi-fi"
   },
   {
-    "CÓDIGO":"WB",
-    "DESCRIÇÃO DO MATERIAL":"White Ballance"
+    "CÓDIGO DA FALHA":"WB",
+    "DESCRIÇÃO DA FALHA":"White Ballance"
   },
   {
-    "CÓDIGO":"TC1",
-    "DESCRIÇÃO DO MATERIAL":"Tescon Falha de Processo"
+    "CÓDIGO DA FALHA":"TC1",
+    "DESCRIÇÃO DA FALHA":"Tescon Falha de Processo"
   },
   {
-    "CÓDIGO":"TC2",
-    "DESCRIÇÃO DO MATERIAL":"Tescon Material"
+    "CÓDIGO DA FALHA":"TC2",
+    "DESCRIÇÃO DA FALHA":"Tescon Material"
   },
   {
-    "CÓDIGO":"GV1",
-    "DESCRIÇÃO DO MATERIAL":"Gravação Falha de Processo"
+    "CÓDIGO DA FALHA":"GV1",
+    "DESCRIÇÃO DA FALHA":"Gravação Falha de Processo"
   },
   {
-    "CÓDIGO":"GV2",
-    "DESCRIÇÃO DO MATERIAL":"Gravação Material"
+    "CÓDIGO DA FALHA":"GV2",
+    "DESCRIÇÃO DA FALHA":"Gravação Material"
   },
   {
-    "CÓDIGO":"DH",
-    "DESCRIÇÃO DO MATERIAL":"Dip teste Manutenção de equipamento"
+    "CÓDIGO DA FALHA":"DH",
+    "DESCRIÇÃO DA FALHA":"Dip teste Manutenção de equipamento"
   },
   {
-    "CÓDIGO":"PM1",
-    "DESCRIÇÃO DO MATERIAL":"Potencia Maxima"
+    "CÓDIGO DA FALHA":"PM1",
+    "DESCRIÇÃO DA FALHA":"Potencia Maxima"
   },
   {
-    "CÓDIGO":"PM2",
-    "DESCRIÇÃO DO MATERIAL":"Potencia Minima"
+    "CÓDIGO DA FALHA":"PM2",
+    "DESCRIÇÃO DA FALHA":"Potencia Minima"
   },
   {
-    "CÓDIGO":"CTT",
-    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+    "CÓDIGO DA FALHA":"CTT",
+    "DESCRIÇÃO DA FALHA":"Equipamento de Teste"
   },
   {
-    "CÓDIGO":"VSL",
-    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+    "CÓDIGO DA FALHA":"VSL",
+    "DESCRIÇÃO DA FALHA":"Equipamento de Teste"
   },
   {
-    "CÓDIGO":"ECJ",
-    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+    "CÓDIGO DA FALHA":"ECJ",
+    "DESCRIÇÃO DA FALHA":"Equipamento de Teste"
   },
   {
-    "CÓDIGO":"VPC1",
-    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+    "CÓDIGO DA FALHA":"VPC1",
+    "DESCRIÇÃO DA FALHA":"Equipamento de Teste"
   },
   {
-    "CÓDIGO":"5V",
-    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+    "CÓDIGO DA FALHA":"5V",
+    "DESCRIÇÃO DA FALHA":"Equipamento de Teste"
   },
   {
-    "CÓDIGO":"12V",
-    "DESCRIÇÃO DO MATERIAL":"Equipamento de Teste"
+    "CÓDIGO DA FALHA":"12V",
+    "DESCRIÇÃO DA FALHA":"Equipamento de Teste"
   },
   {
-    "CÓDIGO":"CT",
-    "DESCRIÇÃO DO MATERIAL":"Coating\/Selador"
+    "CÓDIGO DA FALHA":"CT",
+    "DESCRIÇÃO DA FALHA":"Coating\/Selador"
   },
   {
-    "CÓDIGO":"BP1",
-    "DESCRIÇÃO DO MATERIAL":"Buzer não Atua"
+    "CÓDIGO DA FALHA":"BP1",
+    "DESCRIÇÃO DA FALHA":"Buzer não Atua"
   },
   {
-    "CÓDIGO":"FF",
-    "DESCRIÇÃO DO MATERIAL":"Falsa falha"
+    "CÓDIGO DA FALHA":"FF",
+    "DESCRIÇÃO DA FALHA":"Falsa falha"
   },
   {
-    "CÓDIGO":"VAR",
-    "DESCRIÇÃO DO MATERIAL":"Vazamento de AR"
+    "CÓDIGO DA FALHA":"VAR",
+    "DESCRIÇÃO DA FALHA":"Vazamento de AR"
   },
   {
-    "CÓDIGO":"POL",
-    "DESCRIÇÃO DO MATERIAL":"Polarite Invertido"
+    "CÓDIGO DA FALHA":"POL",
+    "DESCRIÇÃO DA FALHA":"Polarite Invertido"
   },
   {
-    "CÓDIGO":"VZG",
-    "DESCRIÇÃO DO MATERIAL":"Vazamento de Gás"
+    "CÓDIGO DA FALHA":"VZG",
+    "DESCRIÇÃO DA FALHA":"Vazamento de Gás"
   },
   {
-    "CÓDIGO":"ALT",
-    "DESCRIÇÃO DO MATERIAL":"ALETA NÃO ABRE\/FECHA"
+    "CÓDIGO DA FALHA":"ALT",
+    "DESCRIÇÃO DA FALHA":"ALETA NÃO ABRE\/FECHA"
   },
   {
-    "CÓDIGO":"A15",
-    "DESCRIÇÃO DO MATERIAL":"RUIDO NA HÉLICE"
+    "CÓDIGO DA FALHA":"A15",
+    "DESCRIÇÃO DA FALHA":"RUIDO NA HÉLICE"
   }
 ]
