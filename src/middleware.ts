@@ -1,0 +1,64 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+export function middleware(request: NextRequest) {
+  // 1. Ler o Cookie de Autenticação (O "Crachá")
+  // O login.ts que criamos salva o cookie 'sigma_auth'
+  const token = request.cookies.get('sigma_auth');
+  
+  // 2. Descobrir onde o usuário quer ir
+  const { pathname } = request.nextUrl;
+  
+  // Rotas que não precisam de senha (Públicas)
+  const publicRoutes = ['/login', '/_next', '/static', '/favicon.ico', '/file.svg', '/globe.svg', '/window.svg', '/vercel.svg'];
+  
+  // Verifica se é rota pública (usando startsWith para pegar subarquivos)
+  const isPublicRoute = publicRoutes.some(route => pathname.startsWith(route));
+
+  // === REGRA 1: PROTEÇÃO TOTAL ===
+  // Se não tem token E não é rota pública -> Manda pro Login
+  if (!token && !isPublicRoute) {
+    const loginUrl = new URL('/login', request.url);
+    // Opcional: Salvar de onde ele veio para redirecionar depois
+    // loginUrl.searchParams.set('from', pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
+  // === REGRA 2: USUÁRIO LOGADO NÃO VÊ LOGIN ===
+  // Se tem token E tentou entrar no login -> Manda pro Dashboard
+  if (token && pathname === '/login') {
+    return NextResponse.redirect(new URL('/dashboard', request.url));
+  }
+
+  // === REGRA 3: CONTROLE DE ACESSO POR CARGO (RBAC) ===
+  // Protege a área de "Gerenciamento de Acesso" apenas para Admins/Devs
+  if (token && pathname.startsWith('/development/acesso')) {
+    try {
+      const user = JSON.parse(token.value);
+      
+      // Se for 'viewer' (Convidado), chuta de volta pro Dashboard
+      if (user.role === 'viewer') {
+        return NextResponse.redirect(new URL('/dashboard', request.url));
+      }
+    } catch (e) {
+      // Se o cookie estiver corrompido, força logout
+      const resp = NextResponse.redirect(new URL('/login', request.url));
+      resp.cookies.delete('sigma_auth');
+      return resp;
+    }
+  }
+
+  // Se passou por tudo, libera o acesso
+  return NextResponse.next();
+}
+
+// Configuração: Onde o middleware deve rodar
+export const config = {
+  matcher: [
+    /*
+     * Roda em todas as rotas, EXCETO arquivos estáticos e API
+     * (A API pode ter sua própria proteção se necessário)
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+  ],
+};

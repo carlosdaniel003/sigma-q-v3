@@ -11,12 +11,10 @@ type CatalogosFlags = {
 // Classificador que transforma textos de erros em categorias
 function issueCategoryKey(issue: string) {
   const s = String(issue || "").toLowerCase();
-
   if (s.includes("modelo")) return "modelos";
   if (s.includes("falha")) return "falhas";
   if (s.includes("respons")) return "responsabilidades";
   if (s.includes("índice") || s.includes("indice")) return "naoMostrar";
-
   // fallback
   if (s.includes("codigo") && !s.includes("falha")) return "modelos";
   return "outros";
@@ -25,8 +23,20 @@ function issueCategoryKey(issue: string) {
 export async function GET(req: Request) {
   try {
     const url = new URL(req.url);
+    const fonteParam = (url.searchParams.get("fonte") || "todas").toLowerCase();
 
-    const fonte = (url.searchParams.get("fonte") || "todas").toUpperCase();
+    // === 🛠️ TRADUTOR DE NOMES (De-Para) ===
+    // O Frontend manda "produto acabado", mas o cache tem "produto".
+    const sourceMap: Record<string, string> = {
+        "produto acabado": "produto",
+        "produto": "produto",
+        "af": "af",
+        "lcm": "lcm",
+        "pth": "pth"
+    };
+
+    // Descobre qual a chave real do arquivo
+    const realCacheKey = sourceMap[fonteParam] || fonteParam;
 
     const catalogosRaw = url.searchParams.get("catalogos") || "";
     const catalogos: CatalogosFlags = {
@@ -35,14 +45,14 @@ export async function GET(req: Request) {
       usarResponsabilidades: catalogosRaw.includes("responsabilidades")
     };
 
-    // ⚡ Pega TUDO do cache enriquecido
+    // ⚡ Carrega o cache
     const cache = await getDefeitosCache(catalogos);
 
-    // Seleção da fonte
+    // Seleção da lista (usando a chave traduzida)
     const lista =
-      fonte === "TODAS"
+      fonteParam === "todas"
         ? cache.enriched
-        : (cache as any)[fonte.toLowerCase()] ?? [];
+        : (cache as any)[realCacheKey] || []; 
 
     const totalItems = lista.length;
 
@@ -57,159 +67,90 @@ export async function GET(req: Request) {
       ? Number(((identified / totalItems) * 100).toFixed(2))
       : 0;
 
-    // =====================================================
-    // 🔥 DETALHAMENTO DOS ERROS
-    // =====================================================
-
-    const notIdentifiedBreakdown = {
-      modelos: 0,
-      falhas: 0,
-      responsabilidades: 0,
-      naoMostrar: 0,
-      outros: 0
-    };
-
-    const examplesLimit = 20;
-
-    const issuesSummary: Record<
-      string,
-      { count: number; examples: any[] }
-    > = {
-      modelos: { count: 0, examples: [] },
-      falhas: { count: 0, examples: [] },
-      responsabilidades: { count: 0, examples: [] },
-      naoMostrar: { count: 0, examples: [] },
-      outros: { count: 0, examples: [] }
-    };
-
+    // === DETALHAMENTO ===
+    const notIdentifiedBreakdown = { modelos: 0, falhas: 0, responsabilidades: 0, naoMostrar: 0, outros: 0 };
+    const issuesSummary: any = { modelos: {count:0, examples:[]}, falhas: {count:0, examples:[]}, responsabilidades: {count:0, examples:[]}, naoMostrar: {count:0, examples:[]}, outros: {count:0, examples:[]} };
     const divergencias: Record<string, number> = {};
 
     for (const r of lista) {
-      const issues = r._issues || [];
-
-      // Divergências totais
-      for (const issue of issues) {
-        divergencias[issue] = (divergencias[issue] || 0) + 1;
-      }
-
-      if (issues.length === 0) continue;
-
-      // classificar categorias
-      const cats = new Set<string>();
-      for (const issue of issues) {
-        const cat = issueCategoryKey(issue);
-        cats.add(cat);
-      }
-
-      for (const c of cats) {
-        notIdentifiedBreakdown[c]++;
-        issuesSummary[c].count++;
-
-        if (issuesSummary[c].examples.length < examplesLimit) {
-          issuesSummary[c].examples.push({
-            fonte: r.fonte,
-            MODELO: r.MODELO ?? null,
-            CODIGO_DA_FALHA: r["CÓDIGO DA FALHA"] ?? null,
-            QUANTIDADE: r["QUANTIDADE"] ?? 0,
-            _issues: r._issues,
-            _confidence: r._confidence
-          });
+        const issues = r._issues || [];
+        for (const issue of issues) divergencias[issue] = (divergencias[issue] || 0) + 1;
+        if (issues.length === 0) continue;
+        
+        const cats = new Set<string>();
+        for (const issue of issues) cats.add(issueCategoryKey(issue));
+        
+        for (const c of cats) {
+            if (notIdentifiedBreakdown[c as keyof typeof notIdentifiedBreakdown] !== undefined) {
+                (notIdentifiedBreakdown as any)[c]++;
+                issuesSummary[c].count++;
+                if (issuesSummary[c].examples.length < 20) {
+                    issuesSummary[c].examples.push({ 
+                        fonte: r.fonte, 
+                        MODELO: r.MODELO, 
+                        CODIGO_DA_FALHA: r["CÓDIGO DA FALHA"], 
+                        _issues: r._issues, 
+                        _confidence: r._confidence 
+                    });
+                }
+            }
         }
-      }
     }
 
-    // =====================================================
-    // 🔥 MÉTRICAS POR BASE
-    // =====================================================
-
+    // === KPI POR BASE ===
     function computeBaseMetrics(arr: any[]) {
-      const total = arr.length;
-      const totalDef = arr.reduce((a, b) => {
-        const v = Number(b["QUANTIDADE"] ?? b.QUANTIDADE ?? 0);
-        return a + (isFinite(v) ? v : 0);
-      }, 0);
+      const safeArr = arr || [];
+      const total = safeArr.length;
+      const totalDef = safeArr.reduce((a, b) => a + (Number(b["QUANTIDADE"]||0) || 0), 0);
+      const ident = safeArr.filter(r => (r._issues || []).length === 0).length;
+      const avgConf = total ? Number((safeArr.reduce((a, b) => a + (Number(b._confidence) || 0), 0) / total).toFixed(4)) : 0;
 
-      const ident = arr.filter(r => (r._issues || []).length === 0).length;
-
-      const avgConf = total
-        ? Number(
-            (
-              arr.reduce((a, b) => a + (Number(b._confidence) || 0), 0) /
-              total
-            ).toFixed(4)
-          )
-        : 0;
-
-      return {
-        total,
-        totalDefeitos: totalDef,
-        identified: ident,
-        notIdentified: total - ident,
-        percentIdentified: total
-          ? Number(((ident / total) * 100).toFixed(2))
-          : 0,
-        avgConfidence: avgConf
+      return { 
+          total, 
+          totalDefeitos: totalDef, 
+          identified: ident, 
+          notIdentified: total - ident, 
+          percentIdentified: total ? Number(((ident / total) * 100).toFixed(2)) : 0, 
+          avgConfidence: avgConf 
       };
     }
 
+    // AQUI ESTÁ O PULO DO GATO PARA O GRÁFICO FUNCIONAR:
+    // Mapeamos a chave "produto acabado" (que o frontend espera)
+    // para ler os dados de "cache.produto" (que o arquivo entrega)
     const perBase = {
       af: computeBaseMetrics(cache.af),
       lcm: computeBaseMetrics(cache.lcm),
-      produto: computeBaseMetrics(cache.produto),
+      "produto acabado": computeBaseMetrics(cache.produto), // <--- TRADUÇÃO AQUI
       pth: computeBaseMetrics(cache.pth)
     };
 
     const heatmapConf = {
       af: perBase.af.avgConfidence,
       lcm: perBase.lcm.avgConfidence,
-      produto: perBase.produto.avgConfidence,
+      "produto acabado": perBase["produto acabado"].avgConfidence, // <--- TRADUÇÃO AQUI TAMBÉM
       pth: perBase.pth.avgConfidence
     };
 
-    // confiança média global
-    const avgConfidenceTotal = totalItems
-      ? Number(
-          (
-            lista.reduce(
-              (a, b) => a + (Number(b._confidence) || 0),
-              0
-            ) / totalItems
-          ).toFixed(4)
-        )
-      : 0;
-
-    // =====================================================
-    // 🔥 RESPOSTA FINAL COMPLETA
-    // =====================================================
+    const avgConfidenceTotal = totalItems ? Number((lista.reduce((a, b) => a + (Number(b._confidence) || 0), 0) / totalItems).toFixed(4)) : 0;
 
     return NextResponse.json({
       ok: true,
-
-      // totals
       totalItems,
       totalDefeitos,
       identified,
       notIdentified,
       percentIdentified,
-
-      // detalhamento
       notIdentifiedBreakdown,
       issuesSummary,
       divergencias,
-
-      // por base
       perBase,
       heatmapConf,
-
-      // geral
       avgConfidenceTotal
     });
 
   } catch (err: any) {
     console.error("stats error", err);
-    return NextResponse.json(
-      { ok: false, error: String(err) },
-      { status: 500 }
-    );
+    return NextResponse.json({ ok: false, error: String(err) }, { status: 500 });
   }
 }

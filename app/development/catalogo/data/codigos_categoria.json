@@ -15,6 +15,11 @@
     "CATEGORIA":"CM"
   },
   {
+    "CÓDIGO":"SC2824-0004-01",
+    "MODELO":"ALTO FALANTE 10POL TW",
+    "CATEGORIA":"TW"
+  },
+  {
     "CÓDIGO":"5141-01",
     "MODELO":"BX-18",
     "CATEGORIA":"BX"
@@ -2620,11 +2625,6 @@
     "CATEGORIA":"MWO"
   },
   {
-    "CÓDIGO":"SC2824-0004-01",
-    "MODELO":"ALTO FALANTE 10POL TW",
-    "CATEGORIA":"TW"
-  },
-  {
     "CÓDIGO":"5016-01",
     "MODELO":"AWS-T2W-02",
     "CATEGORIA":"TW"
@@ -3493,5 +3493,30 @@
     "CÓDIGO":"6308-02",
     "MODELO":"CONDENSADOR AWS-C-24QF 220V",
     "CATEGORIA":"ARCON"
+  },
+  {
+    "CÓDIGO":"PL0124-0082-01",
+    "MODELO":"PCI PRINCIPAL CM-550-L - MA",
+    "CATEGORIA":"CM"
+  },
+  {
+    "CÓDIGO":"PL0224-0079-01",
+    "MODELO":"PCI DISPLAY CM-400-L - IM",
+    "CATEGORIA":"CM"
+  },
+  {
+    "CÓDIGO":"PL0224-0081-01",
+    "MODELO":"PCI FONTE CM-400L - IM",
+    "CATEGORIA":"CM"
+  },
+  {
+    "CÓDIGO":"PL0224-0089-01",
+    "MODELO":"PCI DISPLAY CM-700\/CM-1000N - IM",
+    "CATEGORIA":"CM"
+  },
+  {
+    "CÓDIGO":"PL0224-0092-01",
+    "MODELO":"PCI DISPLAY CM-550-L - IM",
+    "CATEGORIA":"CM"
   }
 ]

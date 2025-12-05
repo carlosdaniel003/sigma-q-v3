@@ -524,3 +524,12 @@ html, body {
   border-bottom: 1px solid rgba(255,255,255,0.06);
   color: var(--muted);
 }
+
+.diag-card {
+  transition: 0.25s ease;
+}
+
+.diag-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(255,255,255,0.05);
+}

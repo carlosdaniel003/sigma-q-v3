@@ -368,3 +368,31 @@ body {
   margin-top: 20px;
 }
 
+/* === SCROLLBAR DARK GLOBAL (Definitivo) === */
+
+/* Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; /* Cor do fundo da trilha (Dark Blue) */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155; /* Cor da barra (Slate 700) */
+  border-radius: 4px;
+  border: 2px solid #0f172a; /* Borda para dar efeito de "espaço" */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; /* Cor ao passar o mouse (Slate 600) */
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #0f172a;
+}

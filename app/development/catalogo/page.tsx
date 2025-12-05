@@ -8,7 +8,6 @@ export default function CatalogoOficialPage() {
   const [todasResp, setTodasResp] = useState([]);
   const [todosDefeitos, setTodosDefeitos] = useState([]);
   const [todosCodigos, setTodosCodigos] = useState([]);
-  // 📌 NOVO ESTADO ADICIONADO:
   const [todasExcessoes, setTodasExcessoes] = useState([]);
 
   const [buscaGlobal, setBuscaGlobal] = useState("");
@@ -19,7 +18,6 @@ export default function CatalogoOficialPage() {
 
   // --- 🔵 PASSO 2: Carregar tudo com SEGURANÇA ---
   useEffect(() => {
-    // Função auxiliar: se der erro ou 404, retorna [] para não travar o Promise.all
     const fetchSeguro = (url: string) =>
       fetch(url)
         .then((res) => (res.ok ? res.json() : []))
@@ -29,14 +27,13 @@ export default function CatalogoOficialPage() {
         });
 
     async function carregarTudo() {
-      // Carrega as 6 bases em paralelo
       const [m, c, r, d, cod, exc] = await Promise.all([
         fetchSeguro("/api/catalogo/modelos"),
         fetchSeguro("/api/catalogo/causas"),
         fetchSeguro("/api/catalogo/responsabilidades"),
         fetchSeguro("/api/catalogo/defeitos"),
         fetchSeguro("/api/catalogo/codigos"),
-        fetchSeguro("/api/catalogo/excecoes"), // 📌 NOVO FETCH
+        fetchSeguro("/api/catalogo/excecoes"),
       ]);
 
       setTodosModelos(m);
@@ -44,24 +41,23 @@ export default function CatalogoOficialPage() {
       setTodasResp(r);
       setTodosDefeitos(d);
       setTodosCodigos(cod);
-      setTodasExcessoes(exc); // 📌 NOVO SET
+      setTodasExcessoes(exc);
     }
 
     carregarTudo();
   }, []);
 
-  // --- 🔵 Função OTIMIZADA: Carrega da memória (Instantâneo) ---
+  // --- 🔵 Função OTIMIZADA: Carrega da memória ---
   function carregar(tipo: string) {
     setCatalogo(tipo);
-    setBuscaGlobal(""); // Limpa a busca para focar na tabela
+    setBuscaGlobal("");
     
-    // Seleciona o estado correto baseado no botão clicado
     if (tipo === "modelos") setDados(todosModelos);
     else if (tipo === "causas") setDados(todasCausas);
     else if (tipo === "responsabilidades") setDados(todasResp);
     else if (tipo === "defeitos") setDados(todosDefeitos);
     else if (tipo === "codigos") setDados(todosCodigos);
-    else if (tipo === "excecoes") setDados(todasExcessoes); // 📌 AQUI ESTÁ A LIGAÇÃO
+    else if (tipo === "excecoes") setDados(todasExcessoes);
   }
 
   // --- 🔵 PASSO 3: Lógica de Busca Global ---
@@ -81,157 +77,178 @@ export default function CatalogoOficialPage() {
   const achadosResp = filtrar(todasResp);
   const achadosDefeitos = filtrar(todosDefeitos);
   const achadosCodigos = filtrar(todosCodigos);
-  // 📌 NOVA FILTRAGEM:
   const achadosExcessoes = filtrar(todasExcessoes);
 
   const temBusca = buscaGlobal.trim().length > 0;
 
-  // --- 🔵 PASSO 7: Função Helper ---
+  // --- 🔵 PASSO 7: Função Helper (COM SCROLL DARK CORRIGIDO) ---
   function renderTabela(lista: any[]) {
     if (lista.length === 0) return null;
     const colunas = Object.keys(lista[0]);
 
     return (
-      <table className="tabela-catalogo">
-        <thead>
-          <tr>
-            {colunas.map((c, idx) => (
-              <th key={idx}>{c.toUpperCase()}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {lista.map((item, i) => (
-            <tr key={i}>
-              {Object.values(item).map((v, j) => (
-                <td key={j}>{String(v)}</td>
+      // Wrapper para garantir scroll horizontal suave e escuro
+      <div className="custom-scroll" style={{ overflowX: "auto", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)" }}>
+        <table className="tabela-catalogo" style={{ width: "100%", borderCollapse: "collapse" }}>
+          <thead style={{ background: "rgba(255,255,255,0.05)" }}>
+            <tr>
+              {colunas.map((c, idx) => (
+                <th key={idx} style={{ padding: "12px", textAlign: "left", fontSize: "0.85rem", color: "#94a3b8", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+                  {c.toUpperCase()}
+                </th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {lista.map((item, i) => (
+              <tr key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                {Object.values(item).map((v, j) => (
+                  <td key={j} style={{ padding: "10px 12px", fontSize: "0.85rem", color: "#e2e8f0" }}>
+                    {String(v)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     );
   }
 
   return (
     <div className="catalogo-container">
-      <h1>Catálogo Oficial</h1>
+      {/* 🎨 ESTILOS INJETADOS PARA SCROLLBAR DARK 
+         Isso força a barra de rolagem a seguir o tema escuro
+      */}
+      <style jsx global>{`
+        .custom-scroll::-webkit-scrollbar {
+          height: 10px;
+          width: 10px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 4px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+          background: rgba(255, 255, 255, 0.15);
+          border-radius: 4px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+          background: rgba(255, 255, 255, 0.25);
+        }
+        /* Ajuste fino para inputs não vazarem */
+        .input-busca-global:focus {
+           outline: none;
+           border-color: var(--brand);
+           box-shadow: 0 0 0 2px rgba(95, 180, 255, 0.2);
+        }
+      `}</style>
 
-      {/* --- Input de Busca Global --- */}
-      <input
-        type="text"
-        placeholder="Pesquisar em todos os catálogos..."
-        className="input-busca-global"
-        value={buscaGlobal}
-        onChange={(e) => setBuscaGlobal(e.target.value)}
-      />
+      <h1 style={{ marginBottom: "20px" }}>Catálogo Oficial</h1>
+
+      {/* --- Input de Busca Global (CORRIGIDO) --- */}
+      <div style={{ marginBottom: "20px" }}>
+        <input
+          type="text"
+          placeholder="Pesquisar em todos os catálogos..."
+          className="input-busca-global"
+          value={buscaGlobal}
+          onChange={(e) => setBuscaGlobal(e.target.value)}
+          // Estilos inline para garantir que não vaze
+          style={{
+            width: "100%",
+            boxSizing: "border-box", // O segredo para não vazar
+            padding: "12px 16px",
+            borderRadius: "8px",
+            border: "1px solid rgba(255,255,255,0.1)",
+            background: "rgba(255,255,255,0.03)",
+            color: "white",
+            fontSize: "0.95rem"
+          }}
+        />
+      </div>
 
       {/* --- Resultados da Busca Global --- */}
       {temBusca && (
-        <div className="resultados-global">
-          <h2>Resultados da Pesquisa</h2>
+        <div className="resultados-global" style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+          <h2 style={{ fontSize: "1.2rem", color: "var(--brand)" }}>Resultados da Pesquisa</h2>
 
           {achadosDefeitos.length > 0 && (
             <div className="fade-in">
-              <h3>Códigos de Defeitos</h3>
+              <h3 style={{ marginBottom: 10, color: "#cbd5e1" }}>Códigos de Defeitos</h3>
               {renderTabela(achadosDefeitos)}
             </div>
           )}
 
           {achadosCodigos.length > 0 && (
             <div className="fade-in">
-              <h3>Modelos — Categorias — Códigos</h3>
+              <h3 style={{ marginBottom: 10, color: "#cbd5e1" }}>Modelos — Categorias — Códigos</h3>
               {renderTabela(achadosCodigos)}
             </div>
           )}
 
-          {/* 📌 NOVA EXIBIÇÃO NA BUSCA: */}
           {achadosExcessoes.length > 0 && (
             <div className="fade-in">
-              <h3>Exceções</h3>
+              <h3 style={{ marginBottom: 10, color: "#cbd5e1" }}>Exceções</h3>
               {renderTabela(achadosExcessoes)}
             </div>
           )}
 
           {achadosModelos.length > 0 && (
             <div className="fade-in">
-              <h3>Modelos</h3>
+              <h3 style={{ marginBottom: 10, color: "#cbd5e1" }}>Modelos</h3>
               {renderTabela(achadosModelos)}
             </div>
           )}
 
           {achadosCausas.length > 0 && (
             <div className="fade-in">
-              <h3>Causas</h3>
+              <h3 style={{ marginBottom: 10, color: "#cbd5e1" }}>Causas</h3>
               {renderTabela(achadosCausas)}
             </div>
           )}
 
           {achadosResp.length > 0 && (
             <div className="fade-in">
-              <h3>Responsabilidades</h3>
+              <h3 style={{ marginBottom: 10, color: "#cbd5e1" }}>Responsabilidades</h3>
               {renderTabela(achadosResp)}
             </div>
           )}
 
-          {/* Mensagem se não encontrar nada em nenhuma das 6 bases */}
+          {/* Mensagem se não encontrar nada */}
           {achadosDefeitos.length === 0 &&
             achadosModelos.length === 0 &&
             achadosCausas.length === 0 &&
             achadosResp.length === 0 &&
             achadosCodigos.length === 0 &&
-            achadosExcessoes.length === 0 && <p>Nenhum resultado encontrado.</p>}
+            achadosExcessoes.length === 0 && 
+            <div style={{ padding: 20, textAlign: "center", border: "1px dashed rgba(255,255,255,0.1)", borderRadius: 8, color: "#64748b" }}>
+              Nenhum resultado encontrado para "{buscaGlobal}".
+            </div>
+          }
         </div>
       )}
 
       {/* ---- CARDS DE NAVEGAÇÃO ---- */}
       {!temBusca && (
-        <div className="cards-grid">
-          <div className="card-btn" onClick={() => carregar("modelos")}>
-            Ver Informações de Modelos
-          </div>
-          <div className="card-btn" onClick={() => carregar("causas")}>
-            Ver Informações de Causas
-          </div>
-          <div className="card-btn" onClick={() => carregar("responsabilidades")}>
-            Ver Informações de Responsabilidades
-          </div>
-          <div className="card-btn" onClick={() => carregar("defeitos")}>
-            Ver Informações de Defeitos
-          </div>
-          <div className="card-btn" onClick={() => carregar("codigos")}>
-            Ver Informações de Modelos — Categorias — Códigos
-          </div>
-          {/* 📌 NOVO BOTÃO: */}
-          <div className="card-btn" onClick={() => carregar("excecoes")}>
-            Ver Informações de Exceções
-          </div>
+        <div className="cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <div className="card-btn" onClick={() => carregar("modelos")}>Ver Informações de Modelos</div>
+          <div className="card-btn" onClick={() => carregar("causas")}>Ver Informações de Causas</div>
+          <div className="card-btn" onClick={() => carregar("responsabilidades")}>Ver Informações de Responsabilidades</div>
+          <div className="card-btn" onClick={() => carregar("defeitos")}>Ver Informações de Defeitos</div>
+          <div className="card-btn" onClick={() => carregar("codigos")}>Ver Informações de Modelos — Categorias — Códigos</div>
+          <div className="card-btn" onClick={() => carregar("excecoes")}>Ver Informações de Exceções</div>
         </div>
       )}
 
       {/* ---- TABELA DE NAVEGAÇÃO ---- */}
       {catalogo && !temBusca && (
-        <div className="tabela-area fade-in" key={catalogo}>
-          <h2>Catálogo — {catalogo.toUpperCase()}</h2>
-          <table className="tabela-catalogo">
-            <thead>
-              <tr>
-                {dados.length > 0 &&
-                  Object.keys(dados[0]).map((col, index) => (
-                    <th key={index}>{col.toUpperCase()}</th>
-                  ))}
-              </tr>
-            </thead>
-            <tbody>
-              {dados.map((item, idx) => (
-                <tr key={idx}>
-                  {Object.values(item).map((valor, idv) => (
-                    <td key={idv}>{String(valor)}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="tabela-area fade-in" key={catalogo} style={{ marginTop: "20px" }}>
+          <h2 style={{ marginBottom: "12px", color: "var(--brand)", fontSize: "1.1rem" }}>
+            Catálogo — {catalogo.toUpperCase()}
+          </h2>
+          {/* Reutiliza o renderTabela para garantir o scroll bonito aqui também */}
+          {renderTabela(dados)}
         </div>
       )}
     </div>

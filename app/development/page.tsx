@@ -25,9 +25,9 @@ export default function DevArea() {
 
       <ul className="mt-4 list-disc pl-6">
         <li><a href="/development/catalogo">Catálogo Oficial SIGMA-Q</a></li>
-        <li><a href="/development/defeitos">Classificação de Defeitos</a></li>
-        <li><a href="/development/producao">Classificação de Produção</a></li>
-        <li><a href="/development/geral">Classificação Geral</a></li>
+        <li><a href="/development/defeitos">Validação de Defeitos</a></li>
+        <li><a href="/development/producao">Validação de Produção</a></li>
+        <li><a href="/development/geral">Validação Geral</a></li>
         <li><a href="/development/ppm">PPM Engine</a></li>
         <li><a href="/development/acesso">Gerenciamento de Acesso</a></li>
       </ul>
