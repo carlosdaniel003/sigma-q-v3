@@ -1,0 +1,438 @@
+/* === LAYOUT MESTRE (COCKPIT) === */
+.producao-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #e2e8f0;
+  overflow: hidden; /* Impede que a página toda role */
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === HEADER === */
+.page-header {
+  flex-shrink: 0; /* Não encolhe */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.page-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* === 1. ÁREA DE KPIS (FIXA) === */
+.kpi-row {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 16px 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.stat-value.highlight { color: #3b82f6; } /* Azul Brand */
+.stat-value.ok { color: #22c55e; } /* Verde */
+
+.stat-sub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 4px;
+}
+
+/* === 2. ÁREA DIVIDIDA (SPLIT VIEW) === */
+.split-view {
+  flex: 1; /* Ocupa o resto da altura */
+  display: flex;
+  gap: 20px;
+  min-height: 0; /* Crítico para o scroll funcionar dentro */
+}
+
+/* --- LADO ESQUERDO: MENU DE CATEGORIAS --- */
+.left-panel {
+  width: 300px;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel-title {
+  padding: 16px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.02);
+}
+
+.category-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category-item {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.category-item:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.category-item.active {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+}
+
+.cat-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cat-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 6px;
+}
+
+.mini-bar-bg {
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.mini-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+/* --- LADO DIREITO: DETALHES --- */
+.right-panel {
+  flex: 1;
+  overflow-y: auto; /* Scroll independente */
+  padding-right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cards de Problemas */
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.problem-card {
+  background: rgba(239, 68, 68, 0.1); /* Vermelho bem fraco */
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.prob-title {
+  font-weight: 700;
+  color: #fca5a5; /* Vermelho claro */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.prob-code {
+  background: rgba(0,0,0,0.3);
+  padding: 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Tabela de Modelos */
+.glass-table-container {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.glass-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.glass-table th {
+  text-align: left;
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.6);
+  font-weight: 600;
+}
+
+.glass-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.9);
+}
+
+.glass-table tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Badge de Status */
+.status-tag {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.status-tag.ok { background: rgba(34, 197, 94, 0.2); color: #86efac; }
+.status-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+
+/* Loading */
+.loader-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(255,255,255,0.5);
+}
+
+.diag-block {
+  margin-top: 20px;
+}
+
+.diag-table {
+  display: grid;
+  gap: 16px;
+}
+
+.diag-card {
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.diag-card.warn {
+  border-color: #facc15;
+}
+
+.diag-card.danger {
+  border-color: #ef4444;
+}
+
+.diag-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.diag-body p {
+  margin: 2px 0;
+}
+
+/* [BLOCO 2] estilos para o dashboard de divergências */
+.diag-card { padding: 12px; border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); }
+.diag-card.warn { border-color: #facc15; }
+.diag-card.danger { border-color: #ef4444; }
+.kpi-row .stat-card { min-width: 180px; }
+.glass-table-container { max-height: 520px; overflow:auto; }
+.glass-table td, .glass-table th { padding: 12px 10px; }
+.select-dark { background: rgba(255,255,255,0.03); color: white; border: 1px solid rgba(255,255,255,0.04); padding: 6px; border-radius: 6px; }
+
+/* Reaproveita .diag-card, .glass-table etc - pequenas melhorias */
+.diag-card { padding: 12px; border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); }
+.diag-card.warn { border-color: #facc15; }
+.diag-card.danger { border-color: #ef4444; }
+
+.select-dark { background: rgba(255,255,255,0.03); color: white; border: 1px solid rgba(255,255,255,0.04); padding: 6px; border-radius: 6px; }
+
+/* Ajustes para split view quando painel direito tem abas maiores */
+.right-panel .glass-table-container { max-height: 520px; overflow: auto; }
+.problems-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+
+/* ==========================================================
+   SIGMA-Q V3 — TABS CLEAN (Sem sombras, sem preto)
+   ========================================================== */
+
+.right-panel .tab-item {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+  border-radius: 12px;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.85);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.15s ease;
+}
+
+.right-panel .tab-item:hover:not(.disabled) {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.22);
+  color: rgba(255,255,255,1);
+}
+
+/* === ESTILO DA ABA ATIVA (SEM SOMBRA E SEM TEXTO PRETO) === */
+.right-panel .tab-item.active {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.35);
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+/* Aba desativada */
+.right-panel .tab-item.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.05);
+}
+
+.right-panel .tab-item.disabled:hover {
+  opacity: 0.35;
+}
+
+/* ===============================
+   SIGMA-Q • Ajustes das Abas
+   =============================== */
+
+.tabs-spaced {
+  margin-top: 16px;        /* espaço do título até as abas */
+  margin-bottom: 24px;     /* espaço das abas até o conteúdo */
+  padding-bottom: 6px;     /* evita efeito de "corte visual" */
+}
+
+.tabs-header {
+  display: flex;
+  gap: 20px;               /* separação maior entre os botões */
+}
+
+/* Aumentar padding interno das abas */
+.tab-item {
+  padding: 12px 28px !important;
+  border-radius: 14px !important;
+}
+
+/* Quando ativa: manter visual premium */
+.tab-item.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #000;
+}
+
+/* NOVAS CORES DE KPI */
+.stat-value.ok {
+  color: #4ade80 !important; /* verde claro */
+}
+
+.stat-value.bad {
+  color: #f87171 !important; /* vermelho claro */
+}
+
+.stat-value.highlight {
+  color: #60a5fa !important; /* azul SIGMA */
+}
+
+/* Melhor espaçamento */
+.kpi-row {
+  margin-bottom: 18px;
+}
+
+/* Cartões maiores e mais elegantes */
+.stat-card {
+  padding: 18px 22px;
+  border-radius: 14px;
+}
+
+/* Títulos mais fortes */
+.stat-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+/* Subtítulo */
+.stat-sub {
+  opacity: 0.7;
+  font-size: 0.72rem;
+}
