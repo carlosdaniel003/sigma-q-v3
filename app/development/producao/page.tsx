@@ -91,7 +91,6 @@ export default function ProducaoPage() {
         categories={categories}
         categoriasSaudaveis={categoriasSaudaveis}
         modelosCriticos={modelosCriticos}
-        divergenciaGlobal={divergenciaGlobal}
       />
 
       <div className="split-view">
