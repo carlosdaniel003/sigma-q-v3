@@ -17,6 +17,15 @@ export default function DashboardPage() {
 
   const isGuest = user?.role === "viewer";
 
+  function handleGoToLogin() {
+    // 🔥 PASSO CRÍTICO (resolve o bug do Vercel)
+    localStorage.removeItem("sigma_user");
+    document.cookie =
+      "sigma_auth=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+
+    window.location.href = "/login";
+  }
+
   return (
     <div
       style={{
@@ -60,7 +69,7 @@ export default function DashboardPage() {
       {/* CTA PARA CONVIDADO */}
       {isGuest && (
         <button
-          onClick={() => (window.location.href = "/login")}
+          onClick={handleGoToLogin}
           style={{
             display: "flex",
             alignItems: "center",
@@ -75,8 +84,7 @@ export default function DashboardPage() {
             cursor: "pointer",
             background:
               "linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)",
-            boxShadow:
-              "0 10px 30px rgba(59,130,246,0.35)",
+            boxShadow: "0 10px 30px rgba(59,130,246,0.35)",
             transition: "all 0.25s ease",
           }}
           onMouseEnter={(e) => {
