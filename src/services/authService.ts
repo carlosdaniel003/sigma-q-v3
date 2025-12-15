@@ -17,6 +17,10 @@ export async function loginUser(username: string, password: string) {
 export function loginAsGuest() {
   return {
     ok: true,
-    user: { username: "guest", role: "guest" },
+    user: {
+      id: "guest",
+      username: "Convidado",
+      role: "viewer", // ✅ ROLE CORRETO (ANTES ESTAVA "guest")
+    },
   };
 }
