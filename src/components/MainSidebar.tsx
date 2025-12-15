@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-// Importando os Heroicons
+// Heroicons
 import {
   BookOpenIcon,
   Cog6ToothIcon,
@@ -15,7 +15,8 @@ import {
   ArrowRightStartOnRectangleIcon,
   Bars3Icon,
   Bars3BottomLeftIcon,
-  Squares2X2Icon
+  Squares2X2Icon,
+  TableCellsIcon
 } from "@heroicons/react/24/outline";
 
 interface SidebarProps {
@@ -26,20 +27,29 @@ interface SidebarProps {
 export function MainSidebar({ collapsed, setCollapsed }: SidebarProps) {
   const pathname = usePathname();
 
+  /**  
+   * ATUALIZAÇÃO IMPORTANTE:
+   * Removemos "Validação de Defeitos" e "Validação de Produção"
+   * e adicionamos "Validação de Dados" como nova rota consolidada.
+   */
   const menuItems = [
     { name: "Dashboard", path: "/dashboard", icon: Squares2X2Icon },
+
     { name: "Catálogo Oficial", path: "/development/catalogo", icon: BookOpenIcon },
-    { name: "Validação de Defeitos", path: "/development/defeitos", icon: Cog6ToothIcon },
-    { name: "Validação de Produção", path: "/development/producao", icon: BuildingOffice2Icon },
-    { name: "Validação Geral", path: "/development/geral", icon: ChartBarIcon },
-    { name: "PPM Engine", path: "/development/ppm", icon: BeakerIcon },
+
+    // *** NOVA ROTA ÚNICA ***
+    { name: "Validação de Dados", path: "/development/validacao-dados", icon: TableCellsIcon },
     { name: "Gerenciamento de Acesso", path: "/development/acesso", icon: ShieldCheckIcon },
   ];
 
   return (
-    // Aumentei um pouco a largura base para 270px para dar mais respiro
-    <aside className="dev-sidebar" style={{ width: collapsed ? "80px" : "270px", transition: "width 0.3s ease" }}>
-      
+    <aside
+      className="dev-sidebar"
+      style={{
+        width: collapsed ? "80px" : "270px",
+        transition: "width 0.3s ease",
+      }}
+    >
       {/* Botão de Colapso */}
       <button
         className="collapse-btn"
@@ -64,38 +74,42 @@ export function MainSidebar({ collapsed, setCollapsed }: SidebarProps) {
       <div className="nav-section">
         {menuItems.map((item) => {
           const Icon = item.icon;
-          const isActive = pathname === item.path || (item.path !== "/dashboard" && pathname.startsWith(item.path));
+          const isActive =
+            pathname === item.path ||
+            (item.path !== "/dashboard" && pathname.startsWith(item.path));
 
           return (
             <Link
               key={item.path}
               href={item.path}
               className={`nav-item ${isActive ? "active" : ""}`}
-              style={{ 
-                textDecoration: "none", 
-                // Garante layout flexível para ícone e texto
+              style={{
+                textDecoration: "none",
                 display: "flex",
                 alignItems: "center",
                 padding: "10px 14px",
-                minHeight: "48px" // Garante altura mínima confortável
+                minHeight: "48px",
               }}
               title={collapsed ? item.name : ""}
             >
-              {/* Ícone fixo - não encolhe */}
+              {/* Ícone */}
               <div style={{ minWidth: "24px", display: "flex", justifyContent: "center" }}>
-                <Icon className="nav-icon" style={{ width: "24px", height: "24px", margin: 0 }} />
+                <Icon className="nav-icon" style={{ width: "24px", height: "24px" }} />
               </div>
-              
-              {/* Texto com Quebra de Linha Permitida */}
+
+              {/* Texto */}
               {!collapsed && (
-                <span className="text fade-in" style={{ 
-                  whiteSpace: "normal", // PERMITE QUEBRA DE LINHA
-                  fontSize: "0.85rem",  // Fonte ligeiramente menor para caber melhor
-                  lineHeight: "1.2",    // Altura da linha compacta
-                  marginLeft: "12px",   // Espaço entre ícone e texto
-                  display: "block",
-                  wordBreak: "break-word" // Quebra palavras muito longas se necessário
-                }}>
+                <span
+                  className="text fade-in"
+                  style={{
+                    whiteSpace: "normal",
+                    fontSize: "0.85rem",
+                    lineHeight: "1.2",
+                    marginLeft: "12px",
+                    display: "block",
+                    wordBreak: "break-word",
+                  }}
+                >
                   {item.name}
                 </span>
               )}
@@ -115,12 +129,13 @@ export function MainSidebar({ collapsed, setCollapsed }: SidebarProps) {
         style={{ display: "flex", alignItems: "center" }}
       >
         <div style={{ minWidth: "24px", display: "flex", justifyContent: "center" }}>
-           <ArrowRightStartOnRectangleIcon className="nav-icon" style={{ width: "24px" }} />
+          <ArrowRightStartOnRectangleIcon className="nav-icon" style={{ width: "24px" }} />
         </div>
+
         {!collapsed && (
-            <span className="text fade-in" style={{ marginLeft: "12px" }}>
-                Sair
-            </span>
+          <span className="text fade-in" style={{ marginLeft: "12px" }}>
+            Sair
+          </span>
         )}
       </div>
     </aside>

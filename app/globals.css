@@ -1,398 +1,308 @@
 /* ================================================== */
-/* TEMA SIGMA-Q LOGIN - Glassmorphism Moderno */
+/* TEMA SIGMA-Q GLOBAL • GRADIENTE PREMIUM DEFINITIVO */
 /* ================================================== */
 
-/* Importando fonte moderna (Inter) para consistência visual */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* ====== Fundo geral premium ====== */
+/* ====== Fundo global premium ====== */
+html, body, #__next {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    background: linear-gradient(135deg, #0f0f11 0%, #1a1f2a 40%, #0a2a43 100%);
-    color: #fff;
-    height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-}
-
-/* ====== Container central ====== */
-.login-wrapper {
-    width: 100%;
-    max-width: 420px; /* Largura máxima do cartão */
-    padding: 20px;
-}
-
-/* ====== Card ====== */
-.login-card {
-    background: rgba(20, 22, 30, 0.85);
-    backdrop-filter: blur(12px); /* Aumentei o desfoque para um efeito mais suave */
-    -webkit-backdrop-filter: blur(12px);
-    padding: 40px;
-    border-radius: 18px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
-    text-align: center;
-}
-
-/* ====== Títulos ====== */
-.login-title {
-    font-size: 2rem;
-    font-weight: 800; /* Mais peso para destaque */
-    margin-bottom: 10px;
-    color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.login-subtitle {
-    font-size: 0.95rem;
-    color: #ccc;
-    margin-bottom: 30px;
-    font-weight: 400;
-}
-
-/* ====== Campos ====== */
-.field-label {
-    text-align: left;
-    margin-bottom: 8px;
-    font-size: 0.9rem;
-    color: #cfd6e0;
-    font-weight: 600;
-    display: block; /* Garante que o label ocupe uma linha inteira */
-}
-
-/* INPUTS iguais */
-.login-input {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 10px;
-    border: 1px solid #2f3545;
-    background: #1f232e;
-    color: white;
-    font-size: 0.95rem;
-    outline: none;
-    transition: all 0.3s ease;
-    box-sizing: border-box; /* Garante que padding não aumente a largura */
-}
-
-.login-input:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3); /* Sombra azul no foco */
-    background: #252a36;
-}
-
-.login-input::placeholder {
-    color: #6b7280;
-}
-
-/* ===== Wrapper do input com olho ===== */
-.password-wrapper {
-    position: relative;
-    margin-bottom: 20px; /* Espaço entre os campos */
-}
-
-.toggle-password {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 1.2rem; /* Tamanho ajustado */
-    color: #9ca3af; /* Cor cinza claro */
-    transition: color 0.2s ease;
-}
-
-.toggle-password:hover {
-    color: #ffffff; /* Branco no hover */
-}
-
-/* ====== Botões ====== */
-.btn-row {
-    display: flex;
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    gap: 15px; /* Espaço entre os botões */
-    margin-top: 25px;
-}
-
-.login-btn {
-    flex: 1; /* Botões ocupam espaço igual */
-    padding: 12px 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    background: #2563eb; /* Azul padrão */
-    color: #fff;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.login-btn:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px); /* Leve elevação no hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.btn-secondary {
-    background: transparent;
-    border: 1px solid #4b5563;
-    color: #d1d5db;
-}
-
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: #6b7280;
-    color: #ffffff;
-}
-
-/* ======= Rodapé ====== */
-.footer-text {
-    margin-top: 25px;
-    color: #6b7280;
-    font-size: 0.8rem;
-}
-
-.footer-text a {
-    color: #3b82f6;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.footer-text a:hover {
-    text-decoration: underline;
-}
-
-/* Responsividade */
-@media (max-width: 480px) {
-    .login-card {
-        padding: 30px 20px;
-    }
-    
-    .btn-row {
-        flex-direction: column; /* Botões empilhados em telas pequenas */
-    }
-    
-    .login-btn {
-        width: 100%;
-    }
-}
-/* ================================================== */
-/* SIDEBAR SIGMA-Q V3 */
-/* ================================================== */
-
-.dashboard-container {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background: linear-gradient(135deg, #0f0f11 0%, #1a1f2a 40%, #0a2a43 100%);
-  color: #fff;
+  margin: 0;
   font-family: "Inter", sans-serif;
+
+  /* FUNDO GLOBAL OFICIAL */
+   background: linear-gradient(135deg, #0f0f11 0%, #1a1f2a 40%, #0a2a43 100%) !important;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-/* ------- Sidebar ------- */
-.sidebar {
-  width: 250px;
-  background: rgba(20, 22, 30, 0.92);
-  backdrop-filter: blur(10px);
-  border-right: 1px solid rgba(255,255,255,0.08);
-  padding: 25px;
+/* ===========================
+   UTILITÁRIAS GERAIS
+   =========================== */
+
+.login-fullscreen {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-shadow: 4px 0 18px rgba(0,0,0,0.25);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
-.sidebar-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+/* REMOVE fundos antigos que brigavam com o degradê */
+.dev-page-wrapper,
+.dashboard-container,
+.content-container {
+  background: transparent !important;
+}
+
+/* Antigo cartão central */
+.content-container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+  background: rgba(20,22,30,0.35) !important;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.45);
+  box-sizing: border-box;
+}
+
+/* ==================================================
+   LOGIN CARD
+   ================================================== */
+
+.login-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.login-card {
+  background: rgba(20, 22, 30, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.1);
   text-align: center;
 }
 
-/* Botões / Links */
+.login-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.field-label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #cfd6e0;
+  font-weight: 600;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #2f3545;
+  background: #1f232e;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.18);
+}
+
+.password-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Botões */
+.login-btn {
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 25px;
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+/* ================================================== */
+/* SIDEBAR ANTIGA / DASHBOARD (compatibilidade) */
+/* ================================================== */
+
+.sidebar {
+  width: 250px;
+  background: rgba(20,22,30,0.55) !important;
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255,255,255,0.06);
+  padding: 25px;
+  box-shadow: 4px 0 18px rgba(0,0,0,0.25);
+}
+
 .sidebar-item {
   padding: 12px 16px;
+  background: rgba(255,255,255,0.03);
   border-radius: 10px;
-  cursor: pointer;
-  background: rgba(255,255,255,0.04);
-  transition: 0.2s ease;
-  font-size: 0.95rem;
-  font-weight: 500;
+  transition: 0.2s;
 }
 
 .sidebar-item:hover {
   background: rgba(255,255,255,0.12);
 }
 
-/* Área de Conteúdo */
-.dashboard-content {
-  flex: 1;
-  padding: 40px;
-  overflow-y: auto;
+/* ================================================== */
+/* CONTENT DAS PÁGINAS (garante sem fundo) */
+/* ================================================== */
+
+.dashboard-content,
+.access-container,
+.right-panel,
+.left-panel,
+.producao-container,
+.validacao-container,
+.main-panel,
+.defeitos-container {
+  background: transparent !important;
 }
 
-.content-card {
-  background: rgba(20, 22, 30, 0.85);
-  border-radius: 14px;
-  padding: 35px;
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+/* 🔥 IMPORTANTE:
+   Removido o estilo antigo que mudava o dev-content para fundo preto
+   (ele estava aqui originalmente causando o problema)
+*/
+
+/* ================================================== */
+/* SCROLLBAR DARK */
+/* ================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* --- CONTAINER PADRÃO DE PÁGINA --- */
-.access-container {
-  animation: fadeIn 0.4s ease;
-  padding: 25px;
-  color: #e5e7eb;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-/* --- ANIMAÇÃO GLOBAL (MESMA DO CATÁLOGO) --- */
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
+
+/* ================================================== */
+/* Fade global */
+/* ================================================== */
+
 .fade-in {
   animation: fadeIn 0.45s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* --- TABELA PREMIUM --- */
-.access-table-container {
-  background: #111827;
-  border-radius: 12px;
-  padding: 18px;
-  margin-top: 20px;
-  border: 1px solid #1f2937;
+/* ===============================
+   EMERGENCY FIX: Garantir 1 fundo só
+   Cole no FINAL do global.css
+   =============================== */
+
+/* variável de fundo única */
+:root {
+  --sigma-gradient: linear-gradient(135deg, #0f0f11 0%, #1a1f2a 40%, #0a2a43 100%);
 }
 
-.access-table {
-  width: 100%;
-  border-collapse: collapse;
+/* aplicar o degradê como plano de fundo de verdade (última palavra) */
+html, body, #__next {
+  background: var(--sigma-gradient) !important;
+  min-height: 100%;
+  height: 100%;
+  color: #fff !important;
 }
 
-.access-table th {
-  padding: 12px;
-  font-size: 13px;
-  color: #9ca3af;
-  background: #1f2937;
-  font-weight: 600;
-  border-bottom: 1px solid #374151;
-}
-
-.access-table td {
-  padding: 10px;
-  border-bottom: 1px solid #1f2937;
-  color: #e5e7eb;
-  font-size: 14px;
-}
-
-.access-table tr:hover td {
-  background: #1f2937;
-  transition: 0.15s ease;
-}
-
-/* --- BOTÕES PREMIUM --- */
-.btn {
-  padding: 10px 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-  font-weight: 600;
-  transition: 0.25s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.12);
-}
-
-.btn-primary {
-  background: #3b82f6;
-  color: white;
-}
-
-.btn-green {
-  background: #22c55e;
-  color: white;
-}
-
-.btn-edit {
-  background: #2563eb;
-  color: white;
-}
-
-.btn-delete {
-  background: #dc2626;
-  color: white;
-}
-
-/* --- MODAL PREMIUM --- */
-.modal {
+/* cria um layer fixo por baixo (evita que elementos se sobreponham com branco) */
+body::before {
+  content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 0.3s ease;
+  z-index: -9999; /* por baixo de tudo */
+  background: var(--sigma-gradient);
+  pointer-events: none;
 }
 
-.modal-content {
-  background: #1f2937;
-  padding: 25px;
-  width: 380px;
-  border-radius: 14px;
-  border: 1px solid #374151;
-  animation: fadeIn 0.45s ease;
+/* remover fundos próprios indesejados nas áreas do layout do dev/catalogo */
+.dev-content,
+.content-container,
+.catalogo-container,
+.catalogo-section,
+.catalogo-table-wrapper,
+.custom-scroll,
+.tabela-catalogo,
+.defeitos-container,
+.main-panel {
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;  /* evita halo */
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
-.modal-content h2 {
-  margin-bottom: 20px;
-  color: #fff;
+/* cards e botões do catálogo voltam ao estilo glass escuro */
+.card-btn,
+.cards-grid .card-btn,
+.sidebar-btn,
+.nav-item {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  color: inherit !important;
 }
 
-.modal-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+/* forçar cores das células da tabela (evita cells brancas) */
+.tabela-catalogo,
+.tabela-catalogo thead,
+.tabela-catalogo tbody,
+.tabela-catalogo th,
+.tabela-catalogo td {
+  background: transparent !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(255,255,255,0.06) !important;
 }
 
-/* === SCROLLBAR DARK GLOBAL (Definitivo) === */
-
-/* Para navegadores baseados em Webkit (Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+/* se algum componente estiver com z-index muito alto cobrindo tudo */
+.overlay,
+.page-overlay,
+.modal-backdrop {
+  display: none !important;
 }
 
-::-webkit-scrollbar-track {
-  background: #0f172a; /* Cor do fundo da trilha (Dark Blue) */
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #334155; /* Cor da barra (Slate 700) */
-  border-radius: 4px;
-  border: 2px solid #0f172a; /* Borda para dar efeito de "espaço" */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #475569; /* Cor ao passar o mouse (Slate 600) */
-}
-
-/* Para Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #334155 #0f172a;
-}
+/* DEBUG: se ainda ver branco — habilite bordas para localizar o bloco culpado
+   (remova/comment depois de achar o culpado) */

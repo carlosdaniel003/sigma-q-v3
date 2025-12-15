@@ -1,208 +1,279 @@
 "use client";
 
 import React, { useMemo } from "react";
-import { AlertTriangle, CheckCircle2, BarChart3, Box } from "lucide-react";
+import { BarChart3 } from "lucide-react";
 
-/**
- * Componente de Visão Geral da Validação de Produção
- * Mostrado somente quando selectedCategory === null
- */
 export default function ResumoGeral({ data, diagnostico }: any) {
-  
-  // ================================
-  // 1) Coleta de dados principais
-  // ================================
-
   const categorias = data?.perCategory ?? [];
   const problemas = data?.topProblemModels ?? [];
   const totals = data?.totals ?? {};
 
-  const divergencias = diagnostico?.divergencias ?? [];
-  const prodSemDef = diagnostico?.producaoSemDefeitos ?? [];
-  const defeitosSemProd = diagnostico?.defeitosSemProducao ?? [];
+  /* ============================================================
+     DIAGNÓSTICO PADRONIZADO
+  ============================================================ */
+  const prodSemDef =
+    diagnostico?.producaoSemDefeitos ??
+    diagnostico?.semDefeitos ??
+    diagnostico?.modelosSemDefeitos ??
+    [];
 
-  // ================================
-  // 2) CATEGORIAS SAUDÁVEIS E CRÍTICAS
-  // ================================
-  const saudaveis = categorias.filter((c: any) => c.identifiedPct >= 99);
-  const criticas = categorias.filter((c: any) => c.identifiedPct < 99);
+  const defeitosSemProd =
+    diagnostico?.defeitosSemProducao ??
+    diagnostico?.semProducao ??
+    [];
 
-  // ================================
-  // 3) MODELO MAIS CRÍTICO
-  // ================================
+  /* ============================================================
+     REGRAS NOVAS DE CLASSIFICAÇÃO
+  ============================================================ */
+  const saudaveis = categorias.filter((c: any) => Number(c.identifiedPct) >= 99);
+
+  const atencao = categorias.filter(
+    (c: any) =>
+      Number(c.identifiedPct) >= 60 && Number(c.identifiedPct) < 99
+  );
+
+  const criticas = categorias.filter(
+    (c: any) => Number(c.identifiedPct) < 60
+  );
+
+  const divergenciasCriticas = criticas.length;
   const modeloCritico = problemas[0];
 
-  // ================================
-  // 4) Insight Automático
-  // ================================
+  /* ============================================================
+     INSIGHT GLOBAL
+  ============================================================ */
   const insight = useMemo(() => {
-    let txt = "";
+    let txt = `${saudaveis.length} de ${categorias.length} categorias estão saudáveis (≥99%). `;
 
-    txt += `${saudaveis.length} de ${categorias.length} categorias estão saudáveis (≥99%). `;
     if (criticas.length > 0) {
-      txt += `Categoria com menor match: ${criticas[0].categoria} (${criticas[0].identifiedPct}%). `;
+      const worst = [...criticas].sort(
+        (a: any, b: any) => a.identifiedPct - b.identifiedPct
+      )[0];
+      txt += `Categoria mais crítica: ${worst.categoria} (${worst.identifiedPct}%). `;
     }
+
     if (modeloCritico) {
-      txt += `Modelo mais crítico: ${modeloCritico.modelo} (${modeloCritico.count} erros).`;
+      txt += `Modelo mais difícil de identificar: ${modeloCritico.modelo} (${modeloCritico.count} ocorrências). `;
     }
+
+    txt += `Modelos sem defeitos: ${prodSemDef.length}. `;
+    txt += `Defeitos sem produção: ${defeitosSemProd.length}. `;
+    txt += `Divergências críticas (< 60%): ${divergenciasCriticas}.`;
 
     return txt;
-  }, [categorias, saudaveis, criticas, modeloCritico]);
+  }, [
+    categorias,
+    saudaveis.length,
+    criticas,
+    modeloCritico,
+    prodSemDef.length,
+    defeitosSemProd.length,
+    divergenciasCriticas
+  ]);
 
-  // ================================
-  // 5) Renderização
-  // ================================
+  const corDiagnostico =
+    (totals.matchRateByRows ?? 0) >= 90 ? "var(--success)" : "var(--danger)";
+
+  /* ============================================================
+     RENDER — 🔥 ALINHAMENTO CORRIGIDO
+  ============================================================ */
   return (
-    <div className="fade-in" style={{ padding: "10px", display: "flex", flexDirection: "column", gap: 24 }}>
+    <div
+      className="fade-in"
+      style={{
+        padding: 0,      // 👈 REMOVIDO padding que criava desalinhamento
+        margin: 0,
+        width: "100%",  // 👈 garante alinhamento total
+        display: "flex",
+        flexDirection: "column",
+        gap: 20,
+        boxSizing: "border-box"
+      }}
+    >
 
-      {/* ============================
-          INSIGHT GLOBAL
-      ============================ */}
+      {/* INSIGHT GLOBAL */}
       <div
+        className="glass-card"
         style={{
-          padding: "20px",
-          borderRadius: "14px",
-          background: "rgba(255,255,255,0.03)",
-          border: "1px solid rgba(255,255,255,0.08)",
+          padding: 20,
+          margin: 0,          // 👈 remove margem extra
+          width: "100%"       // 👈 alinha com a borda do painel
         }}
       >
-        <h2 style={{ marginBottom: 6, fontSize: "1.3rem" }}>
-          <BarChart3 size={20} style={{ marginRight: 8 }} />
-          Resumo Geral do Sistema
+        <h2
+          className="section-title"
+          style={{ display: "flex", alignItems: "center", gap: 8 }}
+        >
+          <BarChart3 size={20} /> Resumo Geral do Sistema
         </h2>
-
-        <p style={{ opacity: 0.8 }}>{insight}</p>
+        <p className="muted small" style={{ marginTop: 4 }}>{insight}</p>
       </div>
 
-      {/* ============================
-          CATEGORIAS SAUDÁVEIS
-      ============================ */}
-      <div>
-        <h3 style={{ marginBottom: 10, fontSize: "1.2rem" }}>✔ Categorias Saudáveis</h3>
+      {/* KPIs */}
+      <div
+        className="kpi-grid"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))",
+          gap: 16,
+          margin: 0,
+          width: "100%"
+        }}
+      >
+        <KPI
+          title="🧠 Diagnóstico Inteligente"
+          value={`${(totals.matchRateByRows ?? 0).toFixed(2)}%`}
+          color={corDiagnostico}
+          subtitle="precisão média da IA"
+        />
 
-        {saudaveis.length === 0 ? (
-          <p className="muted small">Nenhuma categoria está 100% ainda.</p>
-        ) : (
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
-            {saudaveis.map((c: any) => (
-              <div
-                key={c.categoria}
-                style={{
-                  padding: "14px 18px",
-                  borderRadius: "10px",
-                  background: "rgba(34,197,94,0.12)",
-                  border: "1px solid rgba(34,197,94,0.3)",
-                  minWidth: 180,
-                }}
-              >
-                <strong style={{ color: "#4ade80" }}>{c.categoria}</strong>
-                <div style={{ fontSize: "0.8rem", opacity: 0.7 }}>
-                  {c.volume.toLocaleString()} un. • {c.identifiedPct}% match
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+        <KPI
+          title="📦 Modelos sem defeitos"
+          value={prodSemDef.length}
+          color="var(--success)"
+          subtitle="produção sem falhas"
+        />
+
+        <KPI
+          title="⚠ Defeitos sem produção"
+          value={defeitosSemProd.length}
+          color="var(--danger)"
+          subtitle="apontamentos sem correspondência"
+        />
+
+        <KPI
+          title="🔴 Divergências Críticas"
+          value={divergenciasCriticas}
+          color="var(--danger)"
+          subtitle="categorias < 60% de match"
+        />
       </div>
 
-      {/* ============================
-          CATEGORIAS COM PROBLEMAS
-      ============================ */}
-      <div>
-        <h3 style={{ marginBottom: 10, fontSize: "1.2rem" }}>⚠ Categorias com Atenção Necessária</h3>
+      {/* MAPA COMPLETO */}
+      <div
+        className="glass-card"
+        style={{
+          padding: 22,
+          margin: 0,        // 👈 remove espaço sobrando
+          width: "100%"      // 👈 alinhado pixel-perfect
+        }}
+      >
+        <h3
+          className="section-title-small"
+          style={{ fontSize: 18, marginBottom: 14 }}
+        >
+          📊 Mapa de Integridade das Categorias
+        </h3>
 
-        {criticas.length === 0 ? (
-          <p className="muted small">Nenhuma categoria crítica no momento.</p>
-        ) : (
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
-            {criticas.map((c: any) => (
-              <div
-                key={c.categoria}
-                style={{
-                  padding: "14px 18px",
-                  borderRadius: "10px",
-                  background: "rgba(239,68,68,0.12)",
-                  border: "1px solid rgba(239,68,68,0.3)",
-                  minWidth: 200,
-                }}
-              >
-                <strong style={{ color: "#fca5a5" }}>{c.categoria}</strong>
-                <div style={{ fontSize: "0.8rem", opacity: 0.7 }}>
-                  Match: {c.identifiedPct}% <br />
-                  Volume: {c.volume.toLocaleString()}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+        <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
+          <CategoryGroup
+            titulo="🟢 Categorias Saudáveis"
+            descricao="≥ 99% de precisão — operação estável"
+            cor="var(--success)"
+            className="ok"
+            items={saudaveis}
+          />
+
+          <CategoryGroup
+            titulo="🟡 Categorias em Atenção"
+            descricao="≥ 60% e < 99% — variações moderadas"
+            cor="var(--warn)"
+            className="warn"
+            items={atencao}
+          />
+
+          <CategoryGroup
+            titulo="🔴 Categorias Críticas"
+            descricao="< 60% — impacto direto no KPI"
+            cor="var(--danger)"
+            className="bad"
+            items={criticas}
+          />
+        </div>
       </div>
 
-      {/* ============================
-          PROBLEMAS GLOBAIS
-      ============================ */}
-      <div>
-        <h3 style={{ marginBottom: 10, fontSize: "1.2rem" }}>🔴 Principais Problemas Globais</h3>
+    </div>
+  );
+}
 
-        <div className="problems-grid">
-          {problemas.slice(0, 6).map((p: any, i: number) => (
-            <div key={i} className="problem-card">
-              <div className="prob-title">
-                <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <Box size={16} /> {p.modelo}
+/* ============================================================
+   KPI CARD
+============================================================ */
+function KPI({ title, value, color, subtitle }: any) {
+  return (
+    <div className="stat-card glass-card">
+      <div className="stat-label">{title}</div>
+      <div className="stat-value" style={{ color }}>{value}</div>
+      <div className="stat-sub">{subtitle}</div>
+    </div>
+  );
+}
+
+/* ============================================================
+   CATEGORY GROUP + PROGRESS BAR
+============================================================ */
+function CategoryGroup({ titulo, descricao, cor, className, items }: any) {
+  return (
+    <div>
+      <h4 style={{ color: cor, fontWeight: 600 }}>{titulo}</h4>
+      <p className="muted small" style={{ marginBottom: 10 }}>{descricao}</p>
+
+      {items.length === 0 ? (
+        <p className="muted small">Nenhuma categoria neste grupo.</p>
+      ) : (
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: 14
+          }}
+        >
+          {items.map((c: any) => (
+            <div
+              key={c.categoria}
+              className="stat-card"
+              style={{
+                background: "rgba(255,255,255,0.04)",
+                border: "1px solid rgba(255,255,255,0.07)",
+                borderRadius: 14,
+                padding: 12
+              }}
+            >
+              <div className="cat-title-row">
+                <span className="cat-title">{c.categoria}</span>
+
+                <span className={`cat-percent ${className}`}>
+                  {c.identifiedPct}%
                 </span>
-                <span style={{ fontSize: "0.8rem", opacity: 0.8 }}>{p.count} erros</span>
               </div>
 
-              <div className="prob-code" style={{ marginTop: 8 }}>
-                <div><strong>Cat:</strong> {p.samples?.[0]?.CATEGORIA}</div>
-                <div><strong>Qtd:</strong> {p.samples?.[0]?.QTY_GERAL}</div>
+              <div className="cat-subinfo">
+                {c.volume.toLocaleString()} un.
+              </div>
+
+              <div
+                style={{
+                  height: 6,
+                  width: "100%",
+                  background: "rgba(255,255,255,0.08)",
+                  borderRadius: 4,
+                  overflow: "hidden",
+                  marginTop: 8
+                }}
+              >
+                <div
+                  style={{
+                    height: "100%",
+                    width: `${c.identifiedPct}%`,
+                    background: cor,
+                    transition: "width .3s"
+                  }}
+                ></div>
               </div>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* ============================
-          DIVERGÊNCIAS GLOBAIS
-      ============================ */}
-      <div>
-        <h3 style={{ marginBottom: 10, fontSize: "1.2rem" }}>📉 Divergências de Volume (Geral)</h3>
-
-        {divergencias.length === 0 ? (
-          <p className="muted small">Nenhuma divergência registrada.</p>
-        ) : (
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {divergencias.slice(0, 5).map((d: any, i: number) => (
-              <div
-                key={i}
-                style={{
-                  padding: "12px 16px",
-                  background: "rgba(255,255,255,0.03)",
-                  borderRadius: "8px",
-                  border: "1px solid rgba(255,255,255,0.06)",
-                }}
-              >
-                <strong>{d.categoria ?? d.CATEGORIA}</strong>  
-                — Diferença: <span style={{ color: "#fca5a5" }}>{d.diferenca}</span>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* ============================
-          DIAGNÓSTICO GLOBAL
-      ============================ */}
-      <div>
-        <h3 style={{ marginBottom: 10, fontSize: "1.2rem" }}>🧠 Diagnóstico Inteligente (Geral)</h3>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-          <div>📦 Modelos sem registro de defeitos: <strong>{prodSemDef.length}</strong></div>
-          <div>⚠ Modelos com defeitos sem produção: <strong>{defeitosSemProd.length}</strong></div>
-          <div>🔴 Divergências críticas encontradas: <strong>{divergencias.length}</strong></div>
-        </div>
-      </div>
-
+      )}
     </div>
   );
 }

@@ -1,0 +1,930 @@
+[
+  {
+    "CÓDIGO":"AP2",
+    "DESCRICAO":"HI-POT\/RIGIDEZ\/WI",
+    "SEVERIDADE":5,
+    "OCORRENCIA":5,
+    "DETECCAO":3,
+    "NPR":75
+  },
+  {
+    "CÓDIGO":"VM1",
+    "DESCRICAO":"VAZAMENTO NA CAVIDADE",
+    "SEVERIDADE":5,
+    "OCORRENCIA":3,
+    "DETECCAO":5,
+    "NPR":75
+  },
+  {
+    "CÓDIGO":"VZG",
+    "DESCRICAO":"VAZAMENTO DE GÁS",
+    "SEVERIDADE":5,
+    "OCORRENCIA":3,
+    "DETECCAO":5,
+    "NPR":75
+  },
+  {
+    "CÓDIGO":"A1",
+    "DESCRICAO":"SEM ÁUDIO GERAL",
+    "SEVERIDADE":5,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"A13",
+    "DESCRICAO":"ÁUDIO BAIXO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":4,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"AP1",
+    "DESCRICAO":"LIGA\/DESLIGA AUTOMATICAMENTE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":5,
+    "DETECCAO":3,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"BAT2",
+    "DESCRICAO":"APARELHO NÃO CARREGA",
+    "SEVERIDADE":5,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"CONT",
+    "DESCRICAO":"CONTAMINAÇÃO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":4,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"MURA",
+    "DESCRICAO":"MANCHA ESCURA NA TELA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":4,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"P1",
+    "DESCRICAO":"QUEBRADO\/DANIFICADO\/BATIDO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":4,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"V1",
+    "DESCRICAO":"SEM IMAGEM\/SEM BRILHO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"V5",
+    "DESCRICAO":"INTERFERÊNCIA NA IMAGEM",
+    "SEVERIDADE":5,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"VAR",
+    "DESCRICAO":"VAZAMENTO DE AR",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":4,
+    "NPR":60
+  },
+  {
+    "CÓDIGO":"LD8",
+    "DESCRICAO":"FALTANDO DÍGITO NO DISPLAY",
+    "SEVERIDADE":2,
+    "OCORRENCIA":5,
+    "DETECCAO":5,
+    "NPR":50
+  },
+  {
+    "CÓDIGO":"N1",
+    "DESCRICAO":"APARELHO NÃO LIGA",
+    "SEVERIDADE":5,
+    "OCORRENCIA":5,
+    "DETECCAO":2,
+    "NPR":50
+  },
+  {
+    "CÓDIGO":"T1",
+    "DESCRICAO":"TECLAS NÃO ATUAM",
+    "SEVERIDADE":5,
+    "OCORRENCIA":5,
+    "DETECCAO":2,
+    "NPR":50
+  },
+  {
+    "CÓDIGO":"VM2",
+    "DESCRICAO":"VAZAMENTO NA PORTA",
+    "SEVERIDADE":5,
+    "OCORRENCIA":2,
+    "DETECCAO":5,
+    "NPR":50
+  },
+  {
+    "CÓDIGO":"A10",
+    "DESCRICAO":"SEM ÁUDIO NO ALTO-FALANTE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":48
+  },
+  {
+    "CÓDIGO":"A4",
+    "DESCRICAO":"SEM ÁUDIO NO MIC\/FONE\/AUX",
+    "SEVERIDADE":4,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":48
+  },
+  {
+    "CÓDIGO":"LD11",
+    "DESCRICAO":"FLASH LIGHT FALTANDO COR",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":4,
+    "NPR":48
+  },
+  {
+    "CÓDIGO":"A6",
+    "DESCRICAO":"RUÍDO NO ÁUDIO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":3,
+    "NPR":45
+  },
+  {
+    "CÓDIGO":"A7",
+    "DESCRICAO":"VIBRAÇÃO NO ÁUDIO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":3,
+    "NPR":45
+  },
+  {
+    "CÓDIGO":"A9",
+    "DESCRICAO":"SEM ÁUDIO NO TWEETER",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":3,
+    "NPR":45
+  },
+  {
+    "CÓDIGO":"LD9",
+    "DESCRICAO":"EXCESSO DE DÍGITOS",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":3,
+    "NPR":45
+  },
+  {
+    "CÓDIGO":"N6",
+    "DESCRICAO":"CENTELHANDO\/RUÍDO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":45
+  },
+  {
+    "CÓDIGO":"P3",
+    "DESCRICAO":"MANCHA",
+    "SEVERIDADE":2,
+    "OCORRENCIA":5,
+    "DETECCAO":4,
+    "NPR":40
+  },
+  {
+    "CÓDIGO":"USB1",
+    "DESCRICAO":"APARELHO NÃO LÊ PEN DRIVE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":5,
+    "DETECCAO":2,
+    "NPR":40
+  },
+  {
+    "CÓDIGO":"A2",
+    "DESCRICAO":"SEM ÁUDIO NO CANAL ESQUERDO\/FONE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"A3",
+    "DESCRICAO":"SEM ÁUDIO NO CANAL DIREITO\/FONE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"LV",
+    "DESCRICAO":"LINHA VERTICAL",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"P5",
+    "DESCRICAO":"EMPENADO\/AMASSADO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":4,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"P6",
+    "DESCRICAO":"MAL MONTADO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"P9",
+    "DESCRICAO":"FALTANDO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":4,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"T2",
+    "DESCRICAO":"TECLA DESLOCADA\/DANIFICADA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":4,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"T3",
+    "DESCRICAO":"FUNÇÃO INVERTIDA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"V3",
+    "DESCRICAO":"SEM VÍDEO NO HDMI",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"VZL",
+    "DESCRICAO":"VAZAMENTO DE LUZ",
+    "SEVERIDADE":3,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":36
+  },
+  {
+    "CÓDIGO":"A12",
+    "DESCRICAO":"VOLUME MÍNIMO NÃO ATUA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":4,
+    "DETECCAO":2,
+    "NPR":32
+  },
+  {
+    "CÓDIGO":"P11",
+    "DESCRICAO":"FORA DO ESPECIFICADO",
+    "SEVERIDADE":2,
+    "OCORRENCIA":4,
+    "DETECCAO":4,
+    "NPR":32
+  },
+  {
+    "CÓDIGO":"VT1",
+    "DESCRICAO":"VENTILADOR NÃO GIRA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":4,
+    "DETECCAO":2,
+    "NPR":32
+  },
+  {
+    "CÓDIGO":"LD1",
+    "DESCRICAO":"LED NÃO ACENDE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":2,
+    "NPR":30
+  },
+  {
+    "CÓDIGO":"LD10",
+    "DESCRICAO":"FLASH LIGHT NÃO LIGA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":5,
+    "DETECCAO":2,
+    "NPR":30
+  },
+  {
+    "CÓDIGO":"LD15",
+    "DESCRICAO":"DISPLAY NÃO ACENDE",
+    "SEVERIDADE":5,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":30
+  },
+  {
+    "CÓDIGO":"N2",
+    "DESCRICAO":"APARELHO NÃO DESLIGA",
+    "SEVERIDADE":5,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":30
+  },
+  {
+    "CÓDIGO":"N4",
+    "DESCRICAO":"SOFTWARE DESATUALIZADO",
+    "SEVERIDADE":2,
+    "OCORRENCIA":5,
+    "DETECCAO":3,
+    "NPR":30
+  },
+  {
+    "CÓDIGO":"PBR",
+    "DESCRICAO":"PONTO BRILHANTE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":27
+  },
+  {
+    "CÓDIGO":"VT2",
+    "DESCRICAO":"RUÍDO NO VENTILADOR",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":27
+  },
+  {
+    "CÓDIGO":"WI-FI",
+    "DESCRICAO":"SEM SINAL DE WI-FI",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":27
+  },
+  {
+    "CÓDIGO":"BAT1",
+    "DESCRICAO":"BATERIA\/PILHA NÃO ATUA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"BAT3",
+    "DESCRICAO":"BATERIA AUX. NÃO ATUA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"CAP",
+    "DESCRICAO":"CALÇO\/QUADRO APARECENDO",
+    "SEVERIDADE":2,
+    "OCORRENCIA":4,
+    "DETECCAO":3,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"D1",
+    "DESCRICAO":"NÃO LÊ DVD\/CD\/JOGOS",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"HP1",
+    "DESCRICAO":"ENTRADA DA GUI\/AUX NÃO FUNCIONA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"LD5",
+    "DESCRICAO":"LED\/DISPLAY PISCANDO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":4,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"NC",
+    "DESCRICAO":"NÃO COMUNICA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"P13",
+    "DESCRICAO":"APARELHO COM CORPO ESTRANHO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":4,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"POL",
+    "DESCRICAO":"POLARITE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"PT1",
+    "DESCRICAO":"PRATO NÃO GIRA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"Q2",
+    "DESCRICAO":"NÃO AQUECE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"RD",
+    "DESCRICAO":"RÁDIO NÃO FUNCIONA\/SINTONIZA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"V2",
+    "DESCRICAO":"SEM VÍDEO NO AV",
+    "SEVERIDADE":4,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":24
+  },
+  {
+    "CÓDIGO":"CR1",
+    "DESCRICAO":"CONTROLE NÃO ATUA",
+    "SEVERIDADE":5,
+    "OCORRENCIA":2,
+    "DETECCAO":2,
+    "NPR":20
+  },
+  {
+    "CÓDIGO":"N3",
+    "DESCRICAO":"NÃO GRAVA\/ATUALIZA",
+    "SEVERIDADE":5,
+    "OCORRENCIA":2,
+    "DETECCAO":2,
+    "NPR":20
+  },
+  {
+    "CÓDIGO":"BT2",
+    "DESCRICAO":"RUÍDO NO BLUETOOTH",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"HP5",
+    "DESCRICAO":"REPETIÇÕES DE ECO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"L1",
+    "DESCRICAO":"LÂMPADA NÃO APAGA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"L2",
+    "DESCRICAO":"LÂMPADA NÃO ACENDE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"L3",
+    "DESCRICAO":"LÂMPADA FRACA\/FORTE",
+    "SEVERIDADE":2,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"OP",
+    "DESCRICAO":"O-CELL COM PELÍCULA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"P12",
+    "DESCRICAO":"PELÍCULA NO O-CELL",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"P14",
+    "DESCRICAO":"ESPANADO",
+    "SEVERIDADE":2,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"RC2",
+    "DESCRICAO":"RCA NÃO ATUA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":3,
+    "DETECCAO":2,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"V6",
+    "DESCRICAO":"SEM VÍDEO NO RF\/ANTENA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":18
+  },
+  {
+    "CÓDIGO":"HP6",
+    "DESCRICAO":"AGUDO\/GRAVE NÃO ATUA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":2,
+    "DETECCAO":2,
+    "NPR":16
+  },
+  {
+    "CÓDIGO":"P10",
+    "DESCRICAO":"DESLOCADO",
+    "SEVERIDADE":2,
+    "OCORRENCIA":2,
+    "DETECCAO":4,
+    "NPR":16
+  },
+  {
+    "CÓDIGO":"P4",
+    "DESCRICAO":"COM REBARBA",
+    "SEVERIDADE":1,
+    "OCORRENCIA":4,
+    "DETECCAO":4,
+    "NPR":16
+  },
+  {
+    "CÓDIGO":"RC1",
+    "DESCRICAO":"RCA FORA DO ESPECIFICADO",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":4,
+    "NPR":16
+  },
+  {
+    "CÓDIGO":"T6",
+    "DESCRICAO":"VOLUME MÁXIMO NÃO ATUA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":2,
+    "DETECCAO":2,
+    "NPR":16
+  },
+  {
+    "CÓDIGO":"N5",
+    "DESCRICAO":"SOFTWARE TRAVANDO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":15
+  },
+  {
+    "CÓDIGO":"Q1",
+    "DESCRICAO":"SUPERAQUECIMENTO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":15
+  },
+  {
+    "CÓDIGO":"ST4",
+    "DESCRICAO":"TENSÕES VARIANDO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":15
+  },
+  {
+    "CÓDIGO":"D2",
+    "DESCRICAO":"CD SAI GIRANDO",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"LD3",
+    "DESCRICAO":"LED\/FLASH LIGHT COM LUZ FRACA",
+    "SEVERIDADE":2,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"LD6",
+    "DESCRICAO":"LED COM COR DIFERENTE",
+    "SEVERIDADE":2,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"LH",
+    "DESCRICAO":"LINHA HORIZONTAL",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"P2",
+    "DESCRICAO":"RISCADO",
+    "SEVERIDADE":1,
+    "OCORRENCIA":3,
+    "DETECCAO":4,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"PM1",
+    "DESCRICAO":"POTÊNCIA MÁXIMA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"PT2",
+    "DESCRICAO":"PRATO TRAVADO",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"ST2",
+    "DESCRICAO":"TENSÃO BAIXA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"T4",
+    "DESCRICAO":"TECLA DURA",
+    "SEVERIDADE":2,
+    "OCORRENCIA":2,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"T5",
+    "DESCRICAO":"VOLUME DIMINUI AUTOMATICAMENTE",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":12
+  },
+  {
+    "CÓDIGO":"BT1",
+    "DESCRICAO":"BLUETOOTH NÃO FUNCIONA",
+    "SEVERIDADE":5,
+    "OCORRENCIA":1,
+    "DETECCAO":2,
+    "NPR":10
+  },
+  {
+    "CÓDIGO":"GB",
+    "DESCRICAO":"TERRA ABERTO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":1,
+    "DETECCAO":2,
+    "NPR":10
+  },
+  {
+    "CÓDIGO":"ST1",
+    "DESCRICAO":"SEM TENSÃO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":1,
+    "DETECCAO":2,
+    "NPR":10
+  },
+  {
+    "CÓDIGO":"ST5",
+    "DESCRICAO":"PLACA EM CURTO",
+    "SEVERIDADE":5,
+    "OCORRENCIA":1,
+    "DETECCAO":2,
+    "NPR":10
+  },
+  {
+    "CÓDIGO":"A11",
+    "DESCRICAO":"VIBRAÇÃO NO ÁUDIO SWEEP",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"A15",
+    "DESCRICAO":"RUIDO NA HÉLICE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"A5",
+    "DESCRICAO":"RUÍDO NO ÁUDIO DO MIC\/FONE\/AUX",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"A8",
+    "DESCRICAO":"MAU CONTATO NO MIC\/FONE\/AUX",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"ALT",
+    "DESCRICAO":"ALETA NÃO ABRE\/FECHA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"GV1",
+    "DESCRICAO":"GRAVAÇÃO FALHA DE PROCESSO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"HP2",
+    "DESCRICAO":"SAÍDA DUPLA DE ÁUDIO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"HP3",
+    "DESCRICAO":"ÁUDIO OSCILANDO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"HP7",
+    "DESCRICAO":"POP NOISE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"L4",
+    "DESCRICAO":"LÂMPADA PISCANDO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"LD4",
+    "DESCRICAO":"LED\/FLASH LIGHT COM LUZ FORTE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"LD7",
+    "DESCRICAO":"LED COM LUZ INVERTIDA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"P8",
+    "DESCRICAO":"FALHA DE INJEÇÃO\/SERIGRAFIA",
+    "SEVERIDADE":1,
+    "OCORRENCIA":3,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"PAP",
+    "DESCRICAO":"PONTO APAGADO",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"USB2",
+    "DESCRICAO":"MAU CONTATO NA LEITURA DO PEN DRIVE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"WB",
+    "DESCRICAO":"WHITE BALANCE",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":9
+  },
+  {
+    "CÓDIGO":"T7",
+    "DESCRICAO":"TECLA CAPACITIVA (TOUCH) NÃO ATUA",
+    "SEVERIDADE":4,
+    "OCORRENCIA":1,
+    "DETECCAO":2,
+    "NPR":8
+  },
+  {
+    "CÓDIGO":"BZ",
+    "DESCRICAO":"BUZZER NÃO ATUA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":2,
+    "NPR":6
+  },
+  {
+    "CÓDIGO":"LD2",
+    "DESCRICAO":"LED NÃO APAGA",
+    "SEVERIDADE":2,
+    "OCORRENCIA":1,
+    "DETECCAO":3,
+    "NPR":6
+  },
+  {
+    "CÓDIGO":"REC",
+    "DESCRICAO":"FUNÇÃO REC NÃO GRAVA",
+    "SEVERIDADE":3,
+    "OCORRENCIA":1,
+    "DETECCAO":2,
+    "NPR":6
+  },
+  {
+    "CÓDIGO":"P7",
+    "DESCRICAO":"ABERTURA\/GAP",
+    "SEVERIDADE":1,
+    "OCORRENCIA":1,
+    "DETECCAO":4,
+    "NPR":4
+  }
+]

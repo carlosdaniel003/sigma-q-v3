@@ -1,271 +1,76 @@
-/* ======== Layout Base ======== */
-.dev-container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  background: #0f1117;
-  color: white;
+/* ================================================================
+   SIGMA-Q • DEV MODE PREMIUM UI (V3)
+   Responsivo + Sidebar Dark Glass + Degradê Global
+================================================================ */
+
+/* Paleta Global */
+:root {
+  --bg1: #0f0f11;
+  --bg2: #1a1f2a;
+  --bg3: #0a2a43;
+
+  --glass-dark: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.12);
+  --glass-hover: rgba(228,225,225,0.15);
+
+  --text: #e5e7eb;
+  --brand: #e5e7eb;
 }
 
-/* ======== SIDEBAR ======== */
+/* ================================================================
+   LAYOUT ROOT
+================================================================ */
+html, body {
+  height: 100%;
+  background: transparent !important;
+}
+
+.dev-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  color: var(--text);
+  transition: 0.3s ease;
+
+  background: transparent !important;
+}
+
+/* ================================================================
+   SIDEBAR PREMIUM
+================================================================ */
 .dev-sidebar {
-  width: 260px;
-  background: #151821;
-  padding: 25px 20px;
+  width: 240px;
+  padding: 24px 18px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgba(255,255,255,0.05);
+
+  background: rgba(15,17,23,0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-right: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 4px 0 22px rgba(0,0,0,0.35);
+  transition: width 0.3s ease, padding 0.3s ease;
 }
 
 .dev-logo {
   font-size: 1.6rem;
   font-weight: 800;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 26px;
   letter-spacing: 1px;
+  color: #fff;
 }
 
-/* ======== LINKS ======== */
-.sidebar-link {
-  padding: 12px 15px;
-  margin-bottom: 8px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.03);
-  cursor: pointer;
-  transition: 0.15s ease;
-  font-size: 0.95rem;
-}
-
-.sidebar-link:hover {
-  background: rgba(255,255,255,0.08);
-}
-
-/* ======== LOGOUT ======== */
-.sidebar-logout {
-  margin-top: auto;
-  padding: 12px 15px;
-  border-radius: 8px;
-  background: rgba(255,80,80,0.1);
-  cursor: pointer;
-  transition: 0.15s;
-  text-align: center;
-}
-
-.sidebar-logout:hover {
-  background: rgba(255,80,80,0.2);
-}
-
-/* ======== CONTEÚDO ======== */
-.dev-content {
-  flex: 1;
-  overflow-y: auto;
-  padding: 40px;
-  background: linear-gradient(135deg, #0f0f11 0%, #1a1f2a 40%, #0a2a43 100%);
-}
-
-/* ======== ACESSO NEGADO ======== */
-.dev-denied {
-  width: 100%;
-  min-height: 100vh;
-  background: #12141b;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* ===========================
-   ESTILOS DA ABA CATÁLOGO
-   =========================== */
-
-.catalogo-container {
-  padding: 20px;
-  color: white;
-}
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-  margin-top: 20px;
-}
-
-.card-btn {
-  padding: 22px;
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  backdrop-filter: blur(12px);
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  transition: 0.2s;
-}
-
-.card-btn:hover {
-  background: rgba(255, 255, 255, 0.13);
-  transform: scale(1.03);
-}
-
-.tabela-area {
-  margin-top: 28px;
-}
-
-.tabela-catalogo {
-  width: 100%;
-  border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.tabela-catalogo th,
-.tabela-catalogo td {
-  padding: 14px 18px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.tabela-catalogo th {
-  background: rgba(255, 255, 255, 0.08);
-  font-weight: bold;
-}
-
-.tabela-catalogo tr:hover td {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* ===========================
-   BUSCA GLOBAL - ESTILO PREMIUM
-   =========================== */
-
-.busca-global-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 450px;
-  margin-bottom: 24px;
-}
-
-.input-busca-global {
-  width: 100%;
-  padding: 12px 16px 12px 42px; /* espaço para o ícone */
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(6px);
-  color: white;
-  font-size: 15px;
-  outline: none;
-  transition: all 0.25s ease;
-}
-
-.input-busca-global:hover {
-  background: rgba(255,255,255,0.10);
-  border-color: rgba(255,255,255,0.28);
-}
-
-.input-busca-global:focus {
-  border-color: #4aa3ff;
-  background: rgba(255,255,255,0.14);
-  box-shadow: 0 0 10px rgba(77,163,255,0.35);
-}
-
-/* Ícone da lupa */
-.icon-lupa {
-  position: absolute;
-  top: 50%;
-  left: 14px;
-  transform: translateY(-50%);
-  font-size: 18px;
-  opacity: 0.65;
-  pointer-events: none;
-}
-/* Animação de entrada suave */
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(10px); /* Move um pouco de baixo para cima */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  animation: fadeInAnimation 0.5s ease-out forwards;
-}
-
-/* ---------------------------------------
-   SIDEBAR COLAPSÁVEL — SIGMA-Q PREMIUM
----------------------------------------- */
-
-/* botão de colapsar */
-.collapse-btn {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 8px;
-  padding: 6px 8px;
-  font-size: 14px;
-  cursor: pointer;
-  margin-bottom: 16px;
-  width: 100%;
-  color: white;
-  transition: 0.2s;
-}
-
-.collapse-btn:hover {
-  background: rgba(255,255,255,0.15);
-}
-
-/* estado normal */
-.dev-container {
-  display: flex;
-  transition: 0.3s ease;
-}
-
-/* largura normal */
-.dev-sidebar {
-  width: 240px;
-  transition: width 0.3s ease, padding 0.3s ease;
-}
-
-/* quando colapsado */
-.dev-container.collapsed .dev-sidebar {
-  width: 70px;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-/* esconder textos quando colapsado */
-.dev-container.collapsed .dev-sidebar .text {
-  display: none;
-}
-
-/* alinhamento dos itens colapsados */
-.dev-container.collapsed .sidebar-link,
-.dev-container.collapsed .sidebar-logout {
-  justify-content: center;
-}
-
-/* conteúdo ocupa mais espaço */
-.dev-content {
-  flex: 1;
-  padding: 20px;
-  transition: margin-left 0.3s ease;
-}
-
-/* ================================
-   Sidebar Premium - Heroicons
-================================ */
-
+/* ================================================================
+   NAV ITEMS
+================================================================ */
 .nav-section {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-top: 24px;
+  margin-top: 14px;
 }
 
 .nav-item,
@@ -275,73 +80,325 @@
   gap: 14px;
   padding: 12px 16px;
 
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--glass-dark);
+  border: 1px solid var(--glass-border);
   border-radius: 12px;
 
   cursor: pointer;
   font-size: 15px;
   font-weight: 500;
   color: var(--text);
-
   transition: 0.18s ease;
 }
 
-.nav-item:hover,
-.logout-item:hover {
-  background: rgba(95,180,255,0.15);
+.nav-item:hover {
+  background: var(--glass-hover);
   border-color: rgba(95,180,255,0.35);
   transform: translateX(4px);
 }
 
 .nav-item.active {
   background: rgba(95,180,255,0.25);
-  color: #fff;
   border-color: rgba(95,180,255,0.45);
-  box-shadow: 0 0 12px rgba(95,180,255,0.35);
-}
-
-.nav-icon {
-  width: 20px;
-  height: 20px;
-  color: var(--text);
-  opacity: 0.85;
+  color: #fff;
+  box-shadow: transparent;
 }
 
 .logout-item {
   margin-top: auto;
-  background: rgba(255,50,50,0.08);
+  background: rgba(255,70,70,0.10);
   border-color: rgba(255,70,70,0.18);
 }
 
 .logout-item:hover {
-  background: rgba(255,50,50,0.18);
+  background: rgba(255,60,60,0.20);
   border-color: rgba(255,70,70,0.35);
 }
 
-/* Botão de colapsar – minimalista */
+/* ================================================================
+   BOTÃO COLAPSAR
+================================================================ */
 .collapse-btn {
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.15);
-  backdrop-filter: blur(8px);
-  cursor: pointer;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(241,236,236,0.16);
+  backdrop-filter: blur(10px);
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 10px auto 20px auto;
+  align-items: center;
+  cursor: pointer;
+
+  margin: 0 auto 18px auto;
   transition: 0.2s;
 }
 
 .collapse-btn:hover {
-  background: rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.14);
 }
 
-.collapse-btn .icon {
-  width: 22px;
-  height: 22px;
+.collapse-btn svg,
+.collapse-btn svg * {
+  stroke: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Sidebar colapsada */
+.dev-container.collapsed .dev-sidebar {
+  width: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dev-container.collapsed .text {
+  display: none;
+}
+
+.dev-container.collapsed .nav-item {
+  justify-content: center;
+}
+
+/* ================================================================
+   CONTENT AREA —Painel direito
+================================================================ */
+.dev-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+
+  /* REMOVE fundo próprio */
+  background: transparent !important;
+
+  animation: fadeIn 0.5s ease-out;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* ================================================================
+   ANIMAÇÕES
+================================================================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================================================
+   CARDS / TABELAS
+================================================================ */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.card-btn {
+  padding: 22px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.card-btn:hover {
+  background: rgba(255,255,255,0.15);
+  transform: scale(1.03);
+}
+
+/* ================================================================
+   RESPONSIVIDADE
+================================================================ */
+
+/* Telas 1600px ↓ — Ajuste leve de layout */
+@media (max-width: 1600px) {
+  .dev-content {
+    padding: 32px;
+  }
+}
+
+/* Notebooks 1366px */
+@media (max-width: 1366px) {
+  .dev-sidebar {
+    width: 210px;
+    padding: 20px 14px;
+  }
+
+  .dev-content {
+    padding: 28px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}
+
+/* 1100px — Sidebar reduz automaticamente */
+@media (max-width: 1100px) {
+  .dev-sidebar {
+    width: 180px;
+  }
+
+  .nav-item,
+  .logout-item {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+/* 900px — Sidebar colapsa automaticamente */
+@media (max-width: 900px) {
+  .dev-container.collapsed .dev-sidebar,
+  .dev-sidebar {
+    width: 70px !important;
+    padding: 14px 8px;
+  }
+
+  .nav-item .text,
+  .logout-item .text,
+  .dev-logo {
+    display: none !important;
+  }
+
+  .nav-item {
+    justify-content: center;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dev-content {
+    padding: 22px;
+  }
+}
+
+/* 600px — Modo compacto (mobile-like) */
+@media (max-width: 600px) {
+  .dev-content {
+    padding: 18px;
+  }
+
+  .card-btn {
+    padding: 18px;
+    font-size: 16px;
+  }
+}
+
+/* ============================================================
+   FIX — INPUT DE BUSCA ESCURECE O TEXTO AO DIGITAR
+============================================================ */
+.input-busca-global,
+.input-busca-global::placeholder,
+.input-busca-global:focus {
+  color: #ffffff !important;
+}
+
+/* Chrome / Edge autofill (responsável pelo fundo preto) */
+.input-busca-global:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: 0 0 0 1000px rgba(255,255,255,0.05) inset !important;
+}
+
+/* Evita mudança de cor ao digitar */
+.input-busca-global:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Fundo do wrapper da tabela — evita fundo preto */
+.custom-scroll {
+  background: rgba(255,255,255,0.02) !important;
+  backdrop-filter: blur(6px);
+}
+
+/* Fundo real da tabela */
+.tabela-catalogo {
+  background: rgba(255,255,255,0.04) !important;
+}
+
+/* Cabeçalho */
+.tabela-catalogo th {
+  background: rgba(255,255,255,0.08) !important;
+  color: #cbd5e1;
+}
+
+/* Linhas */
+.tabela-catalogo td {
+  background: transparent !important;
+  color: #e2e8f0;
+}
+
+/* Hover */
+.tabela-catalogo tr:hover td {
+  background: rgba(255,255,255,0.07) !important;
+}
+
+/* ======================================================
+   CATÁLOGO OFICIAL — TABELAS PREMIUM SIGMA-Q V3
+======================================================*/
+
+.catalogo-section {
+  animation: fadeIn 0.45s ease;
+}
+
+.catalogo-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 10px;
+}
+
+.catalogo-table-wrapper {
+  overflow-x: auto;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+/* Tabela premium */
+.premium-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.catalogo-th {
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.08);
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.catalogo-td {
+  padding: 10px 14px;
+  font-size: 0.9rem;
   color: #e5e7eb;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
+.catalogo-tr:hover {
+  background: rgba(255,255,255,0.06);
+  transition: 0.2s ease;
+}
+
+/* FIX — impedir que o input ultrapasse o container */
+.catalogo-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 4px; /* 🔥 evita overflow visual */
+}
+
+.input-busca-global {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}

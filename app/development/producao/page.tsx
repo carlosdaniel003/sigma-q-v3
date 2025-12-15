@@ -3,96 +3,139 @@
 import React from "react";
 import { Factory, Activity, AlertTriangle } from "lucide-react";
 
-import "./producao.css";
-
+import "./producao-premium.css";
 import { useValidacao } from "./hooks/useValidacao";
 
 import KPIsGerais from "./components/KPIsGerais";
 import SidebarCategorias from "./components/SidebarCategorias";
-import TabsNavegacao from "./components/TabsNavegacao";
 
-import AbaProblemas from "./components/AbaProblemas";
-import AbaDivergencias from "./components/AbaDivergencias";
-import AbaDiagnostico from "./components/AbaDiagnostico";
+import ResumoGeral from "./components/ResumoGeral";
+import DiagnosticoGeral from "./components/DiagnosticoGeral";
 
-import ResumoGeral from "./components/ResumoGeral"; // Visão Geral Inteligente
+// 🔥 NOVOS COMPONENTES
+import DetalhamentoPorModelo from "./components/DetalhamentoPorModelo";
+import InsightInteligente from "./components/InsightInteligente";
 
-export default function ProducaoPage() {
+export default function ProducaoPage({ embedded = false }: { embedded?: boolean }) {
+
   const {
     loading,
     error,
     overall,
     categories,
 
-    // novos KPIs
     categoriasSaudaveis,
     modelosCriticos,
     divergenciaGlobal,
 
-    // estado da página
     selectedCategory,
     setSelectedCategory,
-    activeTab,
-    setActiveTab,
-    showTop,
-    currentProblems,
+
     currentStats,
-    divergenciasByCategory,
     diagnostico,
     data,
 
     load,
   } = useValidacao();
 
-  // ===============================
-  // LOADING
-  // ===============================
-  if (loading)
+  /* ============================================================
+      LOADING PREMIUM + PROGRESSO SUAVE
+  ============================================================ */
+
+  const [progress, setProgress] = React.useState(0);
+  const intervalRef = React.useRef<number | null>(null);
+
+  React.useEffect(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+
+    if (loading) {
+      setProgress(0);
+      intervalRef.current = window.setInterval(() => {
+        setProgress(prev => Math.min(prev + Math.random() * 7, 90));
+      }, 180);
+    }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [loading]);
+
+  React.useEffect(() => {
+    if (!loading) {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+
+      let rafId: number | null = null;
+      const start = performance.now();
+      const duration = 500;
+
+      function animate(now: number) {
+        const t = Math.min(1, (now - start) / duration);
+        setProgress(prev => prev + (100 - prev) * t);
+        if (t < 1) rafId = requestAnimationFrame(animate);
+      }
+
+      rafId = requestAnimationFrame(animate);
+      return () => rafId && cancelAnimationFrame(rafId);
+    }
+  }, [loading]);
+
+  const showLoader = loading || progress < 100;
+
+  if (showLoader)
     return (
-      <div className="producao-container loader-container">
-        <Activity className="animate-spin" size={40} style={{ color: "var(--brand)" }} />
-        <p>Processando Validação...</p>
+      <div className="loading-premium-wrapper fade-in">
+        <div className="loading-card">
+          <Activity size={42} className="pulse" style={{ color: "var(--brand)" }} />
+          <p className="loading-title">Processando Validação…</p>
+
+          <div className="progress-bar">
+            <div className="progress-fill" style={{ width: `${progress}%` }} />
+          </div>
+
+          <span className="progress-percent">{Math.floor(progress)}%</span>
+        </div>
       </div>
     );
 
-  // ===============================
-  // ERRO
-  // ===============================
+  /* ============================================================
+        ERRO
+  ============================================================ */
+
   if (error)
     return (
-      <div className="producao-container loader-container">
+      <div className="producao-wrapper fade-in">
         <AlertTriangle size={40} color="#ef4444" />
         <p className="error-text">{error}</p>
-        <button onClick={load} className="sidebar-btn" style={{ marginTop: 20 }}>
+
+        <button onClick={load} className="reload-btn">
           Tentar Novamente
         </button>
       </div>
     );
 
-  // ===============================
-  // PAGE RENDER
-  // ===============================
+  /* ============================================================
+        PÁGINA CARREGADA
+  ============================================================ */
+
   return (
-    <div className="producao-container fade-in">
-      
+    <div className="producao-wrapper fade-in">
+
       {/* HEADER */}
       <header className="page-header">
         <h1>
-          <Factory size={28} style={{ color: "var(--brand)" }} /> Validação de Produção
+          <Factory size={28} style={{ color: "var(--brand)" }} />
+          Validação de Produção
         </h1>
+
         <div className="muted small">
           Automático • {overall.totalRows?.toLocaleString()} registros analisados
         </div>
       </header>
 
-      {/* KPIs NOVOS + ANTIGOS */}
-      <KPIsGerais
-        overall={overall}
-        categories={categories}
-        categoriasSaudaveis={categoriasSaudaveis}
-        modelosCriticos={modelosCriticos}
-      />
-
+      {/* LAYOUT */}
       <div className="split-view">
 
         {/* SIDEBAR */}
@@ -100,62 +143,65 @@ export default function ProducaoPage() {
           categories={categories}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
-          setActiveTab={setActiveTab}
         />
 
-        {/* MAIN CONTENT */}
+        {/* MAIN PAINEL (corrigido: KPIs dentro aqui) */}
         <main className="right-panel custom-scroll">
 
-          {/* ===============================
-              VISÃO GERAL (NENHUMA CATEGORIA)
-          =============================== */}
-          {!selectedCategory && (
-            <ResumoGeral 
-              data={data} 
-              diagnostico={diagnostico}
+          {/* KPIs (AGORA ALINHADOS CORRETAMENTE) */}
+          <div className="kpis-wrapper">
+            <KPIsGerais
+              overall={overall}
+              categories={categories}
               categoriasSaudaveis={categoriasSaudaveis}
               modelosCriticos={modelosCriticos}
-              divergenciaGlobal={divergenciaGlobal}
+              modelosSemDefeitos={diagnostico?.producaoSemDefeitos?.length ?? 0}
+              defeitosSemProducao={diagnostico?.defeitosSemProducao?.length ?? 0}
             />
-          )}
+          </div>
 
-          {/* ===============================
-              CATEGORIA SELECIONADA → TABS
-          =============================== */}
-          {selectedCategory && (
+          {/* VISÃO GERAL */}
+          {!selectedCategory && (
             <>
-              <TabsNavegacao
-                activeTab={activeTab}
-                setActiveTab={setActiveTab}
-                selectedCategory={selectedCategory}
+              <ResumoGeral
+                data={data}
+                diagnostico={diagnostico}
+                categoriasSaudaveis={categoriasSaudaveis}
+                modelosCriticos={modelosCriticos}
+                divergenciaGlobal={divergenciaGlobal}
               />
 
-              {activeTab === "problemas" && (
-                <AbaProblemas
-                  currentProblems={currentProblems}
-                  selectedCategory={selectedCategory}
-                  currentStats={currentStats}
-                  showTop={showTop}
-                />
-              )}
-
-              {activeTab === "divergencias" && (
-                <AbaDivergencias
-                  divergenciasByCategory={divergenciasByCategory}
-                  selectedCategory={selectedCategory}
+              {diagnostico && (
+                <DiagnosticoGeral
                   data={data}
-                />
-              )}
-
-              {activeTab === "diagnostico" && (
-                <AbaDiagnostico
                   diagnostico={diagnostico}
-                  selectedCategory={selectedCategory}
-                  divergenciasByCategory={divergenciasByCategory}
-                  data={data}
                 />
               )}
             </>
+          )}
+
+          {/* CATEGORIA SELECIONADA */}
+          {selectedCategory && currentStats && (
+            <div className="glass-card fade-in" style={{ padding: 20, marginTop: 20 }}>
+
+              <DetalhamentoPorModelo categoria={selectedCategory} stats={currentStats} />
+
+              <div
+                style={{
+                  height: 1,
+                  background: "rgba(255,255,255,0.08)",
+                  margin: "25px 0"
+                }}
+              />
+
+              <InsightInteligente
+  categoria={selectedCategory}
+  stats={currentStats}
+  diagnostico={diagnostico}
+  overall={overall}
+/>
+
+            </div>
           )}
 
         </main>

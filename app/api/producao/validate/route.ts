@@ -72,7 +72,7 @@ function explainMismatch(prod: any, defeitosLista: any[]) {
       motivo: "NOME_DIVERGENTE",
       explicacao: `O modelo "${modelo}" não existe na base oficial, mas existe o semelhante "${best.candidato}" (similaridade ${best.score.toFixed(
         2
-      )}) abaixo do mínimo requerido (0.75).`
+      )}).`
     };
   }
 
@@ -94,8 +94,8 @@ function explainMismatch(prod: any, defeitosLista: any[]) {
   };
 }
 
-/** Carrega planilha de produção */
-async function readProductionDefault(filename = "producao.xlsx") {
+/** Carrega planilha (genérica) */
+async function readSheet(filename = "producao.xlsx") {
   const p = path.join(process.cwd(), "public", "productions", filename);
   const buf = await fs.readFile(p);
   const wb = XLSX.read(buf, { type: "buffer" });
@@ -115,7 +115,28 @@ export async function GET(req: Request) {
     const cache = await getDefeitosCache({});
     const listaDef = cache.enriched || [];
 
-    // 2) Índices rápidos
+    // 1.1) Carrega planilha de semi-acabados (opcional)
+    let semiRows: Array<any> = [];
+    const semiPath = path.join(process.cwd(), "public", "productions", "semi_acabado.xlsx");
+    try {
+      // se existir, lê
+      await fs.access(semiPath);
+      semiRows = await readSheet("semi_acabado.xlsx");
+    } catch {
+      // não existe => semiRows fica vazio
+      semiRows = [];
+    }
+
+    // 1.2) Monta mapa de semi -> modelo correto
+    const semiMap: Map<string, { produto?: string; modeloCorreto?: string }> = new Map();
+    for (const s of semiRows) {
+      const defeito = norm(s.DEFEITOS_SEM_PRODUCAO ?? s.DEFEITO ?? s.DEF ?? "");
+      const produto = String(s.PRODUTO ?? "").toUpperCase().trim();
+      const modeloCorreto = norm(s.MODELO_CORRETO ?? s.MODELO_FINAL ?? "");
+      if (defeito) semiMap.set(defeito, { produto, modeloCorreto });
+    }
+
+    // 2) Índices rápidos para defeitos oficiais
     const indexByModel = new Map<string, any[]>();
     const indexByCodigo = new Map<string, any[]>();
 
@@ -128,8 +149,7 @@ export async function GET(req: Request) {
     }
 
     // 3) Carrega produção
-    const prodRaw = await readProductionDefault(file);
-
+    const prodRaw = await readSheet(file);
     const rows = prodRaw.map((r, idx) => ({
       __row: idx,
       raw: r,
@@ -142,7 +162,7 @@ export async function GET(req: Request) {
     const totalRows = rows.length;
     const totalVolume = rows.reduce((s, r) => s + (r.QTY_GERAL || 0), 0);
 
-    // 4) Acumuladores — agora TIPADOS (soluciona o erro)
+    // 4) Acumuladores
     const categories: Map<
       string,
       {
@@ -152,15 +172,7 @@ export async function GET(req: Request) {
         identifiedVolume: number;
         notIdentifiedRows: number;
         notIdentifiedVolume: number;
-        models: Map<
-          string,
-          {
-            identifiedRows: number;
-            notIdentifiedRows: number;
-            identifiedVolume: number;
-            notIdentifiedVolume: number;
-          }
-        >;
+        models: Map<string, any>;
       }
     > = new Map();
 
@@ -184,7 +196,7 @@ export async function GET(req: Request) {
       return categories.get(cat)!;
     }
 
-    // 5) Loop de matching
+    // 5) Loop de matching (produção → defeitos)
     for (const r of rows) {
       const cat = ensureCat(r.CATEGORIA || "UNDEF");
       cat.rows++;
@@ -221,10 +233,8 @@ export async function GET(req: Request) {
 
         m.identifiedRows++;
         m.identifiedVolume += r.QTY_GERAL || 0;
-
         cat.models.set(mk, m);
-      } 
-      else {
+      } else {
         cat.notIdentifiedRows++;
         cat.notIdentifiedVolume += r.QTY_GERAL || 0;
 
@@ -235,7 +245,6 @@ export async function GET(req: Request) {
 
         m.notIdentifiedRows++;
         m.notIdentifiedVolume += r.QTY_GERAL || 0;
-
         cat.models.set(mk, m);
 
         const prev = notIdentifiedExamplesByModel.get(mk) || { count: 0, samples: [], explicacoes: [] };
@@ -250,73 +259,121 @@ export async function GET(req: Request) {
       }
     }
 
-    // 6) Construir diagnóstico inteligente
+    // 6) Construir diagnósticos — contabilizar defeitos por modelo (com remapeamento de semi)
     const defeitosPorModelo = new Map<string, number>();
+    const semiMapped: Array<{ defeitoOriginal: string; modeloCorreto?: string; ocorrencias: number }> = [];
+    const semiInfo: Array<{ defeitoOriginal: string; modeloCorreto?: string; motivo: string; ocorrencias: number }> = [];
+
     for (const d of listaDef) {
-      const m = norm(d.MODELO ?? d._model?.modelo ?? "");
+      const rawModel = String(d.MODELO ?? d._model?.modelo ?? "");
+      const m = norm(rawModel);
       if (!m) continue;
-      defeitosPorModelo.set(m, (defeitosPorModelo.get(m) || 0) + 1);
+
+      // se este defeito estiver na semiMap, remapeia para modeloCorreto
+      if (semiMap.has(m)) {
+        const mm = semiMap.get(m)!;
+        const target = norm(mm.modeloCorreto ?? "");
+        if (target) {
+          // acumula em modeloCorreto
+          defeitosPorModelo.set(target, (defeitosPorModelo.get(target) || 0) + 1);
+
+          // registra semiMapped para rastreio
+          const existing = semiMapped.find(s => s.defeitoOriginal === m);
+          if (existing) existing.ocorrencias++;
+          else semiMapped.push({ defeitoOriginal: m, modeloCorreto: target, ocorrencias: 1 });
+        } else {
+          // semi sem modelo correto definido — registra em semiInfo (não conta como divergência)
+          const existing = semiInfo.find(s => s.defeitoOriginal === m);
+          if (existing) existing.ocorrencias++;
+          else semiInfo.push({ defeitoOriginal: m, modeloCorreto: undefined, motivo: "Semi sem MODELO_CORRETO", ocorrencias: 1 });
+        }
+      } else {
+        // defeito "normal" contado pelo seu próprio modelo
+        defeitosPorModelo.set(m, (defeitosPorModelo.get(m) || 0) + 1);
+      }
     }
 
-    const producaoPorModelo = new Map<string, any>();
+    // 7) produção por modelo
+    const producaoPorModelo = new Map<string, { categoria: string; volume: number }>();
     for (const r of rows) {
       if (!r.MODELO) continue;
-      const obj = producaoPorModelo.get(r.MODELO) || { categoria: r.CATEGORIA, volume: 0 };
+      const key = r.MODELO;
+      const obj = producaoPorModelo.get(key) || { categoria: r.CATEGORIA, volume: 0 };
       obj.volume += r.QTY_GERAL || 0;
-      producaoPorModelo.set(r.MODELO, obj);
+      producaoPorModelo.set(key, obj);
     }
 
-    const producaoSemDefeitos = [];
+    // 8) producaoSemDefeitos (modelos produzidos sem defeitos)
+    const producaoSemDefeitos: Array<{ modelo: string; categoria: string; produzido: number }> = [];
     for (const [modelo, info] of producaoPorModelo.entries()) {
       if (!defeitosPorModelo.has(modelo)) {
-        producaoSemDefeitos.push({
-          modelo,
-          categoria: info.categoria,
-          produzido: info.volume
-        });
+        producaoSemDefeitos.push({ modelo, categoria: info.categoria, produzido: info.volume });
       }
     }
 
-    const defeitosSemProducao = [];
+    // 9) defeitosSemProducao (defeitos cujo modelo não aparece na produção) -> agora EXCLUIMOS casos de semi com modeloCorreto que existe
+    const defeitosSemProducao: Array<{ modelo: string; ocorrenciasDefeitos: number }> = [];
     for (const [modelo, qtd] of defeitosPorModelo.entries()) {
-      if (!producaoPorModelo.has(modelo)) {
-        defeitosSemProducao.push({
-          modelo,
-          ocorrenciasDefeitos: qtd
-        });
+      const prodExists = producaoPorModelo.has(modelo);
+      if (!prodExists) {
+        // verificar se este modelo corresponde a algum semi original (pode ser mapeado)
+        const isSemiOriginal = semiMapped.find(s => s.modeloCorreto === modelo) ?? null;
+        if (!isSemiOriginal) {
+          // se não for um target de semiMapped, considera defeito sem produção (crítico)
+          defeitosSemProducao.push({ modelo, ocorrenciasDefeitos: qtd });
+        } else {
+          // se é target de semiMapped mas mesmo assim não há produção, mantemos como defeito sem produção (porque target ausente)
+          // entretanto, tratamos esse caso como crítico apenas se desejar — por ora incluo em defeitosSemProducao para transparência
+          defeitosSemProducao.push({ modelo, ocorrenciasDefeitos: qtd });
+        }
       }
     }
 
-    const divergencias = [];
+    // 10) divergencias reais (apenas casos críticos)
+    const divergencias: Array<any> = [];
+
     for (const [modelo, info] of producaoPorModelo.entries()) {
       const defeitos = defeitosPorModelo.get(modelo) || 0;
-      if (defeitos !== info.volume) {
+
+      // regra: divergência crítica quando defeitos > produção OR (produção === 0 && defeitos > 0)
+      if (defeitos > info.volume) {
         divergencias.push({
           modelo,
           categoria: info.categoria,
           produzido: info.volume,
           defeitosApontados: defeitos,
-          diferenca: info.volume - defeitos
+          diferenca: defeitos - info.volume,
+          explicacao: "Quantidade de defeitos maior que o volume produzido — provável erro de apontamento ou duplicação."
+        });
+      } else if (info.volume === 0 && defeitos > 0) {
+        // produção 0 e defeitos >0 -> crítico (a menos que o defeito venha de um semi que mapearia para outro modelo com produção)
+        // verificar se este modelo é resultado de remapeamento de semi (se sim, já somamos ao modelo correto e aqui não deve ocorrer)
+        divergencias.push({
+          modelo,
+          categoria: info.categoria,
+          produzido: info.volume,
+          defeitosApontados: defeitos,
+          diferenca: info.volume - defeitos,
+          explicacao: "Foram registrados defeitos para um modelo que declarou 0 produção — provável erro de apontamento ou modelo incorreto."
         });
       }
+      // Observação: produção > defeitos não gera divergência crítica segundo regra (não afeta KPI)
     }
 
-    // 7) perCategory FINAL TIPADO (solução do erro)
+    // 11) Se existirem defeitos em modelos que não aparecem na produção e não são semi-mapeados para um existente -> já foram coletados em defeitosSemProducao
+
+    // 12) perCategory construção final
     const perCategory = Array.from(categories.entries()).map(
       ([categoria, v]) => ({
         categoria,
         rows: v.rows,
         volume: v.volume,
-
         identifiedRows: v.identifiedRows,
         notIdentifiedRows: v.notIdentifiedRows,
-
         identifiedVolume: v.identifiedVolume,
         notIdentifiedVolume: v.notIdentifiedVolume,
-
         identifiedPct:
           v.rows ? Number(((v.identifiedRows / v.rows) * 100).toFixed(2)) : 0,
-
         models: Array.from(v.models.entries()).map(([modelKey, stats]) => ({
           modelKey,
           ...stats,
@@ -334,7 +391,7 @@ export async function GET(req: Request) {
       })
     );
 
-    // 8) Problemas globais
+    // 13) topProblemModels (não identificado)
     const topProblemModels = Array.from(notIdentifiedExamplesByModel.entries())
       .map(([modelo, v]) => ({
         modelo,
@@ -345,7 +402,7 @@ export async function GET(req: Request) {
       .sort((a, b) => b.count - a.count)
       .slice(0, 10);
 
-    // 9) KPIs gerais
+    // 14) KPIs agregados
     const totalIdentRows = perCategory.reduce((s, c) => s + c.identifiedRows, 0);
     const totalNotIdentRows = perCategory.reduce((s, c) => s + c.notIdentifiedRows, 0);
 
@@ -358,7 +415,7 @@ export async function GET(req: Request) {
       0
     );
 
-    // 10) Payload final
+    // 15) payload final
     const payload = {
       ok: true,
       totals: {
@@ -378,9 +435,11 @@ export async function GET(req: Request) {
       perCategory,
       topProblemModels,
       diagnostico: {
-        producaoSemDefeitos,
-        defeitosSemProducao,
-        divergencias,
+        producaoSemDefeitos,        // modelos produzidos sem registro de defeitos
+        defeitosSemProducao,       // defeitos que não têm produção (críticos)
+        divergencias,              // divergências reais (críticas)
+        semiMapped,                // mapeamentos de semi -> modeloCorreto (para rastreio)
+        semiInfo                   // semi entries que foram ignoradas/sem target
       },
     };
 

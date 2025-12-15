@@ -9,5 +9,6 @@ def convert(xlsx_file, json_file):
 convert("catalogo_codigos.xlsx", "codigos_categoria.json")
 convert("catalogo_codigos_defeitos.xlsx", "defeitos.json")
 convert("catalogo_responsabilidades.xlsx", "responsabilidades.json")
-
+convert("catalogo_modelos.xlsx", "modelos.json")
+convert("catalogo_fmea.xlsx", "fmea.json")
 print("Conversão concluída!")
