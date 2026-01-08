@@ -166,10 +166,14 @@ html, body {
 ================================================================ */
 .dev-content {
   flex: 1;
-  padding: 40px;
-  overflow-y: auto;
 
-  /* REMOVE fundo próprio */
+  /* 🔥 CONTROLE FINO DE ESPAÇO */
+  padding-top: 12px;        /* 👈 ISSO SOBE O DASHBOARD */
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+
+  overflow-y: auto;
   background: transparent !important;
 
   animation: fadeIn 0.5s ease-out;
@@ -402,3 +406,210 @@ html, body {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* ================================================================
+   SIDEBAR PREMIUM (ESTILO CARDS - REFERÊNCIA IMAGEM)
+================================================================ */
+
+.dev-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  
+  /* Fundo Escuro Profundo */
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  
+  padding: 24px 16px;
+  transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow-x: hidden;
+  z-index: 100;
+}
+
+/* HEADER */
+.sidebar-header {
+  display: flex;
+  flex-direction: column; /* Coloca o toggle em cima do logo se quiser */
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 16px;
+}
+
+.dev-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.collapse-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.collapse-btn:hover { background: rgba(255, 255, 255, 0.15); }
+.collapse-btn svg { width: 22px; height: 22px; }
+
+
+/* --- NAVEGAÇÃO: ESTILO CARDS --- */
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaço entre os cartões */
+  flex: 1;
+}
+
+.nav-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px; /* Padding generoso para parecer um card */
+  
+  background: rgba(255, 255, 255, 0.03); /* Fundo sutil */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Borda fina */
+  border-radius: 12px; /* Cantos arredondados */
+  
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  position: relative;
+}
+
+.nav-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* Estado Ativo */
+.nav-card.active,
+.nav-card.active-parent {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Setinha do Submenu */
+.chevron-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  opacity: 0.6;
+  transition: transform 0.3s;
+}
+.chevron-icon.rotate { transform: rotate(180deg); }
+
+/* --- SUBMENU: PÍLULAS (IGUAL FOTO) --- */
+.nav-submenu-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  padding-left: 10px; /* Leve indentação */
+}
+
+.nav-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  
+  background: rgba(0, 0, 0, 0.2); /* Fundo mais escuro para o submenu */
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.nav-pill:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-pill.active {
+  background: rgba(59, 130, 246, 0.15); /* Azul translúcido */
+  color: #60a5fa; /* Texto azul */
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.nav-pill .dot { font-size: 1.2rem; line-height: 0; margin-top: -2px; }
+
+/* --- RODAPÉ SAIR --- */
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.logout-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  
+  /* Estilo avermelhado da referência */
+  background: rgba(220, 38, 38, 0.1); 
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  border-radius: 12px;
+  
+  color: #fca5a5;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-card:hover {
+  background: rgba(220, 38, 38, 0.15);
+  border-color: rgba(220, 38, 38, 0.3);
+  color: #fff;
+}
+
+.logout-icon-wrapper {
+  width: 28px;
+  height: 28px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* --- ESTADO COLAPSADO --- */
+.dev-sidebar.collapsed .sidebar-header { flex-direction: column; }
+.dev-sidebar.collapsed .dev-logo { display: none; }
+.dev-sidebar.collapsed .nav-card { 
+  justify-content: center; 
+  padding: 16px 0; 
+}
+.dev-sidebar.collapsed .nav-card .text, 
+.dev-sidebar.collapsed .nav-card .chevron-icon { display: none; }
+.dev-sidebar.collapsed .nav-group { display: block; } /* Mantém estrutura */
+.dev-sidebar.collapsed .nav-submenu-pills { display: none; } /* Esconde submenu se colapsado */
+.dev-sidebar.collapsed .logout-card { justify-content: center; padding: 16px 0; }
+.dev-sidebar.collapsed .logout-card .text { display: none; }
+
+/* Animação */
+.fade-in-fast { animation: fadeIn 0.3s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }

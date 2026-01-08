@@ -165,6 +165,11 @@
     "CATEGORIA":"CMPA"
   },
   {
+    "CÓDIGO":"8999-01",
+    "MODELO":"CM-550-L",
+    "CATEGORIA":"CM"
+  },
+  {
     "CÓDIGO":"SC2522-0002-01",
     "MODELO":"CR 55\" SKY-IM",
     "CATEGORIA":"TV"
@@ -3386,7 +3391,7 @@
   },
   {
     "CÓDIGO":"PL0224-0091-01",
-    "MODELO":"CM 500L FONTE",
+    "MODELO":"CM 550L FONTE",
     "CATEGORIA":"CM"
   },
   {

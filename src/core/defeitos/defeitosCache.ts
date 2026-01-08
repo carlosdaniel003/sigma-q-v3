@@ -1,7 +1,8 @@
 /* =====================================================================
-   SIGMA-Q V3 — Cache Inteligente com Lazy Load Automático
-   Agora respeita flags de catálogo (usarCodigos/usarFalhas/usarResponsabilidades)
-   e reconstrói se as flags mudarem.
+   SIGMA-Q V3 — Cache Inteligente com Garantia de Enriquecimento
+   ✔ Cache só é válido se refletir as flags
+   ✔ Nunca mascara erro
+   ✔ Nunca gera KPI falso
 ===================================================================== */
 
 import { loadDefeitosAll } from "./defeitosLoader";
@@ -26,98 +27,105 @@ const cache: CacheState = {
   carregado: false,
   carregando: false,
   dados: null,
-  optsKey: undefined
+  optsKey: undefined,
 };
 
+// --------------------------------------------------
+// 🔒 Validação dura de enrichment
+// --------------------------------------------------
+function isEnriched(item: any): boolean {
+  return (
+    item &&
+    Array.isArray(item._issues) &&
+    typeof item._confidence === "number"
+  );
+}
+
 export async function getDefeitosCache(catalogos: any = {}) {
-  // normaliza chave das flags (determinística)
-  const optsKey = JSON.stringify({
+  const flags = {
     usarCodigos: !!catalogos.usarCodigos,
     usarFalhas: !!catalogos.usarFalhas,
-    usarResponsabilidades: !!catalogos.usarResponsabilidades
-  });
+    usarResponsabilidades: !!catalogos.usarResponsabilidades,
+  };
 
-  // Se já carregou com MESMAS flags → retorna imediatamente
+  const optsKey = JSON.stringify(flags);
+
+  // ==================================================
+  // CACHE VÁLIDO → somente se flags e enrichment baterem
+  // ==================================================
   if (cache.carregado && cache.dados && cache.optsKey === optsKey) {
-    console.log("✅ Usando cache existente (mesmas flags).");
-    return cache.dados;
+    const sample = cache.dados.enriched[0];
+    if (isEnriched(sample)) {
+      console.log("✅ Usando cache existente (válido e enriquecido).");
+      return cache.dados;
+    } else {
+      console.warn("⚠️ Cache inválido — registros não enriquecidos.");
+    }
   }
 
-  // Se estiver carregando com MESMAS flags → espera terminar
+  // ==================================================
+  // CACHE EM CONSTRUÇÃO (mesmas flags)
+  // ==================================================
   if (cache.carregando && cache.optsKey === optsKey) {
     console.log("🔄 Aguardando cache carregar (mesmas flags) …");
     await waitForCache();
     return cache.dados!;
   }
 
-  // Se carregando com flags diferentes → aguarda término, depois recarrega
-  if (cache.carregando && cache.optsKey !== optsKey) {
-    console.log("🔁 Cache carregando com flags diferentes — aguardando e atualizando em seguida...");
-    await waitForCache();
-    // cairemos no fluxo de criação abaixo
-  }
-
-  // Primeira execução (ou flags diferentes) → construir cache novo
+  // ==================================================
+  // RECONSTRUÇÃO FORÇADA
+  // ==================================================
   cache.carregando = true;
   cache.carregado = false;
   cache.dados = null;
   cache.optsKey = optsKey;
 
-  console.log("🔥 Criando cache → carregando bases com flags:", optsKey);
+  console.log("🔥 Criando cache → flags:", optsKey);
 
-  // Passa as flags para o loader para que enriquecimento use as mesmas flags
-  const flags = {
-    usarCodigos: !!catalogos.usarCodigos,
-    usarFalhas: !!catalogos.usarFalhas,
-    usarResponsabilidades: !!catalogos.usarResponsabilidades
-  };
-
+  // Loader bruto
   const bases = await loadDefeitosAll(flags);
 
-  console.log("🔥 Enriquecendo registros (aplicando flags) — isso pode demorar um pouco…");
+  console.log("🔥 Enriquecendo registros (forçado e consistente)…");
 
   const enriched: any[] = [];
 
-  // como loadDefeitosAll já chama enrichDefeito (com opts) por fonte,
-  // aqui mantemos uma garantia: se por acaso loadDefeitosAll retornou dados "raw",
-  // aplicamos enrichment final com as mesmas flags. (idempotente)
-  const push = (arr: any[], fonte: string) => {
-    for (const item of arr) {
-      enriched.push({ ...item, fonte });
-    }
-  };
+  async function push(arr: any[], fonte: string) {
+    for (let i = 0; i < arr.length; i++) {
+      const enrichedItem = await enrichDefeito(
+        { ...arr[i], fonte },
+        flags
+      );
+      enriched.push(enrichedItem);
 
-  push(bases.af, "AF");
-  push(bases.lcm, "LCM");
-  push(bases.produto, "PRODUTO");
-  push(bases.pth, "PTH");
-
-  // Enriquecimento adicional (caso necessário). Usamos opts flags.
-  for (let i = 0; i < enriched.length; i++) {
-    // chamamos enrichDefeito com as flags para garantir consistência
-    enriched[i] = await enrichDefeito(enriched[i], flags);
-    if (i % 2000 === 0) {
-      console.log(`   ➕ Enriquecidos ${i}/${enriched.length}`);
+      if (i % 2000 === 0) {
+        console.log(`   ➕ Enriquecidos ${i}/${arr.length} (${fonte})`);
+      }
     }
   }
+
+  await push(bases.af || [], "AF");
+  await push(bases.lcm || [], "LCM");
+  await push(bases.produto || [], "PRODUTO");
+  await push(bases.pth || [], "PTH");
 
   const dados: CacheStateData = {
     enriched,
     af: enriched.filter(r => r.fonte === "AF"),
     lcm: enriched.filter(r => r.fonte === "LCM"),
     produto: enriched.filter(r => r.fonte === "PRODUTO"),
-    pth: enriched.filter(r => r.fonte === "PTH")
+    pth: enriched.filter(r => r.fonte === "PTH"),
   };
 
   cache.dados = dados;
   cache.carregando = false;
   cache.carregado = true;
 
-  console.log("✅ Cache criado com sucesso (flags: " + optsKey + ").");
+  console.log("✅ Cache criado com sucesso (enriquecimento garantido).");
 
   return cache.dados;
 }
 
+// --------------------------------------------------
 function waitForCache(): Promise<void> {
   return new Promise(resolve => {
     const interval = setInterval(() => {

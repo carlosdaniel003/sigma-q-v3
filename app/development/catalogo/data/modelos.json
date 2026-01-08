@@ -145,6 +145,11 @@
     "CATEGORIA":"CM"
   },
   {
+    "CÓDIGO":"8999-01",
+    "MODELO":"CM-550-L",
+    "CATEGORIA":"CM"
+  },
+  {
     "CÓDIGO":"9915-01",
     "MODELO":"CM-700",
     "CATEGORIA":"CM"
@@ -3386,7 +3391,7 @@
   },
   {
     "CÓDIGO":"PL0224-0091-01",
-    "MODELO":"CM 500L FONTE",
+    "MODELO":"CM 550L FONTE",
     "CATEGORIA":"CM"
   },
   {
