@@ -1,3 +1,4 @@
+// C:\Users\cdaniel\Documents\sigma-q-v3\v3\app\development\diagnostico\components\SidebarFiltros.tsx
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
@@ -8,7 +9,7 @@ import { useDiagnosticoFilters } from "../store/diagnosticoFilters";
 ====================================================== */
 interface FiltroOptions {
   semanas: { semana: number; ano: number }[];
-  meses: { mes: number; ano: number }[]; // ✅ Novo tipo
+  meses: { mes: number; ano: number }[];
   modelos: string[];
   categorias: string[];
   responsabilidades: string[];
@@ -54,6 +55,17 @@ export default function SidebarFiltros() {
     );
   }, [options, draftFilters.categoria]);
 
+  // ✅ FILTRO DE RESPONSABILIDADE: Remove "NÃO MOSTRAR NO INDICE"
+  const responsabilidadesFiltradas = useMemo(() => {
+    if (!options) return [];
+    return options.responsabilidades.filter(
+      (resp) => 
+        resp !== "NÃO MOSTRAR NO INDICE" && 
+        resp !== "NAO MOSTRAR NO INDICE" &&
+        resp !== "NÃO MOSTRAR NO ÍNDICE"
+    );
+  }, [options]);
+
   useEffect(() => {
     if (!options || !draftFilters.modelo) return;
     const categoriaVinculada = options.modeloCategoriaMap[draftFilters.modelo];
@@ -80,7 +92,7 @@ export default function SidebarFiltros() {
       <Select
         label="Tipo de período"
         value={draftFilters.periodo.tipo}
-        onChange={(v) =>
+        onChange={(v: string) =>
           setDraftFilter("periodo", {
             tipo: v as "semana" | "mes",
             valor: null,
@@ -88,7 +100,7 @@ export default function SidebarFiltros() {
           })
         }
         options={["semana", "mes"]}
-        renderOption={(v) => (v === "semana" ? "Semanal" : "Mensal")}
+        renderOption={(v: string) => (v === "semana" ? "Semanal" : "Mensal")}
       />
 
       {/* SELEÇÃO DE SEMANA */}
@@ -100,12 +112,12 @@ export default function SidebarFiltros() {
               ? `${draftFilters.periodo.valor}-${draftFilters.periodo.ano}`
               : ""
           }
-          onChange={(v) => {
+          onChange={(v: string) => {
             const [semana, ano] = v.split("-").map(Number);
             setDraftFilter("periodo", { ...draftFilters.periodo, valor: semana, ano });
           }}
           options={options.semanas.map((s) => `${s.semana}-${s.ano}`)}
-          renderOption={(v) => {
+          renderOption={(v: string) => {
             const [semana, ano] = v.split("-");
             return `Semana ${semana}/${ano}`;
           }}
@@ -121,13 +133,12 @@ export default function SidebarFiltros() {
               ? `${draftFilters.periodo.valor}-${draftFilters.periodo.ano}`
               : ""
           }
-          onChange={(v) => {
+          onChange={(v: string) => {
             const [mes, ano] = v.split("-").map(Number);
             setDraftFilter("periodo", { ...draftFilters.periodo, valor: mes, ano });
           }}
-          // ✅ Usa a lista vinda da API, não um array fixo de 12
           options={options.meses.map((m) => `${m.mes}-${m.ano}`)}
-          renderOption={(v) => {
+          renderOption={(v: string) => {
             const [mes, ano] = v.split("-");
             const data = new Date(Number(ano), Number(mes) - 1, 1);
             const nomeMes = data.toLocaleString("pt-BR", { month: "long" });
@@ -139,14 +150,14 @@ export default function SidebarFiltros() {
       <Select
         label="Categoria"
         value={draftFilters.categoria ?? ""}
-        onChange={(v) => setDraftFilter("categoria", v)}
+        onChange={(v: string) => setDraftFilter("categoria", v)}
         options={options.categorias}
       />
 
       <Select
         label="Modelo"
         value={draftFilters.modelo ?? ""}
-        onChange={(v) => setDraftFilter("modelo", v)}
+        onChange={(v: string) => setDraftFilter("modelo", v)}
         options={modelosFiltrados}
         disabled={modelosFiltrados.length === 0}
       />
@@ -154,14 +165,15 @@ export default function SidebarFiltros() {
       <Select
         label="Responsabilidade"
         value={draftFilters.responsabilidade ?? ""}
-        onChange={(v) => setDraftFilter("responsabilidade", v)}
-        options={options.responsabilidades}
+        onChange={(v: string) => setDraftFilter("responsabilidade", v)}
+        // ✅ Agora usamos a lista filtrada aqui
+        options={responsabilidadesFiltradas}
       />
 
       <Select
         label="Turno"
         value={draftFilters.turno ?? ""}
-        onChange={(v) => setDraftFilter("turno", v)}
+        onChange={(v: string) => setDraftFilter("turno", v)}
         options={options.turnos}
       />
 

@@ -22,14 +22,14 @@ export default function KpiPrincipalCausa({
     );
   }
 
-  // ✅ LÓGICA DE REINCIDÊNCIA (TOTAL - 1)
-  // O backend manda a sequência total (ex: 3 meses).
-  // A UI deve mostrar quantas vezes REPETIU (ex: 2x seguidas).
+  // ✅ LÓGICA DE REINCIDÊNCIA (TOTAL)
+  // Agora usamos o valor direto. Se apareceu 2 meses seguidos, mostra "2x".
   const totalPeriodos = data.periodosConsecutivos || 1;
-  const reincidencias = totalPeriodos - 1; 
   
-  const isReincidente = reincidencias >= 1; // Só mostra se repetiu pelo menos 1 vez (Total >= 2)
-  const isCritico = reincidencias >= 2;     // Vermelho se repetiu 2x ou mais (Total >= 3)
+  // Só mostra a tag se for uma sequência de 2 ou mais
+  const isReincidente = totalPeriodos >= 2; 
+  // Fica vermelho (crítico) se for uma sequência de 3 ou mais
+  const isCritico = totalPeriodos >= 3;
 
   return (
     <div
@@ -107,7 +107,7 @@ export default function KpiPrincipalCausa({
                 textTransform: "uppercase",
               }}
             >
-              {reincidencias}x Seguidas
+              {totalPeriodos}x Seguidas
             </span>
           </div>
         )}

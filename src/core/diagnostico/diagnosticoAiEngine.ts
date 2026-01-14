@@ -25,7 +25,7 @@ export interface DiagnosticoAiInput {
     producaoAtual: number;
   };
 
-  // ✅ Contexto de Análise de Sustentação (Efeito V) - Com Quantidades
+  // ✅ Contexto de Análise de Sustentação (Efeito V)
   analiseSustentacao?: {
       nome: string;   // Nome do defeito que fez o V
       ppmT: number;   
@@ -194,13 +194,13 @@ export function gerarDiagnosticoAutomatico(
   /* ======================================================
       ✅ 4B. MUDANÇA BRUSCA (VARREDURA GLOBAL)
       Analisa o defeito que teve a maior variação (Spike)
-      Agora reporta tanto positivo quanto negativo, independente do tamanho (Ajuste de Tom)
+      Reporta tanto positivo quanto negativo, independente do tamanho
   ====================================================== */
   if (mudancaBrusca) {
       const delta = mudancaBrusca.delta;
       const absDelta = Math.abs(delta);
-      const sinal = delta > 0 ? "+" : ""; // Sinal explícito
-      const txtDelta = fmtPpm(delta);     // Formatado com 2 casas decimais
+      const sinal = delta > 0 ? "+" : ""; 
+      const txtDelta = fmtPpm(delta);     
       const nomeDefeito = mudancaBrusca.nome;
 
       // CENÁRIO 1: PIORA (Delta Positivo)
@@ -214,7 +214,7 @@ export function gerarDiagnosticoAutomatico(
               );
               indicadores.push(`Spike: ${nomeDefeito}`);
           } else {
-              // MODERADO (<100) - Agora é mostrado!
+              // MODERADO (<100)
               linhas.push(
                   `**Oscilação de Processo:** A maior variação registrada foi no defeito **"${nomeDefeito}"**, com aumento de **${txtDelta} PPM** ` +
                   `(${fmtPpm(mudancaBrusca.ppmAnterior)} ➝ ${fmtPpm(mudancaBrusca.ppmAtual)} PPM). Embora abaixo do limiar crítico, monitore este item.`
@@ -232,7 +232,7 @@ export function gerarDiagnosticoAutomatico(
               );
               indicadores.push(`Melhoria: ${nomeDefeito}`);
           } else {
-              // BOM (<100) - Agora é mostrado!
+              // BOM (<100)
               linhas.push(
                   `**Tendência de Melhoria:** O defeito **"${nomeDefeito}"** apresentou a redução mais relevante do período, caindo **${txtDelta} PPM** ` +
                   `(${fmtPpm(mudancaBrusca.ppmAnterior)} ➝ ${fmtPpm(mudancaBrusca.ppmAtual)} PPM), contribuindo para a estabilidade geral.`
@@ -269,15 +269,15 @@ export function gerarDiagnosticoAutomatico(
   /* ======================================================
       ✅ 5B. EFEITO REBOTE (SUSTENTAÇÃO / CURVA V)
       Logica: T-2 Alto -> T-1 Baixo -> T Alto (Formato em V)
-      Informa as quantidades absolutas e PPMs para evidência.
+      AGORA: Apenas PPM (Sem Qtd)
   ====================================================== */
   if (analiseSustentacao) {
-      const { nome, ppmT, ppmT1, ppmT2, qtdT, qtdT1, qtdT2 } = analiseSustentacao;
+      const { nome, ppmT, ppmT1, ppmT2 } = analiseSustentacao;
       
       linhas.push(
           `**Falha na Sustentação (Efeito Rebote):** Identificamos um padrão crítico no defeito **"${nome}"**. ` +
-          `Este item era alto em T-2 (**${fmt(qtdT2)} pçs** / ${fmtPpm(ppmT2)} PPM), reduziu significativamente no período anterior (**${fmt(qtdT1)} pçs** / ${fmtPpm(ppmT1)} PPM), ` +
-          `mas **voltou a subir drasticamente agora** para **${fmt(qtdT)} pçs** (${fmtPpm(ppmT)} PPM). ` +
+          `Este item era alto em T-2 (${fmtPpm(ppmT2)} PPM), reduziu significativamente no período anterior (${fmtPpm(ppmT1)} PPM), ` +
+          `mas **voltou a subir drasticamente agora** para ${fmtPpm(ppmT)} PPM. ` +
           `Diagnóstico provável: A ação corretiva anterior perdeu eficácia ou houve relaxamento no controle.`
       );
       indicadores.push(`Efeito Rebote: ${nome}`);
