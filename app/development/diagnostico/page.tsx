@@ -1,3 +1,4 @@
+// app/development/diagnostico/page.tsx
 "use client";
 
 import SidebarFiltros from "./components/SidebarFiltros";
@@ -16,13 +17,15 @@ export default function DiagnosticoIaPage() {
   const { data, loading, error } = useDiagnosticoIa();
 
   /* ======================================================
-     ✅ LÓGICA DE ESTADO VAZIO (SEM PRODUÇÃO)
-     Detecta o sinal que criamos no backend (diagnosticoAiEngine)
+      ✅ LÓGICA DE ESTADOS ESPECIAIS
   ====================================================== */
-  const isSemProducao = data?.diagnosticoIa?.titulo === "Sem Produção Registrada";
+  const tituloIa = data?.diagnosticoIa?.titulo;
+  
+  const isSemProducao = tituloIa === "Sem Produção Registrada";
+  const isZeroDefeitos = tituloIa === "Excelência em Qualidade";
 
   /* ======================================================
-     LAYOUT BASE (COM SIDEBAR)
+      LAYOUT BASE (COM SIDEBAR)
   ====================================================== */
   return (
     <div
@@ -77,7 +80,7 @@ export default function DiagnosticoIaPage() {
         {/* DASHBOARD RENDERIZADO */}
         {!loading && data && (
           <>
-            {/* ✅ SE NÃO TIVER PRODUÇÃO, MOSTRA O AVISO AMIGÁVEL */}
+            {/* 1️⃣ CENÁRIO: SEM PRODUÇÃO */}
             {isSemProducao ? (
                 <div
                     style={{
@@ -93,18 +96,14 @@ export default function DiagnosticoIaPage() {
                         marginTop: 20,
                     }}
                 >
-                    {/* Ícone ilustrativo */}
                     <div style={{ fontSize: "3rem", marginBottom: 16, opacity: 0.8 }}>📊</div>
-                    
                     <h2 style={{ fontSize: "1.25rem", fontWeight: 600, color: "#f1f5f9", marginBottom: 8 }}>
                         Não houve produção neste período
                     </h2>
-                    
                     <p style={{ maxWidth: 500, color: "#94a3b8", lineHeight: 1.6 }}>
                         O sistema não encontrou registros de produção para os filtros selecionados (Categoria/Modelo/Data). 
                         Sem produção, não é possível calcular indicadores de qualidade (PPM) ou risco.
                     </p>
-                    
                     <div 
                         style={{ 
                             marginTop: 24, 
@@ -120,8 +119,56 @@ export default function DiagnosticoIaPage() {
                         💡 Dica: Tente selecionar um período anterior ou outro modelo.
                     </div>
                 </div>
+            ) : isZeroDefeitos ? (
+                /* 2️⃣ CENÁRIO: EXCELÊNCIA (ZERO DEFEITOS) - Card Bonito e Centralizado */
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "60px 20px",
+                        background: "linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(16, 185, 129, 0.02) 100%)", // Verde Suave
+                        border: "1px solid rgba(16, 185, 129, 0.15)",
+                        borderRadius: 24,
+                        textAlign: "center",
+                        marginTop: 20,
+                    }}
+                >
+                    {/* Ícone de Troféu/Sucesso */}
+                    <div style={{ fontSize: "3.5rem", marginBottom: 16 }}>🏆</div>
+                    
+                    <h2 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#34d399", marginBottom: 12 }}>
+                        Excelência em Qualidade
+                    </h2>
+                    
+                    <div style={{ fontSize: "1.1rem", color: "#e2e8f0", marginBottom: 8 }}>
+                        Zero Defeitos Registrados
+                    </div>
+
+                    <p style={{ maxWidth: 600, color: "#94a3b8", lineHeight: 1.6, marginBottom: 24 }}>
+                        Parabéns! Houve produção registrada para este período, mas <strong>nenhuma falha</strong> foi apontada. 
+                        O processo demonstrou robustez total nos filtros selecionados.
+                    </p>
+
+                    {/* Badge de PPM 0 */}
+                    <div 
+                        style={{ 
+                            padding: "6px 16px", 
+                            background: "rgba(16, 185, 129, 0.15)", 
+                            color: "#34d399", 
+                            borderRadius: 20,
+                            fontSize: "0.9rem",
+                            fontWeight: 700,
+                            border: "1px solid rgba(16, 185, 129, 0.3)",
+                            letterSpacing: 0.5
+                        }}
+                    >
+                        PPM 0,00
+                    </div>
+                </div>
             ) : (
-                /* ✅ SE TIVER DADOS, MOSTRA O DASHBOARD NORMAL */
+                /* 3️⃣ CENÁRIO: PADRÃO (COM DADOS) */
                 <>
                     {/* LINHA 1: KPIS SUPERIORES */}
                     <div
